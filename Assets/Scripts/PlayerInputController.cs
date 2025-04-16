@@ -55,6 +55,8 @@ public class PlayerInputController : MonoBehaviour
         {
             CharacterMovement();
             CharacterRotation();
+
+            CameraMovement();
         }
 
     }
@@ -69,7 +71,7 @@ public class PlayerInputController : MonoBehaviour
     // }
     private void Interact(InputAction.CallbackContext context)
     {
-        string tag = /*_interactableObject.tag*/"";
+        string tag = "" /*_interactableObject.tag*/;
         switch (tag)
         {//lo hago con switch por si en el futuro el numero de interacciones sube más.
             case "Chest":
@@ -90,11 +92,13 @@ public class PlayerInputController : MonoBehaviour
         _characterController.Move(_characterSpeed * Time.deltaTime * (transform.forward * _movementInput.normalized.magnitude));
     }
     void CharacterRotation()
-    {        
-        Vector3 realtiveRotationAngle = transform.position + _movementInput.ToIso() - transform.position;
-        Quaternion appliedRotation = Quaternion.LookRotation(realtiveRotationAngle, Vector3.up);
-
+    {
+        Quaternion appliedRotation = Quaternion.LookRotation(Quaternion.Euler(0, 45, 0) * _movementInput, Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, appliedRotation, _turnSmoothVelocity * Time.deltaTime);
+    }
+    void CameraMovement()
+    {
+        _camera.transform.position = transform.position;
     }
 }
 

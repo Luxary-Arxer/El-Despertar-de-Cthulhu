@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55411f2651c8c04f9710d079a95b904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 963194228}
+  _camera: {fileID: 1238701445}
   _characterSpeed: 7.5
   _turnSmoothVelocity: 720
 --- !u!114 &757964008
@@ -1290,10 +1290,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 705507995}
+  - {fileID: 1238701445}
   - {fileID: 2092876721}
   - {fileID: 692345147}
   - {fileID: 757964012}
-  - {fileID: 1238701445}
   - {fileID: 1662700794}
   - {fileID: 1600071509}
   - {fileID: 1342118401}
