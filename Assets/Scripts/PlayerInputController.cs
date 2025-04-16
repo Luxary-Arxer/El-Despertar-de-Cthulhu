@@ -1,12 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 
 public class PlayerInputController : MonoBehaviour
 {
-    //[SerializeField]
-    //GameObject _pauseMenu;
     [SerializeField]
     Transform _camera;
     public PlayerControllsDefault PlayerControlls;
@@ -18,20 +14,9 @@ public class PlayerInputController : MonoBehaviour
     CharacterController _characterController;
     [SerializeField]
     float _characterSpeed;
-    float _turnSmoothVelocity = 1440;
-    //[SerializeField]
-    //GameObject[] _itemSlots;
-    //public List<Item> Inventory = new();
-    Collider _interactableObject;
+    [SerializeField]
+    float _turnSmoothVelocity;
 
-    // public class Item
-    // {
-    //     public SpriteRenderer InventoryImage;
-    //     public Item(SpriteRenderer img)
-    //     {
-    //         InventoryImage = img;
-    //     }
-    // }
     void Awake()
     {
         PlayerControlls = new PlayerControllsDefault();
@@ -84,60 +69,17 @@ public class PlayerInputController : MonoBehaviour
     // }
     private void Interact(InputAction.CallbackContext context)
     {
-        if (_interactableObject != null)
-        {
-            string tag = _interactableObject.tag;
-            switch (tag)
-            {//lo hago con switch por si en el futuro el numero de interacciones sube más.
-                case "Chest":
-                    //ChestInteraction();
-                    break;
-                case "Item":
-                    //ItemPickUp();
-                    break;
-            }
+        string tag = /*_interactableObject.tag*/"";
+        switch (tag)
+        {//lo hago con switch por si en el futuro el numero de interacciones sube más.
+            case "Chest":
+                //ChestInteraction();
+                break;
+            case "Item":
+                //ItemPickUp();
+                break;
         }
     }
-    // void ChestInteraction()
-    // {
-    //     ChestRandomAlgorithm chest = _interactableObject.GetComponentInParent<ChestRandomAlgorithm>();
-    //     chest.OnChestOpen();
-    // }
-    // void ItemPickUp()
-    // {
-    //     //if (Inventory.Count < _itemSlots.Length)
-    //     //{
-    //     CollectibleItemLogic pickedItem = _interactableObject.GetComponent<CollectibleItemLogic>();
-    //     //Item newInventoryItem = new(pickedItem.Image);
-    //     //Inventory.Add(newInventoryItem);
-    //     pickedItem.OnItemPicked();
-    //     //RefreshInventoryUI();
-    //     //}
-    //     //else
-    //     //{
-    //     Debug.Log("Objeto recogido");
-    //     //}
-    // }
-    /*void RefreshInventoryUI()
-    {
-        for (int i = 0; i < _itemSlots.Length && i < Inventory.Count; i++)
-        {
-            Image img = _itemSlots[i].GetComponent<Image>();
-            img.sprite = Inventory[i].InventoryImage.sprite;
-            Color imgColor = img.color;
-            imgColor.a = 255;
-            img.color = imgColor;
-        }
-    }*/
-    // void OnTriggerEnter(Collider collider)
-    // {
-    //     _interactableObject = collider;
-    // }
-    // public void RebindInteract(InputAction interactKeyCode)
-    // {
-    //     _interactRebind = interactKeyCode.PerformInteractiveRebinding().Start();
-    //     _interactRebind.Dispose();
-    // }
     void GatherInput()
     {
         Vector2 inputVector = _move.ReadValue<Vector2>();
@@ -145,12 +87,12 @@ public class PlayerInputController : MonoBehaviour
     }
     void CharacterMovement()
     {
-        _characterController.Move(_characterSpeed * Time.deltaTime * (transform.forward * _movementInput.magnitude));
+        _characterController.Move(_characterSpeed * Time.deltaTime * (transform.forward * _movementInput.normalized.magnitude));
     }
     void CharacterRotation()
-    {
-        var realtiveRotationAngle = transform.position + _movementInput - transform.position;
-        var appliedRotation = Quaternion.LookRotation(realtiveRotationAngle, Vector3.up);
+    {        
+        Vector3 realtiveRotationAngle = transform.position + _movementInput.ToIso() - transform.position;
+        Quaternion appliedRotation = Quaternion.LookRotation(realtiveRotationAngle, Vector3.up);
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, appliedRotation, _turnSmoothVelocity * Time.deltaTime);
     }
