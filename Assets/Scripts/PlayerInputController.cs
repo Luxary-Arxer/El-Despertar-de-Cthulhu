@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class PlayerInputController : MonoBehaviour
 {
@@ -13,15 +14,11 @@ public class PlayerInputController : MonoBehaviour
     //InputAction _pause;
     InputAction _interact;
     //InputAction _jump;
+    Vector3 _movementInput;
     CharacterController _characterController;
-    Vector3 _moveDirection;
-    Vector3 _initialDirection;
     [SerializeField]
-    float _speed;
-    float _turnSmoothTime = .075f;
-    float _turnSmoothVelocity;
-    float _targetAngle;
-    float _appliedAngle;
+    float _characterSpeed;
+    float _turnSmoothVelocity = 1440;
     //[SerializeField]
     //GameObject[] _itemSlots;
     //public List<Item> Inventory = new();
@@ -67,9 +64,12 @@ public class PlayerInputController : MonoBehaviour
 
     void Update()
     {
+        GatherInput();
+
         if (_move.ReadValue<Vector2>().magnitude > .05f)
         {
-            CharacterMovementAndRotation();
+            CharacterMovement();
+            CharacterRotation();
         }
 
     }
@@ -97,7 +97,7 @@ public class PlayerInputController : MonoBehaviour
                     break;
             }
         }
-    }    
+    }
     // void ChestInteraction()
     // {
     //     ChestRandomAlgorithm chest = _interactableObject.GetComponentInParent<ChestRandomAlgorithm>();
@@ -138,17 +138,21 @@ public class PlayerInputController : MonoBehaviour
     //     _interactRebind = interactKeyCode.PerformInteractiveRebinding().Start();
     //     _interactRebind.Dispose();
     // }
-    void CharacterMovementAndRotation()
+    void GatherInput()
     {
         Vector2 inputVector = _move.ReadValue<Vector2>();
-        _initialDirection = new(inputVector.x, 0f, inputVector.y);
+        _movementInput = new(inputVector.x, 0, inputVector.y);
+    }
+    void CharacterMovement()
+    {
+        _characterController.Move(_characterSpeed * Time.deltaTime * (transform.forward * _movementInput.magnitude));
+    }
+    void CharacterRotation()
+    {
+        var realtiveRotationAngle = transform.position + _movementInput - transform.position;
+        var appliedRotation = Quaternion.LookRotation(realtiveRotationAngle, Vector3.up);
 
-        _targetAngle = Mathf.Atan2(_initialDirection.x, _initialDirection.z) * Mathf.Rad2Deg + _camera.eulerAngles.y;
-        _appliedAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
-        transform.rotation = Quaternion.Euler(0, _appliedAngle, 0);
-
-        _moveDirection = Quaternion.Euler(0, _targetAngle, 0) * Vector3.forward;
-        _characterController.Move(_speed * Time.deltaTime * _moveDirection);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, appliedRotation, _turnSmoothVelocity * Time.deltaTime);
     }
 }
 
