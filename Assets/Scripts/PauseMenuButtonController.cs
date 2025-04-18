@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MenuButtonController : MonoBehaviour
+public class PauseMenuButtonController : MonoBehaviour
 {
     [SerializeField]
     PlayerInputController _playerInputController;

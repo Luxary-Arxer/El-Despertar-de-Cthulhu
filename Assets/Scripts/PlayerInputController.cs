@@ -32,7 +32,7 @@ public class PlayerInputController : MonoBehaviour
         PlayerControlls = new PlayerControllsDefault();
         _characterController = GetComponent<CharacterController>();
 
-        Cursor.visible = false;
+        //Cursor.visible = false;
     }
     void OnEnable()
     {
