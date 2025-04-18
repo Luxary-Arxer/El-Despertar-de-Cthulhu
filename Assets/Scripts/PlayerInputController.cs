@@ -48,7 +48,7 @@ public class PlayerInputController : MonoBehaviour
 
         _pause.performed += Pause;
         _interact.performed += Interact;
-        //_inventory.performed += Inventory;
+        _inventory.performed += Inventory;
     }
     void OnDisable()
     {
@@ -60,16 +60,15 @@ public class PlayerInputController : MonoBehaviour
 
     void Update()
     {
-        GatherInput();
+        GatherMovementInput();
 
-        if (IsMoving())
+        if (IsPlayerMoving())
         {
             CharacterMovement();
             CharacterRotation();
 
             CameraMovement();
         }
-
     }
     private void Pause(InputAction.CallbackContext context)
     {
@@ -97,7 +96,11 @@ public class PlayerInputController : MonoBehaviour
                 break;
         }
     }
-    void GatherInput()
+    private void Inventory(InputAction.CallbackContext context)
+    {
+        Debug.Log("Has abierto el inventario!");
+    }
+    void GatherMovementInput()
     {
         Vector2 inputVector = _move.ReadValue<Vector2>();
         _movementInput = new(inputVector.x, 0, inputVector.y);
@@ -115,7 +118,7 @@ public class PlayerInputController : MonoBehaviour
     {
         _camera.transform.position = transform.position;
     }
-    bool IsMoving()
+    bool IsPlayerMoving()
     {
         return _move.ReadValue<Vector2>().magnitude > .05f;
     }

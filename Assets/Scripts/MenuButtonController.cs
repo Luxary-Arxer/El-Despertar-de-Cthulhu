@@ -45,7 +45,6 @@ public class MenuButtonController : MonoBehaviour
             .OnComplete(_ => OnBindingComplete())
             .Start();
     }
-
     void OnBindingComplete()
     {
         int bindingIndex = _playerInputController.PlayerControlls.Player.Interact.GetBindingIndexForControl(_playerInputController.PlayerControlls.Player.Interact.controls[0]);
