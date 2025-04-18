@@ -12,6 +12,7 @@ public class PlayerInputController : MonoBehaviour
     InputAction _pause;
     InputAction _interact;
     InputAction _inventory;
+    InputAction _back;
 
     Vector3 _movementInput;
 
@@ -28,6 +29,10 @@ public class PlayerInputController : MonoBehaviour
     GameObject _pauseMenu;
     [SerializeField]
     GameObject _inventoryUI;
+    [SerializeField]
+    GameObject _time;
+    [SerializeField]
+    GameObject _place;
 
     void Awake()
     {
@@ -43,14 +48,20 @@ public class PlayerInputController : MonoBehaviour
         _interact = PlayerControlls.Player.Interact;
         _inventory = PlayerControlls.Player.Inventory;
 
+        _back = PlayerControlls.UI.Back;
+
         _move.Enable();
         _pause.Enable();
         _interact.Enable();
         _inventory.Enable();
 
+        _back.Enable();
+
         _pause.performed += Pause;
         _interact.performed += Interact;
         _inventory.performed += Inventory;
+
+        _back.performed += Back;
     }
     void OnDisable()
     {
@@ -58,6 +69,8 @@ public class PlayerInputController : MonoBehaviour
         _pause.Disable();
         _interact.Disable();
         _inventory.Disable();
+
+        _back.Disable();
     }
 
     void Update()
@@ -72,16 +85,18 @@ public class PlayerInputController : MonoBehaviour
             CameraMovement();
         }
     }
-    private void Pause(InputAction.CallbackContext context)
+    void Pause(InputAction.CallbackContext context)
     {
         PlayerControlls.Player.Disable();
         PlayerControlls.UI.Enable();
         _pauseMenu.SetActive(true);
+        _time.SetActive(false);
+        _place.SetActive(false);
 
         Time.timeScale = 0f;
         Cursor.visible = true;
     }
-    private void Interact(InputAction.CallbackContext context)
+    void Interact(InputAction.CallbackContext context)
     {
         string tag = _interactableObject.tag;
 
@@ -98,14 +113,29 @@ public class PlayerInputController : MonoBehaviour
                 break;
         }
     }
-    private void Inventory(InputAction.CallbackContext context)
+    void Inventory(InputAction.CallbackContext context)
     {
         PlayerControlls.Player.Disable();
         PlayerControlls.UI.Enable();
         _inventoryUI.SetActive(true);
+        _time.SetActive(false);
+        _place.SetActive(false);
 
         Time.timeScale = 0f;
         Cursor.visible = true;
+    }
+    void Back(InputAction.CallbackContext context)
+    {
+        PlayerControlls.Player.Enable();
+        PlayerControlls.UI.Disable();
+
+        _pauseMenu.SetActive(false);
+        _inventoryUI.SetActive(false);
+        _time.SetActive(true);
+        _place.SetActive(true);
+
+        Cursor.visible = false;
+        Time.timeScale = 1f;
     }
     void GatherMovementInput()
     {
