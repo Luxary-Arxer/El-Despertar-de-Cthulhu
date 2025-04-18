@@ -5,17 +5,27 @@ public class PlayerInputController : MonoBehaviour
 {
     [SerializeField]
     Transform _camera;
+
     public PlayerControllsDefault PlayerControlls;
+
     InputAction _move;
-    //InputAction _pause;
+    InputAction _pause;
     InputAction _interact;
-    //InputAction _jump;
+    InputAction _inventory;
+
     Vector3 _movementInput;
+
     CharacterController _characterController;
+
+    GameObject _interactableObject;
+
     [SerializeField]
     float _characterSpeed;
     [SerializeField]
     float _turnSmoothVelocity;
+
+    [SerializeField]
+    GameObject _pauseMenu;
 
     void Awake()
     {
@@ -27,31 +37,32 @@ public class PlayerInputController : MonoBehaviour
     void OnEnable()
     {
         _move = PlayerControlls.Player.Move;
-        //_pause = PlayerControlls.Player.Pause;
+        _pause = PlayerControlls.Player.Pause;
         _interact = PlayerControlls.Player.Interact;
-        //_jump = PlayerControlls.Player.Jump;
+        _inventory = PlayerControlls.Player.Inventory;
 
         _move.Enable();
-        //_pause.Enable();
+        _pause.Enable();
         _interact.Enable();
-        //_jump.Enable();
+        _inventory.Enable();
 
-        //_pause.performed += Pause;
+        _pause.performed += Pause;
         _interact.performed += Interact;
-        //_jump.performed += Jump;
+        //_inventory.performed += Inventory;
     }
     void OnDisable()
     {
         _move.Disable();
-        //_pause.Disable();
+        _pause.Disable();
         _interact.Disable();
+        _inventory.Disable();
     }
 
     void Update()
     {
         GatherInput();
 
-        if (_move.ReadValue<Vector2>().magnitude > .05f)
+        if (IsMoving())
         {
             CharacterMovement();
             CharacterRotation();
@@ -60,25 +71,29 @@ public class PlayerInputController : MonoBehaviour
         }
 
     }
-    // private void Pause(InputAction.CallbackContext context)
-    // {
-    //     PlayerControlls.Player.Disable();
-    //     PlayerControlls.UI.Enable();
-    //     _pauseMenu.SetActive(true);
+    private void Pause(InputAction.CallbackContext context)
+    {
+        PlayerControlls.Player.Disable();
+        PlayerControlls.UI.Enable();
+        _pauseMenu.SetActive(true);
 
-    //     Time.timeScale = 0f;
-    //     Cursor.visible = true;
-    // }
+        Time.timeScale = 0f;
+        Cursor.visible = true;
+    }
     private void Interact(InputAction.CallbackContext context)
     {
-        string tag = "" /*_interactableObject.tag*/;
+        string tag = _interactableObject.tag;
+
         switch (tag)
-        {//lo hago con switch por si en el futuro el numero de interacciones sube más.
-            case "Chest":
-                //ChestInteraction();
+        {
+            case "Exit":
+                //ExitInteraction();
                 break;
             case "Item":
                 //ItemPickUp();
+                break;
+            case "NPC":
+                //TalkInteraction();
                 break;
         }
     }
@@ -99,6 +114,10 @@ public class PlayerInputController : MonoBehaviour
     void CameraMovement()
     {
         _camera.transform.position = transform.position;
+    }
+    bool IsMoving()
+    {
+        return _move.ReadValue<Vector2>().magnitude > .05f;
     }
 }
 

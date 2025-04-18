@@ -33,9 +33,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Jump",
+                    "name": "Inventory",
                     "type": "Button",
-                    "id": "d27178ae-b326-435e-a2cd-ad3df0064ce9",
+                    "id": "623286a6-d79e-404f-8c71-fa38b4fadbe7",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -166,12 +166,12 @@
                 },
                 {
                     "name": "",
-                    "id": "df0d238e-cf4a-4beb-b62d-fffc9097e680",
-                    "path": "<Keyboard>/space",
+                    "id": "6f81fb4d-1a19-4627-8a0a-e8cd4e7b421e",
+                    "path": "<Keyboard>/tab",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "Inventory",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
