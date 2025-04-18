@@ -26,13 +26,15 @@ public class PlayerInputController : MonoBehaviour
 
     [SerializeField]
     GameObject _pauseMenu;
+    [SerializeField]
+    GameObject _inventoryUI;
 
     void Awake()
     {
         PlayerControlls = new PlayerControllsDefault();
         _characterController = GetComponent<CharacterController>();
 
-        //Cursor.visible = false;
+        Cursor.visible = false;
     }
     void OnEnable()
     {
@@ -98,7 +100,12 @@ public class PlayerInputController : MonoBehaviour
     }
     private void Inventory(InputAction.CallbackContext context)
     {
-        Debug.Log("Has abierto el inventario!");
+        PlayerControlls.Player.Disable();
+        PlayerControlls.UI.Enable();
+        _inventoryUI.SetActive(true);
+
+        Time.timeScale = 0f;
+        Cursor.visible = true;
     }
     void GatherMovementInput()
     {
