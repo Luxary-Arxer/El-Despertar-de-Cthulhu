@@ -85,6 +85,33 @@ public class PlayerInputController : MonoBehaviour
             CameraMovement();
         }
     }
+    void OnTriggerEnter(Collider other)
+    {
+        _interactableObject = other.gameObject;
+    }
+    void OnTriggerExit(Collider other)
+    {
+        _interactableObject = null;
+    }
+    void Interact(InputAction.CallbackContext context)
+    {
+        if (_interactableObject != null)
+        {
+            string tag = _interactableObject.tag;
+            switch (tag)
+            {
+                case "Leave":
+                    _interactableObject.GetComponent<LeaveManor>().LeaveManorFunction();
+                    break;
+                case "Item":
+                    _interactableObject.GetComponent<ItemPickUp>().PickUpItem();
+                    break;
+                case "NPC":
+                    _interactableObject.GetComponent<TalkToNPC>().StartTalkToNPC();
+                    break;
+            }
+        }
+    }
     void Pause(InputAction.CallbackContext context)
     {
         PlayerControlls.Player.Disable();
@@ -95,23 +122,6 @@ public class PlayerInputController : MonoBehaviour
 
         Time.timeScale = 0f;
         Cursor.visible = true;
-    }
-    void Interact(InputAction.CallbackContext context)
-    {
-        string tag = _interactableObject.tag;
-
-        switch (tag)
-        {
-            case "Exit":
-                //ExitInteraction();
-                break;
-            case "Item":
-                //ItemPickUp();
-                break;
-            case "NPC":
-                //TalkInteraction();
-                break;
-        }
     }
     void Inventory(InputAction.CallbackContext context)
     {

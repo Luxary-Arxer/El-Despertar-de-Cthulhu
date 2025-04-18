@@ -1,10 +1,9 @@
 
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class LeaveManor : MonoBehaviour
+public class ItemPickUp : MonoBehaviour
 {
-    [SerializeField]   
+    [SerializeField]
     GameObject _interactCanvas;
     void OnTriggerEnter(Collider other)
     {
@@ -20,16 +19,8 @@ public class LeaveManor : MonoBehaviour
             _interactCanvas.SetActive(false);
         }
     }
-    public void LeaveManorFunction()
+    public void PickUpItem()
     {
-        if (DaytimeTracker.MomentOfTheDay < 2)
-        {
-            DaytimeTracker.AdvanceThroughTheDay();
-        }
-        else
-        {
-            DaytimeTracker.RestartDay();
-        }
-        SceneManager.LoadScene(1);
+        Debug.Log("Picked Up Item!");
     }
 }
