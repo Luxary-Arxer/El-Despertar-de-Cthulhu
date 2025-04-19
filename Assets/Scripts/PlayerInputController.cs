@@ -5,6 +5,8 @@ public class PlayerInputController : MonoBehaviour
 {
     [SerializeField]
     Transform _camera;
+    [SerializeField]
+    Transform _characterSprite;
 
     public PlayerControllsDefault PlayerControlls;
 
@@ -84,6 +86,7 @@ public class PlayerInputController : MonoBehaviour
             CharacterRotation();
 
             CameraMovement();
+            SpriteMovement();
         }
     }
     void OnTriggerEnter(Collider other)
@@ -166,7 +169,10 @@ public class PlayerInputController : MonoBehaviour
     }
     void CameraMovement()
     {
-        _camera.transform.position = transform.position;
+        _camera.position = transform.position;
+    }
+    void SpriteMovement(){
+        _characterSprite.position = transform.position;
     }
     bool IsPlayerMoving()
     {

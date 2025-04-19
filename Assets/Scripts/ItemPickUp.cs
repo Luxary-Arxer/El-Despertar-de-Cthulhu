@@ -15,7 +15,7 @@ public class ItemPickUp : MonoBehaviour
     public string Description { get { return _description; } }
     void Awake()
     {
-        _image = GetComponent<SpriteRenderer>();
+        _image = GetComponentInChildren<SpriteRenderer>();
     }
     public void OnItemPicked()
     {
