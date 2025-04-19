@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     GameObject[] _itemSlots;
     public List<Item> Inventory = new();
+    
     Collider _interactableObject;
 
     public class Item

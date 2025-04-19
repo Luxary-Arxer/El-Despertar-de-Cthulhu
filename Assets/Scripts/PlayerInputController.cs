@@ -19,6 +19,7 @@ public class PlayerInputController : MonoBehaviour
     CharacterController _characterController;
 
     GameObject _interactableObject;
+    public GameObject InteractableObject { get { return _interactableObject; } }
 
     [SerializeField]
     float _characterSpeed;
@@ -104,7 +105,9 @@ public class PlayerInputController : MonoBehaviour
                     _interactableObject.GetComponent<LeaveManor>().LeaveManorFunction();
                     break;
                 case "Item":
-                    _interactableObject.GetComponent<ItemPickUp>().PickUpItem();
+                    ItemPickUp pickedItem = _interactableObject.GetComponent<ItemPickUp>();
+                    GetComponent<InventoryManager>().AddItemToInventory(pickedItem.Image, pickedItem.Name, pickedItem.Description);
+                    pickedItem.OnItemPicked();
                     break;
                 case "NPC":
                     _interactableObject.GetComponent<TalkToNPC>().StartTalkToNPC();
