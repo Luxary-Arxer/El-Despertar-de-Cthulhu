@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+using DialogueEditor;
 
 public class PlayerInputController : MonoBehaviour
 {
@@ -68,7 +69,7 @@ public class PlayerInputController : MonoBehaviour
         _interact.performed += Interact;
         _inventory.performed += Inventory;
 
-        _back.performed += Back;        
+        _back.performed += Back;
     }
     void OnDisable()
     {
@@ -117,45 +118,62 @@ public class PlayerInputController : MonoBehaviour
                     pickedItem.OnItemPicked();
                     break;
                 case "NPC":
-                    _interactableObject.GetComponent<TalkToNPC>().StartTalkToNPC();
+                    if (!ConversationManager.Instance.IsConversationActive)
+                    {
+                        _interactableObject.GetComponent<TalkToNPC>().StartTalkToNPC();
+                    }
                     break;
             }
         }
     }
     void Pause(InputAction.CallbackContext context)
     {
-        PlayerControlls.Player.Disable();
-        PlayerControlls.UI.Enable();
-        _pauseMenuUI.SetActive(true);
-        _timeUI.SetActive(false);
-        _placeUI.SetActive(false);
+        if (!ConversationManager.Instance.IsConversationActive)
+        {
+            PlayerControlls.Player.Disable();
+            PlayerControlls.UI.Enable();
 
-        Time.timeScale = 0f;
-        Cursor.visible = true;
+            _pauseMenuUI.SetActive(true);
+            _timeUI.SetActive(false);
+            _placeUI.SetActive(false);
+
+            Time.timeScale = 0f;
+            Cursor.visible = true;
+        }
     }
     void Inventory(InputAction.CallbackContext context)
     {
-        PlayerControlls.Player.Disable();
-        PlayerControlls.UI.Enable();
-        _inventoryUI.SetActive(true);
-        _timeUI.SetActive(false);
-        _placeUI.SetActive(false);
+        if (!ConversationManager.Instance.IsConversationActive)
+        {
+            PlayerControlls.Player.Disable();
+            PlayerControlls.UI.Enable();
+            _inventoryUI.SetActive(true);
+            _timeUI.SetActive(false);
+            _placeUI.SetActive(false);
 
-        Time.timeScale = 0f;
-        Cursor.visible = true;
+            Time.timeScale = 0f;
+            Cursor.visible = true;
+        }
     }
     void Back(InputAction.CallbackContext context)
     {
-        PlayerControlls.Player.Enable();
-        PlayerControlls.UI.Disable();
+        if (!ConversationManager.Instance.IsConversationActive)
+        {
+            PlayerControlls.Player.Enable();
+            PlayerControlls.UI.Disable();
 
-        _pauseMenuUI.SetActive(false);
-        _inventoryUI.SetActive(false);
-        _timeUI.SetActive(true);
-        _placeUI.SetActive(true);
+            _pauseMenuUI.SetActive(false);
+            _inventoryUI.SetActive(false);
+            _timeUI.SetActive(true);
+            _placeUI.SetActive(true);
 
-        Cursor.visible = false;
-        Time.timeScale = 1f;
+            Cursor.visible = false;
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            ConversationManager.Instance.EndConversation();
+        }
     }
     void GatherMovementInput()
     {

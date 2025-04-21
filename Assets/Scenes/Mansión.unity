@@ -5464,7 +5464,7 @@ GameObject:
   - component: {fileID: 623388173}
   - component: {fileID: 623388172}
   m_Layer: 5
-  m_Name: ExitText
+  m_Name: QuitText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5509,7 +5509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Exit
+  m_text: 'Quit
 
 '
   m_isRightToLeft: 0
@@ -17924,7 +17924,7 @@ GameObject:
   - component: {fileID: 2118759268}
   - component: {fileID: 2118759267}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
