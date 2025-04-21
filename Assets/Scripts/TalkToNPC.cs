@@ -8,7 +8,7 @@ public class TalkToNPC : MonoBehaviour
     GameObject _interactCanvas;
 
     NPCConversation _currentConversation;
-    
+
     void OnEnable()
     {
         ConversationManager.OnConversationStarted += ConversationStarted;

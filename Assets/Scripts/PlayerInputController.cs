@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -67,7 +68,7 @@ public class PlayerInputController : MonoBehaviour
         _interact.performed += Interact;
         _inventory.performed += Inventory;
 
-        _back.performed += Back;
+        _back.performed += Back;        
     }
     void OnDisable()
     {
