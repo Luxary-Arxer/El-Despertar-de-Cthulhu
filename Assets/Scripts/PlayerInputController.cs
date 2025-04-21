@@ -140,6 +140,10 @@ public class PlayerInputController : MonoBehaviour
             Time.timeScale = 0f;
             Cursor.visible = true;
         }
+        else
+        {
+            ConversationManager.Instance.EndConversation();
+        }
     }
     void Inventory(InputAction.CallbackContext context)
     {
@@ -154,26 +158,23 @@ public class PlayerInputController : MonoBehaviour
             Time.timeScale = 0f;
             Cursor.visible = true;
         }
-    }
-    void Back(InputAction.CallbackContext context)
-    {
-        if (!ConversationManager.Instance.IsConversationActive)
-        {
-            PlayerControlls.Player.Enable();
-            PlayerControlls.UI.Disable();
-
-            _pauseMenuUI.SetActive(false);
-            _inventoryUI.SetActive(false);
-            _timeUI.SetActive(true);
-            _placeUI.SetActive(true);
-
-            Cursor.visible = false;
-            Time.timeScale = 1f;
-        }
         else
         {
             ConversationManager.Instance.EndConversation();
         }
+    }
+    void Back(InputAction.CallbackContext context)
+    {
+        PlayerControlls.Player.Enable();
+        PlayerControlls.UI.Disable();
+
+        _pauseMenuUI.SetActive(false);
+        _inventoryUI.SetActive(false);
+        _timeUI.SetActive(true);
+        _placeUI.SetActive(true);
+
+        Cursor.visible = false;
+        Time.timeScale = 1f;
     }
     void GatherMovementInput()
     {
