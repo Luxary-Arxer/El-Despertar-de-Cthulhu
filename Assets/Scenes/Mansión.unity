@@ -6420,14 +6420,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55411f2651c8c04f9710d079a95b904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _characterSpeed: 12
+  _turnVelocity: 1550
   _camera: {fileID: 1238701445}
   _characterSprite: {fileID: 524773655}
-  _characterSpeed: 15
-  _turnSmoothVelocity: 1440
-  _pauseMenu: {fileID: 1196752640}
+  _pauseMenuUI: {fileID: 1196752640}
   _inventoryUI: {fileID: 970377626}
-  _time: {fileID: 288040568}
-  _place: {fileID: 1292021322}
+  _timeUI: {fileID: 288040568}
+  _placeUI: {fileID: 1292021322}
 --- !u!114 &757964008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6511,9 +6511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c409a5b5d00aa54abab6df7435b7170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _daggerImage: {fileID: 7482450056836936865, guid: 027e1dc2f385bfc4094bf1641d8e0bb9, type: 3}
-  _daggerName: La daga del dios de la muerte
-  _daggerDescription: Esta es la daga utilizada para reiniciar el time loop
+  _itemImage: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
+  _itemName: La daga del dios de la muerte
+  _itemDescription: Esta es el objeto necesario para reiniciar el loop
   _itemSlots:
   - {fileID: 232086025}
   - {fileID: 825815576}
@@ -11805,6 +11805,8 @@ MonoBehaviour:
   _playerInputController: {fileID: 757964007}
   _pauseMenu: {fileID: 1196752640}
   _optionsMenu: {fileID: 1586360780}
+  _time: {fileID: 288040568}
+  _place: {fileID: 1292021322}
   _interactKeybindText: {fileID: 1711233278}
 --- !u!224 &1461814119
 RectTransform:

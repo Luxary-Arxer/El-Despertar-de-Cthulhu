@@ -4,23 +4,25 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    [Header("Starter items")]
     [SerializeField]
-    SpriteRenderer _daggerImage;
+    Sprite _itemImage;
     [SerializeField]
-    string _daggerName;
+    string _itemName;
     [SerializeField]
-    string _daggerDescription;
+    string _itemDescription;
 
+    [Header("Inventory slots")]
     [SerializeField]
     GameObject[] _itemSlots;
     public List<Item> ItemInventory = new();
 
     public class Item
     {
-        public SpriteRenderer InventoryImage;
+        public Sprite InventoryImage;
         public string Name;
         public string Description;
-        public Item(SpriteRenderer img, string name, string desc)
+        public Item(Sprite img, string name, string desc)
         {
             InventoryImage = img;
             Name = name;
@@ -33,9 +35,9 @@ public class InventoryManager : MonoBehaviour
     }
     void Awake()
     {
-        AddItemToInventory(_daggerImage, _daggerName, _daggerDescription);
+        AddItemToInventory(_itemImage, _itemName, _itemDescription);
     }
-    public void AddItemToInventory(SpriteRenderer img, string name, string desc)
+    public void AddItemToInventory(Sprite img, string name, string desc)
     {
         if (ItemInventory.Count < _itemSlots.Length)
         {

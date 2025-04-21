@@ -224,6 +224,17 @@ public partial class @PlayerControllsDefault: IInputActionCollection2, IDisposab
                     ""action"": ""Back"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dd83fee8-7e3c-40b4-845d-127a4ca5065d"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Back"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }

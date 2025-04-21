@@ -6,10 +6,18 @@ public class PauseMenuButtonController : MonoBehaviour
 {
     [SerializeField]
     PlayerInputController _playerInputController;
+
+    [Header("UI elements")]
     [SerializeField]
     GameObject _pauseMenu;
     [SerializeField]
     GameObject _optionsMenu;
+    [SerializeField]
+    GameObject _time;
+    [SerializeField]
+    GameObject _place;
+
+    [Header("Keybinding change texts")]
     [SerializeField]
     TextMeshProUGUI _interactKeybindText;
     InputActionRebindingExtensions.RebindingOperation _interactRebind;
@@ -19,6 +27,8 @@ public class PauseMenuButtonController : MonoBehaviour
         _playerInputController.PlayerControlls.UI.Disable();
         _playerInputController.PlayerControlls.Player.Enable();
         _pauseMenu.SetActive(false);
+        _time.SetActive(true);
+        _place.SetActive(true);
 
         Time.timeScale = 1.0f;
         Cursor.visible = false;

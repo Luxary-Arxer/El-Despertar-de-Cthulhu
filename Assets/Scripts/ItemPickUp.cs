@@ -5,17 +5,20 @@ public class ItemPickUp : MonoBehaviour
 {
     [SerializeField]
     GameObject _interactCanvas;
+
+    [Header("Item elements")]
     [SerializeField]
     string _name;
     [SerializeField]
     string _description;
-    SpriteRenderer _image;
-    public SpriteRenderer Image { get { return _image; } }
+    Sprite _image;
+    public Sprite Image { get { return _image; } }
     public string Name { get { return _name; } }
     public string Description { get { return _description; } }
+
     void Awake()
     {
-        _image = GetComponentInChildren<SpriteRenderer>();
+        _image = GetComponentInChildren<SpriteRenderer>().sprite;
     }
     public void OnItemPicked()
     {

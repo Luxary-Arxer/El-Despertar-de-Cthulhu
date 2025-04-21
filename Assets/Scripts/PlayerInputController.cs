@@ -3,10 +3,27 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputController : MonoBehaviour
 {
+    [Header("Player Stats")]
+    [SerializeField]
+    float _characterSpeed;
+    [SerializeField]
+    float _turnVelocity;
+
+    [Header("Objects to move with the player")]
     [SerializeField]
     Transform _camera;
     [SerializeField]
     Transform _characterSprite;
+
+    [Header("UI Elements")]
+    [SerializeField]
+    GameObject _pauseMenuUI;
+    [SerializeField]
+    GameObject _inventoryUI;
+    [SerializeField]
+    GameObject _timeUI;
+    [SerializeField]
+    GameObject _placeUI;
 
     public PlayerControllsDefault PlayerControlls;
 
@@ -22,20 +39,6 @@ public class PlayerInputController : MonoBehaviour
 
     GameObject _interactableObject;
     public GameObject InteractableObject { get { return _interactableObject; } }
-
-    [SerializeField]
-    float _characterSpeed;
-    [SerializeField]
-    float _turnSmoothVelocity;
-
-    [SerializeField]
-    GameObject _pauseMenu;
-    [SerializeField]
-    GameObject _inventoryUI;
-    [SerializeField]
-    GameObject _time;
-    [SerializeField]
-    GameObject _place;
 
     void Awake()
     {
@@ -122,9 +125,9 @@ public class PlayerInputController : MonoBehaviour
     {
         PlayerControlls.Player.Disable();
         PlayerControlls.UI.Enable();
-        _pauseMenu.SetActive(true);
-        _time.SetActive(false);
-        _place.SetActive(false);
+        _pauseMenuUI.SetActive(true);
+        _timeUI.SetActive(false);
+        _placeUI.SetActive(false);
 
         Time.timeScale = 0f;
         Cursor.visible = true;
@@ -134,8 +137,8 @@ public class PlayerInputController : MonoBehaviour
         PlayerControlls.Player.Disable();
         PlayerControlls.UI.Enable();
         _inventoryUI.SetActive(true);
-        _time.SetActive(false);
-        _place.SetActive(false);
+        _timeUI.SetActive(false);
+        _placeUI.SetActive(false);
 
         Time.timeScale = 0f;
         Cursor.visible = true;
@@ -145,10 +148,10 @@ public class PlayerInputController : MonoBehaviour
         PlayerControlls.Player.Enable();
         PlayerControlls.UI.Disable();
 
-        _pauseMenu.SetActive(false);
+        _pauseMenuUI.SetActive(false);
         _inventoryUI.SetActive(false);
-        _time.SetActive(true);
-        _place.SetActive(true);
+        _timeUI.SetActive(true);
+        _placeUI.SetActive(true);
 
         Cursor.visible = false;
         Time.timeScale = 1f;
@@ -165,13 +168,14 @@ public class PlayerInputController : MonoBehaviour
     void CharacterRotation()
     {
         Quaternion appliedRotation = Quaternion.LookRotation(Quaternion.Euler(0, 45, 0) * _movementInput, Vector3.up);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, appliedRotation, _turnSmoothVelocity * Time.deltaTime);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, appliedRotation, _turnVelocity * Time.deltaTime);
     }
     void CameraMovement()
     {
         _camera.position = transform.position;
     }
-    void SpriteMovement(){
+    void SpriteMovement()
+    {
         _characterSprite.position = transform.position;
     }
     bool IsPlayerMoving()
