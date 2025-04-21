@@ -10,6 +10,8 @@ public class ItemSlotManager : MonoBehaviour
     TextMeshProUGUI _itemDescriptionBox;
     [SerializeField]
     TextMeshProUGUI _itemNameBox;
+    [SerializeField]
+    Image _itemImageBox;
 
     Sprite _itemImage;
     string _itemName;
@@ -20,8 +22,12 @@ public class ItemSlotManager : MonoBehaviour
 
     public void DisplayImageOnInventory()
     {
-        GetComponentInChildren<Image>().sprite = _itemImage;
-    }    
+        _itemImageBox.sprite = _itemImage;
+        
+        Color imgColor = _itemImageBox.color;
+        imgColor.a = 255;
+        _itemImageBox.color = imgColor;
+    }
     public void DisplayItemDescription()
     {
         _itemDescriptionBox.text = _itemDescription;
