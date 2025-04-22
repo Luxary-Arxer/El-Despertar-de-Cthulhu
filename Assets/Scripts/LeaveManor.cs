@@ -31,6 +31,6 @@ public class LeaveManor : MonoBehaviour
         {
             DaytimeTracker.RestartDay();
         }
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
