@@ -9,6 +9,15 @@ Tras unos siglos, en el año 1900, muchas de las criaturas consideradas solo mit
 Encarnamos el papel de Viktra, una chica de 26 años que fue criada por unos cultistas adoradores de Cthulhu que, una vez descubrió el plan definitivo de la secta: revivir a su dios para acabar con el mundo, se fugó para ponerle fin a tal locura. 
 
 Con la ayuda de la Daga del dios de la muerte, un poderoso objeto ritual con la capacidad de retroceder en el tiempo hasta el comienzo de ese mismo día, Viktra tendrá que infiltrarse en las cuevas donde se hallan congregados todos los líderes cultistas, también conocidos como Generales de Cthulhu, y eliminarlos; o persuadirles para cambiar de idea.
+### Controles 
+
+- **Moviemiento:** WASD
+
+- **Interactuar:** E
+
+- **Pausa:** Esc
+
+- **Inventario:** Tabulador
 
 ### Desarolladores
 |Martín Morales|David Román|Albert Martín|Enric Arxer|
