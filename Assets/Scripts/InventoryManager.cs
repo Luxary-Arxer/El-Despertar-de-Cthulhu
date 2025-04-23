@@ -29,9 +29,10 @@ public class InventoryManager : MonoBehaviour
             Description = desc;
         }
     }
+    
     void OnEnable()
     {
-        UpdateItemInventory();
+        UpdateItemInventoryUI();
     }
     void Awake()
     {
@@ -44,14 +45,14 @@ public class InventoryManager : MonoBehaviour
             Item newInventoryItem = new(img, name, desc);
             ItemInventory.Add(newInventoryItem);
 
-            UpdateItemInventory();
+            UpdateItemInventoryUI();
         }
         else
         {
             Debug.Log("¡No hay espacio en el inventario!");
         }
     }
-    void UpdateItemInventory()
+    void UpdateItemInventoryUI()
     {
         for (int i = 0; i < _itemSlots.Length && i < ItemInventory.Count; i++)
         {

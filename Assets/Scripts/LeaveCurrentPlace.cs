@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LeaveManor : MonoBehaviour
+public class LeaveCurrentPlace : MonoBehaviour
 {
     [SerializeField]   
     GameObject _interactCanvas;
@@ -21,7 +21,7 @@ public class LeaveManor : MonoBehaviour
             _interactCanvas.SetActive(false);
         }
     }
-    public void LeaveManorFunction()
+    public void LeaveCurrentPlaceFunction()
     {
         if (DaytimeTracker.MomentOfTheDay < 2)
         {
@@ -31,6 +31,6 @@ public class LeaveManor : MonoBehaviour
         {
             DaytimeTracker.RestartDay();
         }
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

@@ -16,6 +16,7 @@ public class ItemSlotManager : MonoBehaviour
     Sprite _itemImage;
     string _itemName;
     string _itemDescription;
+    
     public Sprite ItemImage { set { _itemImage = value; } }
     public string ItemName { set { _itemName = value; } }
     public string ItemDescription { set { _itemDescription = value; } }

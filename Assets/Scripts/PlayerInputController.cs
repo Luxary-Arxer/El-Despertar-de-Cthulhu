@@ -110,7 +110,7 @@ public class PlayerInputController : MonoBehaviour
             switch (tag)
             {
                 case "Leave":
-                    _interactableObject.GetComponent<LeaveManor>().LeaveManorFunction();
+                    _interactableObject.GetComponent<LeaveCurrentPlace>().LeaveCurrentPlaceFunction();
                     break;
                 case "Item":
                     ItemPickUp pickedItem = _interactableObject.GetComponent<ItemPickUp>();
