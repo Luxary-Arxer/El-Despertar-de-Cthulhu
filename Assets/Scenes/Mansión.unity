@@ -2868,8 +2868,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _daySprite: {fileID: 21300000, guid: e0b83a574e25b11499855363ff75c10f, type: 3}
-  _eveningSprite: {fileID: 21300000, guid: 6fb99b9c64d7ded4cbc0bc4b4427e222, type: 3}
-  _nightSprite: {fileID: 21300000, guid: 0ff12c558ac5aaf4584bad1a43228911, type: 3}
+  _eveningSprite: {fileID: 21300000, guid: f349b136baa6c20448e49ed4d92ba7f3, type: 3}
+  _nightSprite: {fileID: 21300000, guid: 7dc5f515ff15bf94e810db98a15f7adc, type: 3}
 --- !u!65 &296925640
 BoxCollider:
   m_ObjectHideFlags: 0
