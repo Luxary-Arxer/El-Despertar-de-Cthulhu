@@ -3497,7 +3497,7 @@ GameObject:
   - component: {fileID: 382162478}
   - component: {fileID: 382162482}
   m_Layer: 0
-  m_Name: Item-Test
+  m_Name: Manzana
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3554,8 +3554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactCanvas: {fileID: 1623553919}
-  _name: Manzana
-  _description: Este es el objeto necesario para matar a Korby :(
+  _item: {fileID: 11400000, guid: 005aee7bdee1ff54d8ae53ad90096788, type: 2}
 --- !u!65 &382162483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7246,6 +7245,51 @@ MonoBehaviour:
   _itemDescriptionBox: {fileID: 117196265}
   _itemNameBox: {fileID: 1491471635}
   _itemImageBox: {fileID: 1548124396}
+--- !u!1 &830718479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 830718481}
+  - component: {fileID: 830718480}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &830718480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830718479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371131004a4c1d5469c809d84c04a67c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InGameItem: {fileID: 11400000, guid: 005aee7bdee1ff54d8ae53ad90096788, type: 2}
+--- !u!4 &830718481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830718479}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.215121, y: -3.4009755, z: 31.30665}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &834097227
 GameObject:
   m_ObjectHideFlags: 0
@@ -25608,3 +25652,4 @@ SceneRoots:
   - {fileID: 382162477}
   - {fileID: 1617650005}
   - {fileID: 328843540}
+  - {fileID: 830718481}
