@@ -11,7 +11,7 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField]
     float _turnVelocity;
 
-    [Header("Objects to move with the player")]
+    [Header("Objects to move along with the player")]
     [SerializeField]
     Transform _camera;
     [SerializeField]
@@ -38,6 +38,7 @@ public class PlayerInputController : MonoBehaviour
     Vector3 _movementInput;
 
     CharacterController _characterController;
+    InventoryManager _inventoryManager;
 
     GameObject _interactableObject;
     public GameObject InteractableObject { get { return _interactableObject; } }
@@ -46,6 +47,7 @@ public class PlayerInputController : MonoBehaviour
     {
         PlayerControlls = new PlayerControllsDefault();
         _characterController = GetComponent<CharacterController>();
+        _inventoryManager = GetComponent<InventoryManager>();
 
         Cursor.visible = false;
     }
@@ -113,9 +115,16 @@ public class PlayerInputController : MonoBehaviour
                     _interactableObject.GetComponent<LeaveCurrentPlace>().LeaveCurrentPlaceFunction();
                     break;
                 case "Item":
-                    ItemPickUp pickedItem = _interactableObject.GetComponent<ItemPickUp>();
-                    GetComponent<InventoryManager>().AddItemToInventory(pickedItem.Item);
-                    pickedItem.OnItemPicked();
+                    _inventoryManager.AddItemToInventory(_interactableObject.GetComponent<ItemPickUp>().Item);
+                    _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
+                    break;
+                case "Log":
+                    _inventoryManager.AddLogToInventory(_interactableObject.GetComponent<LogPickUp>().Log);
+                    _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
+                    break;
+                case "Hint":
+                    _inventoryManager.AddHintToInventory(_interactableObject.GetComponent<HintPickUp>().Hint);
+                    _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
                     break;
                 case "NPC":
                     if (!ConversationManager.Instance.IsConversationActive)

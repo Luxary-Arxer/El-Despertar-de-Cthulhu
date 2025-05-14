@@ -1,16 +1,12 @@
 
 using UnityEngine;
 
-public class ItemPickUp : MonoBehaviour
+public class GeneralObjectPickUpManager : MonoBehaviour
 {
     [SerializeField]
     GameObject _interactCanvas;
 
-    [SerializeField]
-    ItemObject _item;
-    public ItemObject Item { get { return _item; } }
-
-    public void OnItemPicked()
+    public void OnObjectPicked()
     {
         Destroy(gameObject);
     }

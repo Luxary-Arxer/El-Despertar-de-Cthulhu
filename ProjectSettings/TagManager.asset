@@ -7,6 +7,8 @@ TagManager:
   - Leave
   - NPC
   - Item
+  - Log
+  - Hint
   layers:
   - Default
   - TransparentFX
