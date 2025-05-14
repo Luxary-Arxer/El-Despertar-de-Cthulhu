@@ -8432,7 +8432,7 @@ MonoBehaviour:
   _characterSprite: {fileID: 1322313518}
   _pauseMenuUI: {fileID: 164919794}
   _inventoryUI: {fileID: 918604290}
-  _timeUI: {fileID: 0}
+  _timeUI: {fileID: 1269246854}
   _placeUI: {fileID: 329613779}
 --- !u!114 &1268343910
 MonoBehaviour:
@@ -8505,6 +8505,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1269246854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4974928225794047489, guid: 6d500bd058466604e87ae8ec2b8b5ab6, type: 3}
+  m_PrefabInstance: {fileID: 1805721986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1273651526
 GameObject:
   m_ObjectHideFlags: 0

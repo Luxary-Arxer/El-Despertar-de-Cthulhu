@@ -256,6 +256,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516767}
   m_CullTransparentMesh: 1
+--- !u!1 &5169515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 717152817029869850, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
+  m_PrefabInstance: {fileID: 1298120401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &26496096
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8283,7 +8288,7 @@ MonoBehaviour:
   _pauseMenuUI: {fileID: 1196752640}
   _inventoryUI: {fileID: 970377626}
   _timeUI: {fileID: 288040568}
-  _placeUI: {fileID: 0}
+  _placeUI: {fileID: 5169515}
 --- !u!114 &757964008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18795,7 +18800,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.23911765, y: 0.3696438, z: -0.09904577, w: 0.89239913}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 382162477}
