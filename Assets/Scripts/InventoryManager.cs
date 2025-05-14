@@ -6,29 +6,25 @@ public class InventoryManager : MonoBehaviour
 {
     [Header("Starter items")]
     [SerializeField]
-    Sprite _itemImage;
-    [SerializeField]
-    string _itemName;
-    [SerializeField]
-    string _itemDescription;
+    ItemObject _daggerItem;
 
     [Header("Inventory slots")]
     [SerializeField]
     GameObject[] _itemSlots;
-    public List<Item> ItemInventory = new();
+    public static List<ItemObject> ItemInventory = new();
 
-    public class Item
-    {
-        public Sprite InventoryImage;
-        public string Name;
-        public string Description;
-        public Item(Sprite img, string name, string desc)
-        {
-            InventoryImage = img;
-            Name = name;
-            Description = desc;
-        }
-    }
+    // public class Item
+    // {
+    //     public Sprite InventoryImage;
+    //     public string Name;
+    //     public string Description;
+    //     public Item(Sprite img, string name, string desc)
+    //     {
+    //         InventoryImage = img;
+    //         Name = name;
+    //         Description = desc;
+    //     }
+    // }
     
     void OnEnable()
     {
@@ -36,14 +32,13 @@ public class InventoryManager : MonoBehaviour
     }
     void Awake()
     {
-        AddItemToInventory(_itemImage, _itemName, _itemDescription);
+        AddItemToInventory(_daggerItem);
     }
-    public void AddItemToInventory(Sprite img, string name, string desc)
+    public void AddItemToInventory(ItemObject item)
     {
         if (ItemInventory.Count < _itemSlots.Length)
         {
-            Item newInventoryItem = new(img, name, desc);
-            ItemInventory.Add(newInventoryItem);
+            ItemInventory.Add(item);
 
             UpdateItemInventoryUI();
         }
@@ -57,7 +52,7 @@ public class InventoryManager : MonoBehaviour
         for (int i = 0; i < _itemSlots.Length && i < ItemInventory.Count; i++)
         {
             ItemSlotManager currentItem = _itemSlots[i].GetComponent<ItemSlotManager>();
-            currentItem.ItemImage = ItemInventory[i].InventoryImage;
+            currentItem.ItemImage = ItemInventory[i].Image;
             currentItem.ItemName = ItemInventory[i].Name;
             currentItem.ItemDescription = ItemInventory[i].Description;
             currentItem.DisplayImageOnInventory();

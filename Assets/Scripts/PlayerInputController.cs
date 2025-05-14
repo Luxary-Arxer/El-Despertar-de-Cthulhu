@@ -114,7 +114,7 @@ public class PlayerInputController : MonoBehaviour
                     break;
                 case "Item":
                     ItemPickUp pickedItem = _interactableObject.GetComponent<ItemPickUp>();
-                    GetComponent<InventoryManager>().AddItemToInventory(pickedItem.Item.Image, pickedItem.Item.Name, pickedItem.Item.Description);
+                    GetComponent<InventoryManager>().AddItemToInventory(pickedItem.Item);
                     pickedItem.OnItemPicked();
                     break;
                 case "NPC":

@@ -28,5 +28,4 @@ public class ItemPickUp : MonoBehaviour
             _interactCanvas.SetActive(false);
         }
     }
-
 }
