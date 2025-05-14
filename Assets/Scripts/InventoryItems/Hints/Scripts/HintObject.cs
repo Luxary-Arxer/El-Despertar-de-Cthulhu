@@ -5,9 +5,5 @@ using UnityEngine;
 public class HintObject : InventoryItemObjectAbstract
 {
     [TextArea(5, 10)]
-    public string Hint;
-    void Awake()
-    {
-        ItemType = ItemType.Hint;
-    }    
+    public string Hint;   
 }

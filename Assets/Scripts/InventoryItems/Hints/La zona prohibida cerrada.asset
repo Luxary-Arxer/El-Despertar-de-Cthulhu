@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
+  m_Name: La zona prohibida cerrada
+  m_EditorClassIdentifier: 
+  Name: 'Lo siento mucho, pero solo un selecto grupo de personas puede entrar en
+    esa sala prohibida. '
+  Hint: "Parece que necesito encontrar alg\xFAn tipo de contrase\xF1a para entrar
+    en la sala prohibida de la biblioteca. Tendr\xEDa que ponerme a buscarla, pero
+    por donde\u2026\r\n"

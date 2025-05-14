@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press E to talk
+  m_text: Bibliotecaria
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4877,7 +4877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press E to talk
+  m_text: Antigua Bibliotecaria
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16009,18 +16009,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":56,\"yPos\":125},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
-    are red, Violets are blue, Unexpected '{' on line 42.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":277,\"yPos\":126},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":23,\"yPos\":36},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
+    are red, Violets are blue, Unexpected '{' on line 42.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":244,\"yPos\":37},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
     me gustar\xEDa entrar en la sala que hay ah\xED detr\xE1s, pero la puerta est\xE1
-    cerrada, \xBFMe podr\xEDas abrir, por favor?\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+    cerrada, \xBFMe podr\xEDas abrir, por favor?\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":143.5,\"yPos\":-67},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
     muy buenas. \xBFComo puedo ayudarte hoy?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":56,\"yPos\":196},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Entendido,
+    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":23,\"yPos\":107},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Entendido,
     puedes pasar\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":279,\"yPos\":197},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":246,\"yPos\":108},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
     siento mucho, pero solo un selecto grupo de personas puede entrar en esa sala
     prohibida. \",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":279,\"yPos\":292},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vale,
-    gracias\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":280,\"yPos\":393},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
+    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":246,\"yPos\":203},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vale,
+    gracias\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":247,\"yPos\":304},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
     que averiguar la forma de entrar ah\xED.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -22097,7 +22097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press E to pick up
+  m_text: Manzana
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22569,7 +22569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press E to pick up
+  m_text: "Las cr\xF3nicas de Korby"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
