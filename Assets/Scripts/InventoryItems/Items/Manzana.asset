@@ -14,5 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemType: 1
   Name: Manzana
-  Description: Este es el objeto necesario para matar a Korby :(
+  Description: "Tan solo es una manzana com\xFAn, de la variedad Arlette.\n\r\nArlette
+    es el nombre de la variedad cultivar de manzano (Malus domestica).\nDesarrollada
+    por Bernhard Krapf en 1958 en la \"Estaci\xF3n Federal Suiza de Investigaci\xF3n
+    Ag\xEDcola\", Wadenswil. La primera fruta de la variedad experimental se cosech\xF3
+    en 1968 y se lanz\xF3 a los huertos europeos durante la d\xE9cada de 1970. Las
+    frutas son dulces, crujientes y jugosas con un sabor ligeramente perfumado."
   Image: {fileID: 21300000, guid: 38bdfb94d117609418c9a948df8a29b6, type: 3}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d223ba9a57de389479810f2ccbde7fca, type: 3}
+  m_Name: Daga del dios de la muerte
+  m_EditorClassIdentifier: 
+  ItemType: 1
+  Name: La daga del dios de la muerte
+  Description: "Daga legendaria que fue robada por una cultista que huy\xF3, y volvi\xF3
+    para enfrentarse al culto.\n\r\nLos rumores dicen que la daga fue forjada del
+    material de otro mundo por un herrero que, tras una visi\xF3n del retorno del
+    Dios de la Muerte, perdi\xF3 la cordura; tan solo es necesaria una fracci\xF3n
+    de su poder para quebrar las leyes de la realidad. \n\r\nLa daga est\xE1 inscrita
+    con runas en la antigua lengua: \u201CQui\xE9n porte la daga, se volver\xE1 amo
+    del tiempo\u201D.\r"
+  Image: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
