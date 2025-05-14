@@ -19,6 +19,8 @@ public class InventoryManager : MonoBehaviour
     void OnEnable()
     {
         UpdateItemInventoryUI();
+        UpdateHintInventoryUI();
+        UpdateLogInventoryUI();
     }
     void Awake()
     {
