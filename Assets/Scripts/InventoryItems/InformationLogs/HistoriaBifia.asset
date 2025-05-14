@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5747d8f55a91169468f869ec1ca110d0, type: 3}
   m_Name: HistoriaBifia
   m_EditorClassIdentifier: 
-  ItemType: 0
-  Name: 
-  Log: 
-  Image: {fileID: 0}
+  Name: "La serpiente que naci\xF3 reina"
+  Log: "Gestada de un huevo, y adorada desde su nacimiento, Lady Bifia naci\xF3 siendo
+    ya la emperatriz del Imperio de Laverin. \r\nAntes de su nacimiento ya se hab\xEDa
+    formado una religi\xF3n alrededor del misterioso huevo del que sali\xF3. Tras
+    su nacimiento, Lady Bifia aprendi\xF3 las artes del enga\xF1o, repugnada por
+    las pretensiones del mundo.\r\nPoco a poco, fue extendiendo su imperio en las
+    sombras, a trav\xE9s de la persuasi\xF3n, el enga\xF1o y la intimidaci\xF3n.
+    Sin embargo, estos m\xE9todos no le permit\xEDan alcanzar todos sus objetivos.
+    La fuerza directa no era su manera de hacer, no le gustaba ensuciarse las manos.\r\nNecesitaba
+    fuerza, poder, alguien que arrasara con aquellos que se le opusieran. Entonces
+    encontr\xF3 el culto a Cthulhu\u2026 y con ellos, una oportunidad.\r"
+  Image: {fileID: 21300000, guid: 7663545a455531447b3fc6382f6448ac, type: 3}

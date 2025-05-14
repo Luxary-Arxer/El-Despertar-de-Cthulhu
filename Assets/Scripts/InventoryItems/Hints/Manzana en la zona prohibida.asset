@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
   m_Name: Manzana en la zona prohibida
   m_EditorClassIdentifier: 
-  Name: 
-  Hint: 
+  Name: "\xBFPor qu\xE9 guardar una manzana en la zona prohibida de la biblioteca?"
+  Hint: "No entiendo por qu\xE9 la secta guardar\xEDa una manzana en este sitio\u2026
+    Eso s\xED, tiene buena pinta."

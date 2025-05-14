@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5747d8f55a91169468f869ec1ca110d0, type: 3}
   m_Name: HistoriaViktra
   m_EditorClassIdentifier: 
-  ItemType: 0
-  Name: 
-  Log: 
-  Image: {fileID: 0}
+  Name: La hija del culto
+  Log: "Viktra naci\xF3 siendo hija de cultistas. Sus padres llevaban a\xF1os siendo
+    adoradores de Cthulhu y, al nacer ella, la iniciaron en las pr\xE1cticas esot\xE9ricas.\r\nDurante
+    los primeros a\xF1os de su vida, Viktra estuvo completamente aislada del mundo,\r\nencerrada
+    dentro de este culto peligroso. Al crecer y volverse parte del c\xEDrculo m\xE1s
+    exclusivo, presenci\xF3 pr\xE1cticas exponencialmente m\xE1s macabras que la
+    horripilaban.\r\nCuando Viktra descubri\xF3 el objetivo del culto de invocar
+    a Cthulhu y traer la destrucci\xF3n al\r\nmundo, traz\xF3 un plan para detener
+    a sus antiguos camaradas desde dentro, mientras a\xFAn fuera posible.\r\nSe introdujo
+    sin ser vista en la secci\xF3n prohibida de la biblioteca del culto a Cthulhu
+    y consigui\xF3 sustraer una poderosa daga ritual con el poder de retroceder en
+    el tiempo. Una vez tuvo el misterioso objeto en su poder, huy\xF3.\r\nInmediatamente
+    despu\xE9s de huir del \xFAnico hogar que hab\xEDa conocido, Viktra fue a informar
+    a la inquisici\xF3n de lo que estaba pasando. Debido a su situaci\xF3n \xFAnica
+    y a su predisposici\xF3n a terminar de una vez por todas con el culto a Cthulhu,
+    fue elegida por el inquisidor supremo\r\npara llevar a cabo esta misi\xF3n especial
+    y as\xED poder librar al mundo de este mal inimaginable.\r"
+  Image: {fileID: 21300000, guid: 7663545a455531447b3fc6382f6448ac, type: 3}

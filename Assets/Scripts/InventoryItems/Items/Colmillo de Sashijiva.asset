@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d223ba9a57de389479810f2ccbde7fca, type: 3}
   m_Name: Colmillo de Sashijiva
   m_EditorClassIdentifier: 
-  Name: 
-  Description: 
-  Image: {fileID: 0}
+  Name: Colmillo de Sashijiva
+  Description: "Descripci\xF3n"
+  Image: {fileID: 21300000, guid: 7663545a455531447b3fc6382f6448ac, type: 3}

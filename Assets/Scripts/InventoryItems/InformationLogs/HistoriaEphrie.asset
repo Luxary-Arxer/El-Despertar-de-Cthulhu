@@ -12,7 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5747d8f55a91169468f869ec1ca110d0, type: 3}
   m_Name: HistoriaEphrie
   m_EditorClassIdentifier: 
-  ItemType: 0
-  Name: 
-  Log: 
-  Image: {fileID: 0}
+  Name: El gran comerciante
+  Log: "Ephraim Aeph Varnell naci\xF3 en las ruinas de un antiguo mercado de c\xEDclopes,
+    donde su familia vend\xEDa baratijas y objetos de escaso valor. Desde ni\xF1o,
+    sufri\xF3 el desprecio de comerciantes m\xE1s ricos y poderosos, quienes ve\xEDan
+    a su gente como parias sin futuro. Aprendi\xF3 r\xE1pido que sin dinero, el mundo
+    no lo respetar\xEDa. Su infancia estuvo marcada por el hambre, el fr\xEDo y la
+    frustraci\xF3n de ver a su familia perder clientes frente a mercaderes m\xE1s
+    astutos y despiadados.\r\nUn d\xEDa, un hombre misterioso lleg\xF3 al mercado,
+    ofreciendo comprar un viejo amuleto que su padre vend\xEDa por unas cuantas monedas.
+    Ephraim, curioso, investig\xF3 el objeto y descubri\xF3 que su valor era incalculable.
+    El hombre, un coleccionista de artefactos prohibidos, se burl\xF3 de su ignorancia
+    y le arrebat\xF3 el trato con facilidad. Desde entonces, Ephraim jur\xF3 que
+    jam\xE1s volver\xEDa a ser enga\xF1ado.\r\nA\xF1os despu\xE9s, vendi\xF3 a su
+    propia familia para financiar su primer negocio. Aprendi\xF3 de los mejores comerciantes,
+    manipul\xF3 mercados y finalmente, se convirti\xF3 en uno de los mercaderes m\xE1s
+    ricos del mundo esot\xE9rico. Su ambici\xF3n lo llev\xF3 a unirse a un culto
+    que buscaba revivir a Cthulhu, no por fe, sino porque ve\xEDa en ello la oportunidad
+    definitiva: si los dioses antiguos volv\xEDan, \xE9l se asegurar\xEDa de estar
+    en la cima cuando el mundo colapsara. Ahora, cada trato que hace, cada reliquia
+    que adquiere, lo acerca m\xE1s a su objetivo final: poder absoluto y riqueza
+    infinita.\r"
+  Image: {fileID: 21300000, guid: 7663545a455531447b3fc6382f6448ac, type: 3}

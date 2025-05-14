@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
   m_Name: "Contrase\xF1a de la sala prohibida"
   m_EditorClassIdentifier: 
-  Name: 
-  Hint: 
+  Name: "Por favor, qu\xE9 vieja tan pesada\u2026 pero tengo la sensaci\xF3n de que
+    lo \xFAltimo que ha dicho es algo muy importante."
+  Hint: "Si no recuerdo mal, esa vieja bibliotecaria me dijo que la contrase\xF1a
+    para entrar en la zona prohibida de la biblioteca era: Roses are red, Violets
+    are blue; Unexpected \u2018{\u2018 on line 42. Tal vez deber\xEDa probar suerte
+    con esta contrase\xF1a\u2026"

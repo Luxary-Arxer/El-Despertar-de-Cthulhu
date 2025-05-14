@@ -12,7 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5747d8f55a91169468f869ec1ca110d0, type: 3}
   m_Name: HistoriaEuriale
   m_EditorClassIdentifier: 
-  ItemType: 0
-  Name: 
-  Log: 
-  Image: {fileID: 0}
+  Name: La hermana de Medusa
+  Log: "Ella y sus dos hermanas, Medusa y Stheno, nacieron de la relaci\xF3n entre
+    Tif\xF3n y Equidna en una isla rocosa llamada Sarped\xF3n. Donde iban descubriendo
+    las diferentes magias y rituales del mundo natural, y la creaci\xF3n de nuevas
+    como la magia de la petrificaci\xF3n, aliment\xE1ndose de criaturas del bosque.\r\nLos
+    asentamientos alrededor a veces ven\xEDan para buscar su sabidur\xEDa y magia
+    para resolver sus problemas, ellas a cambio les ped\xEDan tratos que la mayor\xEDa
+    del tiempo acaban con consecuencias devastadoras para aquellos que los hac\xEDan.
+    Con ello desarrollan una mala reputaci\xF3n que atrap\xF3 a h\xE9roes y los cazarrecompensas
+    en busca de fama y gloria, pero siempre terminan muertos o con una estatua m\xE1s
+    en su jard\xEDn.\r\nHasta que un d\xEDa un joven llamado Perseo, guiado por los
+    dioses Atenea y Hermes, lleg\xF3 a su escondite donde decapit\xF3 a Medusa y
+    se llev\xF3 su cabeza. Tras muchos a\xF1os, Eur\xEDale y Stheno pudieron recuperar
+    el escudo donde la cabeza de su hermana estaba para poder completar su cuerpo.
+    Desde ese momento las dos hermanas han buscado a alg\xFAn dios con el poder de
+    resucitar a su hermana, en vano, esperando que Cthulhu sea diferente.\r"
+  Image: {fileID: 21300000, guid: 7663545a455531447b3fc6382f6448ac, type: 3}
