@@ -64,7 +64,7 @@ public class InventoryManager : MonoBehaviour
             {
                 InventoryGenerator.LogsInventory.Add(log);
 
-                //UpdateLogInventoryUI();
+                UpdateLogInventoryUI();
             }
             else
             {
@@ -87,7 +87,7 @@ public class InventoryManager : MonoBehaviour
     {
         for (int i = 0; i < _logsSlots.Length && i < InventoryGenerator.LogsInventory.Count; i++)
         {
-            ItemSlotManager currentItem = _itemSlots[i].GetComponent<ItemSlotManager>();
+            ItemSlotManager currentItem = _logsSlots[i].GetComponent<ItemSlotManager>();
             currentItem.ItemImage = InventoryGenerator.LogsInventory[i].Image;
             currentItem.ItemName = InventoryGenerator.LogsInventory[i].Name;
             currentItem.ItemDescription = InventoryGenerator.LogsInventory[i].Log;
