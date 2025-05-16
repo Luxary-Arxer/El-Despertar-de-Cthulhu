@@ -1,11 +1,14 @@
 
 using UnityEngine;
 using DialogueEditor;
+using TMPro;
 
 public class TalkToNPC : MonoBehaviour
 {
     [SerializeField]
     GameObject _interactCanvas;
+    [SerializeField]
+    string _NPCName;
 
     NPCConversation _currentConversation;
 
@@ -22,6 +25,8 @@ public class TalkToNPC : MonoBehaviour
     void Awake()
     {
         _currentConversation = GetComponent<NPCConversation>();
+        GetComponentInChildren<TextMeshProUGUI>().text = _NPCName;
+        _interactCanvas.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
