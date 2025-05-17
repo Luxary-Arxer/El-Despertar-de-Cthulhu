@@ -6,9 +6,10 @@ using TMPro;
 public class TalkToNPC : MonoBehaviour
 {
     [SerializeField]
-    GameObject _interactCanvas;
-    [SerializeField]
     string _NPCName;
+    [SerializeField]
+    Sprite _NPCSprite;
+    GameObject _interactCanvas;
 
     NPCConversation _currentConversation;
 
@@ -24,8 +25,12 @@ public class TalkToNPC : MonoBehaviour
     }
     void Awake()
     {
-        _currentConversation = GetComponent<NPCConversation>();
         GetComponentInChildren<TextMeshProUGUI>().text = _NPCName;
+        GetComponentInChildren<SpriteRenderer>().sprite = _NPCSprite;
+
+        _currentConversation = GetComponent<NPCConversation>();
+        _interactCanvas = GetComponentInChildren<Canvas>().gameObject;
+        
         _interactCanvas.SetActive(false);
     }
 

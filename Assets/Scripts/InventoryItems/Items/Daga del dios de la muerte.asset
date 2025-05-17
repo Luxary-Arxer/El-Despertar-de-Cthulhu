@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d223ba9a57de389479810f2ccbde7fca, type: 3}
   m_Name: Daga del dios de la muerte
   m_EditorClassIdentifier: 
-  ItemType: 1
   Name: La daga del dios de la muerte
   Description: "Daga legendaria que fue robada por una cultista que huy\xF3, y volvi\xF3
     para enfrentarse al culto.\n\r\nLos rumores dicen que la daga fue forjada del
