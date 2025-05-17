@@ -9,8 +9,7 @@ public class FadeManager : MonoBehaviour
     [SerializeField]
     float _waitTime;
     bool _isFinishedFadingOut;
-    bool _hasReachedBlack;
-    public bool HasReachedBlack { get { return _hasReachedBlack; } set { _hasReachedBlack = value; } }
+    
     Image _image;
     PlayerInputController _playerInputController;
 
@@ -52,7 +51,6 @@ public class FadeManager : MonoBehaviour
     }
     IEnumerator WaitAndFadeIn()
     {
-        _hasReachedBlack = true;
         yield return new WaitForSeconds(_waitTime);
         _isFinishedFadingOut = true;
     }
