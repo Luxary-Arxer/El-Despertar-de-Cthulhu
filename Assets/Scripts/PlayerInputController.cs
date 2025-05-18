@@ -21,6 +21,8 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField]
     GameObject _pauseMenuUI;
     [SerializeField]
+    GameObject _optionsMenuUI;
+    [SerializeField]
     GameObject _inventoryUI;
     [SerializeField]
     GameObject _timeUI;
@@ -178,6 +180,7 @@ public class PlayerInputController : MonoBehaviour
         PlayerControlls.UI.Disable();
 
         _pauseMenuUI.SetActive(false);
+        _optionsMenuUI.SetActive(false);
         _inventoryUI.SetActive(false);
         _timeUI.SetActive(true);
         _placeUI.SetActive(true);

@@ -27,5 +27,6 @@ public class ChefLeavesArea : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         gameObject.SetActive(false);
+        QuestManager.ReachedFinalNodeChefConversation = false;
     }    
 }

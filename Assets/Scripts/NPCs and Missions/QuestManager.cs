@@ -1,10 +1,12 @@
 
 using UnityEngine;
 using DialogueEditor;
-using System.Collections;
 
 public class QuestManager : MonoBehaviour
 {
+     
+
+    InventoryManager _inventoryManager;
 
     //Library forbidden room Sidequest
     public static bool HasPasswordLibraryRoom;
@@ -15,6 +17,20 @@ public class QuestManager : MonoBehaviour
     [SerializeField]
     GameObject _chefGameObject;
 
+    //Bifia death quest
+    public static bool HasFailedToSayJanitorPassword;
+    public static bool ReachedFinalNodeBifiaConversation;
+    [SerializeField]
+    ItemObject _bifiaKey;
+
+    void Awake()
+    {
+        _inventoryManager = GetComponent<InventoryManager>();
+    }
+    void Update()
+    {
+        Debug.Log(HasRatsInfo);
+    }
     //Library forbidden room Sidequest
     public void CheckPasswordLibraryForbiddenRoom()
     {
@@ -51,5 +67,24 @@ public class QuestManager : MonoBehaviour
     public void HasReachedFinalNodeChefConversation()
     {
         ReachedFinalNodeChefConversation = true;
+    }
+
+    //Bifia death quest
+    public void GetBifiaRoomKey()
+    {
+        _inventoryManager.AddItemToInventory(_bifiaKey);
+    }
+    public void HasReachedFinalNodeBifiaConversation()
+    {
+        ReachedFinalNodeBifiaConversation = true;
+    }
+    public void CheckJanitorPasswordFail()
+    {
+        if (HasFailedToSayJanitorPassword)
+            ConversationManager.Instance.SetBool("HasFailedPassword", true);
+    }
+    public void FailedToSayJanitorPassword()
+    {
+        HasFailedToSayJanitorPassword = true;
     }
 }
