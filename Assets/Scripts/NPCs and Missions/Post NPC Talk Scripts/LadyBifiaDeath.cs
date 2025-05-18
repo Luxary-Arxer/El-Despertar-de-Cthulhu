@@ -29,6 +29,7 @@ public class LadyBifiaDeath : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         //Mover a Viktra fuera de la habitación y bloquear la puerta de entrada
         ConversationManager.Instance.StartConversation(_postBifiaDeathConversation);
+        QuestManager.IsBifiaDead = true;
         QuestManager.ReachedFinalNodeBifiaConversation = false;
     }    
 }

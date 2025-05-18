@@ -4,9 +4,13 @@ using DialogueEditor;
 
 public class QuestManager : MonoBehaviour
 {
-     
-
     InventoryManager _inventoryManager;
+
+    //Generals death markers
+    public static bool IsKorbyDead;
+    public static bool IsBifiaDead;
+    public static bool IsEphrieDead;
+    public static bool IsEurialeDead;
 
     //Library forbidden room Sidequest
     public static bool HasPasswordLibraryRoom;
@@ -23,14 +27,15 @@ public class QuestManager : MonoBehaviour
     [SerializeField]
     ItemObject _bifiaKey;
 
+    //Ephrie death quest
+
+    //Euriale death quest
+
     void Awake()
     {
         _inventoryManager = GetComponent<InventoryManager>();
     }
-    void Update()
-    {
-        Debug.Log(HasRatsInfo);
-    }
+
     //Library forbidden room Sidequest
     public void CheckPasswordLibraryForbiddenRoom()
     {
