@@ -137,7 +137,10 @@ public class PlayerInputController : MonoBehaviour
                 case "Item":
                     _inventoryManager.AddItemToInventory(_interactableObject.GetComponent<ItemPickUp>().Item);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
+
+                    CharacterStoppedMoving();
                     _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
+
                     _hintsInventory.SetActive(false);
                     _itemsInventory.SetActive(true);
                     _logsInventory.SetActive(false);
@@ -146,7 +149,10 @@ public class PlayerInputController : MonoBehaviour
                 case "Log":
                     _inventoryManager.AddLogToInventory(_interactableObject.GetComponent<LogPickUp>().Log);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
+
+                    CharacterStoppedMoving();
                     _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
+
                     _hintsInventory.SetActive(false);
                     _itemsInventory.SetActive(false);
                     _logsInventory.SetActive(true);
@@ -155,7 +161,10 @@ public class PlayerInputController : MonoBehaviour
                 case "Hint":
                     _inventoryManager.AddHintToInventory(_interactableObject.GetComponent<HintPickUp>().Hint);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
+
+                    CharacterStoppedMoving();
                     _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
+
                     _hintsInventory.SetActive(true);
                     _itemsInventory.SetActive(false);
                     _logsInventory.SetActive(false);
