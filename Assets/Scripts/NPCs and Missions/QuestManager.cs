@@ -18,12 +18,14 @@ public class QuestManager : MonoBehaviour
     //Korby death quest
     public static bool HasRatsInfo;
     public static bool ReachedFinalNodeChefConversation;
+    [Header("Korby quest")]
     [SerializeField]
     GameObject _chefGameObject;
 
     //Bifia death quest
     public static bool HasFailedToSayJanitorPassword;
     public static bool ReachedFinalNodeBifiaConversation;
+    [Header("Bifia quest")]
     [SerializeField]
     ItemObject _bifiaKey;
 

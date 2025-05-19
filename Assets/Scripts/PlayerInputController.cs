@@ -10,6 +10,7 @@ public class PlayerInputController : MonoBehaviour
     float _characterSpeed;
     [SerializeField]
     float _turnVelocity;
+    bool _characterStartedMoving;
 
     [Header("Objects to move along with the player")]
     [SerializeField]
@@ -23,7 +24,13 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField]
     GameObject _optionsMenuUI;
     [SerializeField]
-    GameObject _inventoryUI;
+    GameObject _globalInventoryUI;
+    [SerializeField]
+    GameObject _hintsInventory;
+    [SerializeField]
+    GameObject _itemsInventory;
+    [SerializeField]
+    GameObject _logsInventory;
     [SerializeField]
     GameObject _timeUI;
     [SerializeField]
@@ -41,6 +48,7 @@ public class PlayerInputController : MonoBehaviour
 
     CharacterController _characterController;
     InventoryManager _inventoryManager;
+    CharacterAudioManager _characterAudioManager;
 
     GameObject _interactableObject;
     public GameObject InteractableObject { get { return _interactableObject; } }
@@ -48,8 +56,10 @@ public class PlayerInputController : MonoBehaviour
     void Awake()
     {
         PlayerControlls = new PlayerControllsDefault();
+
         _characterController = GetComponent<CharacterController>();
         _inventoryManager = GetComponent<InventoryManager>();
+        _characterAudioManager = GetComponent<CharacterAudioManager>();
 
         Cursor.visible = false;
     }
@@ -96,6 +106,14 @@ public class PlayerInputController : MonoBehaviour
 
             CameraMovement();
             SpriteMovement();
+            if (!_characterStartedMoving)
+            {
+                CharacterStartedMoving();
+            }
+        }
+        else if (_characterStartedMoving)
+        {
+            CharacterStoppedMoving();
         }
     }
     void OnTriggerEnter(Collider other)
@@ -119,20 +137,33 @@ public class PlayerInputController : MonoBehaviour
                 case "Item":
                     _inventoryManager.AddItemToInventory(_interactableObject.GetComponent<ItemPickUp>().Item);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
+                    _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
+                    _hintsInventory.SetActive(false);
+                    _itemsInventory.SetActive(true);
+                    _logsInventory.SetActive(false);
+                    Inventory(context);
                     break;
                 case "Log":
                     _inventoryManager.AddLogToInventory(_interactableObject.GetComponent<LogPickUp>().Log);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
+                    _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
+                    _hintsInventory.SetActive(false);
+                    _itemsInventory.SetActive(false);
+                    _logsInventory.SetActive(true);
+                    Inventory(context);
                     break;
                 case "Hint":
                     _inventoryManager.AddHintToInventory(_interactableObject.GetComponent<HintPickUp>().Hint);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
+                    _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
+                    _hintsInventory.SetActive(true);
+                    _itemsInventory.SetActive(false);
+                    _logsInventory.SetActive(false);
+                    Inventory(context);
                     break;
                 case "NPC":
                     if (!ConversationManager.Instance.IsConversationActive)
-                    {
                         _interactableObject.GetComponent<TalkToNPC>().StartTalkToNPC();
-                    }
                     break;
             }
         }
@@ -162,7 +193,7 @@ public class PlayerInputController : MonoBehaviour
         {
             PlayerControlls.Player.Disable();
             PlayerControlls.UI.Enable();
-            _inventoryUI.SetActive(true);
+            _globalInventoryUI.SetActive(true);
             _timeUI.SetActive(false);
             _placeUI.SetActive(false);
 
@@ -181,7 +212,7 @@ public class PlayerInputController : MonoBehaviour
 
         _pauseMenuUI.SetActive(false);
         _optionsMenuUI.SetActive(false);
-        _inventoryUI.SetActive(false);
+        _globalInventoryUI.SetActive(false);
         _timeUI.SetActive(true);
         _placeUI.SetActive(true);
 
@@ -209,6 +240,16 @@ public class PlayerInputController : MonoBehaviour
     void SpriteMovement()
     {
         _characterSprite.position = transform.position;
+    }
+    void CharacterStartedMoving()
+    {
+        _characterStartedMoving = true;
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[1], true, .5f, 1);
+    }
+    void CharacterStoppedMoving()
+    {
+        _characterStartedMoving = false;
+        _characterAudioManager.StopSound();
     }
     bool IsPlayerMoving()
     {
