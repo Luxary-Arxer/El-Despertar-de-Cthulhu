@@ -20,11 +20,17 @@ public class ItemSlotManager : MonoBehaviour
     public Sprite ItemImage { set { _itemImage = value; } }
     public string ItemName { set { _itemName = value; } }
     public string ItemDescription { set { _itemDescription = value; } }
+    
+    CharacterAudioManager _characterAudioManager;
 
+    void Awake()
+    {
+        _characterAudioManager = FindFirstObjectByType<CharacterAudioManager>();
+    }
     public void DisplayImageOnInventory()
     {
         _itemImageBox.sprite = _itemImage;
-        
+
         Color imgColor = _itemImageBox.color;
         imgColor.a = 255;
         _itemImageBox.color = imgColor;
@@ -33,5 +39,7 @@ public class ItemSlotManager : MonoBehaviour
     {
         _itemDescriptionBox.text = _itemDescription;
         _itemNameBox.text = _itemName;
+
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[2], false, .6f, 1);
     }
 }
