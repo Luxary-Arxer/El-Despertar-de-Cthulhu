@@ -24,6 +24,7 @@ public class QuestManager : MonoBehaviour
 
     //Bifia death quest
     public static bool HasFailedToSayJanitorPassword;
+    public static bool ReachedFinalNodeJanitorConversation;
     public static bool ReachedFinalNodeBifiaConversation;
     [Header("Bifia quest")]
     [SerializeField]
@@ -77,13 +78,15 @@ public class QuestManager : MonoBehaviour
     }
 
     //Bifia death quest
-    public void GetBifiaRoomKey()
-    {
-        _inventoryManager.AddItemToInventory(_bifiaKey);
-    }
     public void HasReachedFinalNodeBifiaConversation()
     {
         ReachedFinalNodeBifiaConversation = true;
+    }
+    public void HasReachedFinalNodeJanitorConversation()
+    {
+        ReachedFinalNodeJanitorConversation = true;
+
+        _inventoryManager.AddItemToInventory(_bifiaKey);
     }
     public void CheckJanitorPasswordFail()
     {

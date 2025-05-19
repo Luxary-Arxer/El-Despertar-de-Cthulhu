@@ -1969,7 +1969,7 @@ MonoBehaviour:
   NodeID: 38
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!114 &222539683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1988,7 +1988,7 @@ MonoBehaviour:
   NodeID: 37
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d887c05f0143d44da20a772294b497f, type: 3}
 --- !u!114 &222539684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,7 +2007,7 @@ MonoBehaviour:
   NodeID: 36
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!114 &222539685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2026,7 +2026,7 @@ MonoBehaviour:
   NodeID: 35
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b7916589d4676eb4fb9fcb2b7dc9efb9, type: 3}
 --- !u!114 &222539686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2045,7 +2045,7 @@ MonoBehaviour:
   NodeID: 34
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62d64dcfd7922054eba6c90a39d021a0, type: 3}
 --- !u!114 &222539687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2102,7 +2102,7 @@ MonoBehaviour:
   NodeID: 31
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 658351653057d46448c1ef700a132393, type: 3}
 --- !u!114 &222539690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2121,7 +2121,7 @@ MonoBehaviour:
   NodeID: 29
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
 --- !u!114 &222539691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2140,7 +2140,7 @@ MonoBehaviour:
   NodeID: 28
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b7916589d4676eb4fb9fcb2b7dc9efb9, type: 3}
 --- !u!114 &222539692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2197,7 +2197,7 @@ MonoBehaviour:
   NodeID: 25
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!114 &222539695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2216,7 +2216,7 @@ MonoBehaviour:
   NodeID: 24
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 658351653057d46448c1ef700a132393, type: 3}
 --- !u!114 &222539696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2235,7 +2235,7 @@ MonoBehaviour:
   NodeID: 23
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62d64dcfd7922054eba6c90a39d021a0, type: 3}
 --- !u!114 &222539697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,7 +2292,7 @@ MonoBehaviour:
   NodeID: 20
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d887c05f0143d44da20a772294b497f, type: 3}
 --- !u!114 &222539700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2311,7 +2311,7 @@ MonoBehaviour:
   NodeID: 19
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62d64dcfd7922054eba6c90a39d021a0, type: 3}
 --- !u!114 &222539701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2330,7 +2330,7 @@ MonoBehaviour:
   NodeID: 18
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
 --- !u!114 &222539702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2387,7 +2387,7 @@ MonoBehaviour:
   NodeID: 14
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d887c05f0143d44da20a772294b497f, type: 3}
 --- !u!114 &222539705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2406,7 +2406,7 @@ MonoBehaviour:
   NodeID: 13
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!114 &222539706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,7 +2425,7 @@ MonoBehaviour:
   NodeID: 12
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b7916589d4676eb4fb9fcb2b7dc9efb9, type: 3}
 --- !u!114 &222539707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2444,7 +2444,7 @@ MonoBehaviour:
   NodeID: 11
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62d64dcfd7922054eba6c90a39d021a0, type: 3}
 --- !u!114 &222539708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2482,7 +2482,7 @@ MonoBehaviour:
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
 --- !u!114 &222539710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,7 +2520,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d887c05f0143d44da20a772294b497f, type: 3}
 --- !u!1 &224306296
 GameObject:
   m_ObjectHideFlags: 0
@@ -11989,7 +11989,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62d64dcfd7922054eba6c90a39d021a0, type: 3}
 --- !u!4 &1044692846
 Transform:
   m_ObjectHideFlags: 0
@@ -12023,7 +12023,7 @@ MonoBehaviour:
   NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 658351653057d46448c1ef700a132393, type: 3}
 --- !u!114 &1044692848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12054,7 +12054,7 @@ MonoBehaviour:
   NodeID: 3
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
 --- !u!114 &1044692849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13438,78 +13438,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 41
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":304.5,\"yPos\":811},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":91.5,\"yPos\":812},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":306.5,\"yPos\":1164},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":75.5,\"yPos\":1163},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":304.5,\"yPos\":1538},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"??????\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":83.5,\"yPos\":1537},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":308.5,\"yPos\":1910},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[31],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":77.5,\"yPos\":1911},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[31],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":328.5,\"yPos\":989},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":115.5,\"yPos\":990},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":330.5,\"yPos\":1342},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":99.5,\"yPos\":1341},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":328.5,\"yPos\":1716},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"??????\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":107.5,\"yPos\":1715},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":332.5,\"yPos\":2088},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[31],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":101.5,\"yPos\":2089},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[31],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":200.5,\"yPos\":200},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
     joven \xBFNecesitas ayuda con algo?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":121},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
-    ahora no necesito nada, gracias.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176.5,\"yPos\":219},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":200,\"yPos\":299},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    ahora no necesito nada, gracias.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":200.5,\"yPos\":397},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
     supuesto, los cultistas de hoy en d\xEDa ya no necesitan nada de una vieja bibliotecaria
     retirada\u2026\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178.5,\"yPos\":521},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Espere\u2026
-    \xBFUsted era la anterior bibliotecaria?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176.5,\"yPos\":321},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Estoy
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":202.5,\"yPos\":699},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Espere\u2026
+    \xBFUsted era la anterior bibliotecaria?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":200.5,\"yPos\":499},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Estoy
     segura de que los Generales est\xE1n deseando que me muera para dejar de pagarme
     los montones de medicinas especiales que necesito para seguir con vida.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179.5,\"yPos\":422},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Pues
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":203.5,\"yPos\":600},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Pues
     que se sienten a esperar, esta vieja a\xFAn tiene fuerza para mucho, mucho tiempo!\\r\\n\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179.5,\"yPos\":620},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":203.5,\"yPos\":798},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
     es, estuve en el cargo durante m\xE1s de cincuenta a\xF1os. Si yo te contara
     la de cosas que he visto en esa biblioteca\u2026\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":180.5,\"yPos\":713},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Recuerdo
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":204.5,\"yPos\":891},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Recuerdo
     una vez, cuando Ephrie no era m\xE1s que un ni\xF1o, muy feo por cierto, aunque
     supongo que todos los c\xEDclopes lo son, el muchacho se present\xF3 delante
     de m\xED y me dijo que\u2026\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.5,\"yPos\":878},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208.5,\"yPos\":1055},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     dijo que quer\xEDa entrar a la zona prohibida de la biblioteca, que hab\xEDan
     tra\xEDdo un nuevo cacharro del reino de nosequ\xE9, y que le hac\xEDa mucha
     ilusi\xF3n jugar con ese trasto.\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":185.5,\"yPos\":974},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tendr\xEDas
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.5,\"yPos\":1152},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tendr\xEDas
     que haberlo visto, puso la mejor cara de pena que jam\xE1s vi en un ni\xF1o;
     de hecho, casi se pone a llorar all\xED mismo.\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.5,\"yPos\":1070},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Obviamente,
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.5,\"yPos\":1248},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Obviamente,
     le dije que no pod\xEDa entrar, que all\xED dentro hab\xEDa objetos m\xE1gicos
     muy peligrosos y que podr\xEDa poner en peligro a todo el culto\u2026\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":183.5,\"yPos\":1237},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":207.5,\"yPos\":1415},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
     tiempos aquellos\u2026 Espera, \xBFDe qu\xE9 est\xE1bamos hablando? Ah, ya me
     acuerdo. De verdad, a los malos no hay quien os entienda. Sab\xE9is que al final
     gana el h\xE9roe, pero siempre os resist\xEDs.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":185.5,\"yPos\":1339},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Como
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.5,\"yPos\":1517},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Como
     aquel tipo de New Haven. La ciudad ardiendo, la gente muriendose\u2026 y va un
     tio y me ataca con una cuchara, \xA1Una cuchara! Y yo parti\xE9ndome de risa.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":185.5,\"yPos\":1438},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.5,\"yPos\":1616},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
     que le saco los ojos con ella y sus hijos se ponen en plan: \xA1AAAAAHHHHHH!
     Y el t\xEDo a\xFAn se resiste m\xE1s. Menudo espect\xE1culo. El caso es que eres
     gilipollas\u2026\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.5,\"yPos\":1610},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208.5,\"yPos\":1788},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     acuerdo perfectamente de c\xF3mo se puso Ephrie cuando le dije que no pod\xEDa
     entrar a la biblioteca: fue una pataleta que marc\xF3 una \xE9poca, la recuerdo
     como si fuera ayer;\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.5,\"yPos\":1712},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"aunque,
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208.5,\"yPos\":1890},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"aunque,
     bueno, dos a\xF1os tampoco es tanto tiempo, ser\xEDa raro que lo hubiera olvidado.
     Me pregunto que debe estar haciendo el peque\xF1o Ephrie ahora\u2026 Bueno, que
     me estoy desviando del tema.\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":185.5,\"yPos\":1810},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Para
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.5,\"yPos\":1988},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Para
     conseguir que el ni\xF1o dejara de llorar, gritar y de darse golpes contra la
     pared, al final llegamos a un acuerdo\u2026\",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.5,\"yPos\":1980},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208.5,\"yPos\":2158},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
     final, acordamos que pod\xEDa entrar en la zona prohibida bajo mi estricta supervisi\xF3n,
     y jugar un ratito con el nuevo artilugio.\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":185.5,\"yPos\":2081},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209.5,\"yPos\":2259},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
     gracioso se puso cuando vio el cacharro, que, en realidad, era una espada muy
     grande; qu\xE9 b\xE1sicos son los c\xEDclopes, en cuanto ven una arma muy grande
     se ponen a dar saltos de alegr\xEDa.\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.5,\"yPos\":2180},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210.5,\"yPos\":2358},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
     que m\xE1s me llam\xF3 la atenci\xF3n fue lo que dijo cuando vio la espada:\",\"parentUIDs\":[35],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187.5,\"yPos\":2278},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211.5,\"yPos\":2456},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
     are red, Violets are blue; Unexpected \u2018{\u2018 on line 42.\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.5,\"yPos\":2378},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A\xFAn
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212.5,\"yPos\":2556},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A\xFAn
     me sigo preguntando c\xF3mo fue capaz de pronunciar el s\xEDmbolo \u2018{\u2019.
     De hecho, me hizo tanta gracia su reacci\xF3n, que empezamos a utilizarlo como
     contrase\xF1a para entrar en la sala prohibida\u2026\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.5,\"yPos\":2477},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212.5,\"yPos\":2655},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Qu\xE9
     historia tan interesante! Por desgracia se me est\xE1 haciendo tarde. Que le
-    vaya muy bien el d\xEDa.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.5,\"yPos\":2574},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    vaya muy bien el d\xEDa.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212.5,\"yPos\":2752},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
     favor, qu\xE9 vieja tan pesada\u2026 pero tengo la sensaci\xF3n de que lo \xFAltimo
     que ha dicho es algo muy importante.\",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -16510,18 +16510,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":56,\"yPos\":125},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
-    are red, Violets are blue, Unexpected '{' on line 42.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":277,\"yPos\":126},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":40,\"yPos\":80},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
+    are red, Violets are blue, Unexpected '{' on line 42.\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":261,\"yPos\":81},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
     me gustar\xEDa entrar en la sala que hay ah\xED detr\xE1s, pero la puerta est\xE1
-    cerrada, \xBFMe podr\xEDas abrir, por favor?\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+    cerrada, \xBFMe podr\xEDas abrir, por favor?\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":1},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasPasswordLibraryRoom\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":160.5,\"yPos\":-23},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
     muy buenas. \xBFComo puedo ayudarte hoy?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":56,\"yPos\":196},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Entendido,
+    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":41,\"yPos\":150},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Entendido,
     puedes pasar\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":279,\"yPos\":197},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":263,\"yPos\":152},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
     siento mucho, pero solo un selecto grupo de personas puede entrar en esa sala
     prohibida. \",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":279,\"yPos\":292},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vale,
-    gracias\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":280,\"yPos\":393},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
+    Bibliotecaria\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":263,\"yPos\":247},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vale,
+    gracias\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":265,\"yPos\":348},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
     que averiguar la forma de entrar ah\xED.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -16539,7 +16539,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757964014}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckPasswordLibraryForbiddenRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1481020112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24810,11 +24822,11 @@ MonoBehaviour:
     infalible se\xF1or de la muerte, ya estamos muy cerca de traerle de vuelta para
     que pueda equilibriar el mundo con su poder. Anhelo el d\xEDa en el que, con
     su infinita fuerza, nos iguale a todos nosotros, seres inferiores, bajo su estandarte
-    de destrucci\xF3n sin l\xEDmites. \\r\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":124},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Se
+    de destrucci\xF3n sin l\xEDmites. \\r\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":1,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":124},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Se
     acerca el momento en el que todos los seres de este mundo se sometan a su escrutinio;
     momento en el que nosotros: los Kirbos, los seres m\xE1s justos sobre la tierra,
     nos alzaremos como la m\xE1s poderosa de las razas, y los m\xE1s fieles servidores
-    de su se\xF1or\xEDa\u2026\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    de su se\xF1or\xEDa\u2026\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -24840,24 +24852,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 26
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-81,\"yPos\":17},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bebe\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":140,\"yPos\":17},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sale\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":363,\"yPos\":17},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Pide\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-84,\"yPos\":196},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Audici\xF3n\",\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":141,\"yPos\":197},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Visi\xF3n\",\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":364,\"yPos\":196},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mente\",\"parentUIDs\":[19],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFailedPassword\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFailedPassword\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":17},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFailedPassword\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":134.5,\"yPos\":-722},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Va
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-11,\"yPos\":153},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bebe\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":210,\"yPos\":153},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sale\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":433,\"yPos\":153},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Pide\",\"parentUIDs\":[13],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-14,\"yPos\":332},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Audici\xF3n\",\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211,\"yPos\":333},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Visi\xF3n\",\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":434,\"yPos\":332},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mente\",\"parentUIDs\":[19],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFailedPassword\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFailedPassword\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":17},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFailedPassword\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":204.5,\"yPos\":-586},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Va
     a comenzar el ritual y a\xFAn no he terminado de limpiar las habitaciones de
-    los generales\u2026 A este paso, me lo voy a perder.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":133,\"yPos\":-615},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ey,
-    si quieres puedo echarte un cable. Podemos partirnos el trabajo.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":136,\"yPos\":-507},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hmmm\u2026
+    los generales\u2026 A este paso, me lo voy a perder.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":203,\"yPos\":-479},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ey,
+    si quieres puedo echarte un cable. Podemos partirnos el trabajo.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206,\"yPos\":-371},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hmmm\u2026
     No me suena tu cara\u2026 Solo se les permite acceso a las c\xE1maras de los
-    generales a un grupo selecto de personas \u2026 Y por tus pintas no pareces ser
-    un alto cargo.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":136,\"yPos\":-400},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ehh\u2026
-    \xA1Pues s\xED lo soy!\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":138,\"yPos\":-293},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Muy
-    bien\u2026 entonces debes saber el santo y se\xF1a\u2026 \xBFno?\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":139,\"yPos\":-187},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ehh\u2026
-    \xBFS\xED?\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Vkitra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":139,\"yPos\":-78},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Entonces
-    completalo por m\xED. \xBFQui\xE9n tent\xE1culos quiere, del mar\u2026\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":363,\"yPos\":98},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    generales a un grupo selecto de personas\u2026 Y por tus pintas no pareces ser
+    un alto cargo.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206,\"yPos\":-264},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ehh\u2026
+    \xA1Pues s\xED lo soy!\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208,\"yPos\":-157},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Muy
+    bien\u2026 entonces debes saber el santo y se\xF1a\u2026 \xBFno?\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209,\"yPos\":-51},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ehh\u2026
+    \xBFS\xED?\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Vkitra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209,\"yPos\":58},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Entonces
+    completalo por m\xED. \xBFQui\xE9n tent\xE1culos quiere, del mar\u2026\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":433,\"yPos\":234},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
     sab\xEDa\u2026 \xA1No me entretengas m\xE1s, ya tengo suficiente trabajo con
-    lo m\xEDo!\",\"parentUIDs\":[0,15,16,21,23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":139,\"yPos\":98},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Muy
-    bien\u2026 Pero hay una segunda parte que quiz\xE1s no sabes. Y al perder la
-    raz\xF3n, se aclara la\u2026\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142,\"yPos\":272},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh\u2026
+    lo m\xEDo!\",\"parentUIDs\":[0,15,16,21,23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":209,\"yPos\":234},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Muy
+    bien\u2026 Pero hay una segunda parte que quiz\xE1s no sepas. Y al perder la
+    raz\xF3n, se aclara la\u2026\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":212,\"yPos\":408},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh\u2026
     pido perd\xF3n, parece que eres de fiar. \xBFSabes qu\xE9? Aqu\xED tienes, enc\xE1rgate
     de la habitaci\xF3n de Lady Bifia. Lo cierto es que tampoco me hac\xEDa mucha
-    gracia pasar por ese lugar\u2026\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    gracia pasar por ese lugar\u2026\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -24883,19 +24895,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 757964014}
-        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: GetBifiaRoomKey
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &240929292432750986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25215,6 +25215,7 @@ GameObject:
   - component: {fileID: 5639518441249253615}
   - component: {fileID: 6362698644844391677}
   - component: {fileID: 8473172810476209785}
+  - component: {fileID: 8473172810476209786}
   - component: {fileID: 238958337091333303}
   m_Layer: 0
   m_Name: IntNPC-JanitorNight
@@ -25585,8 +25586,8 @@ MonoBehaviour:
   json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh,
     mi querido y amado siervo, ahora mismo no puedo hablar\\r\\npuesto que voy a
     cenar inmediatamente.\\r\\nVuelve cuando termine la hora de la cena para poder
-    mantener la maravillosa conversaci\xF3n que has venido a compartir conmigo.\\r\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":120},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Muchas
-    gracias y disculpa las molestias!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    mantener la maravillosa conversaci\xF3n que has venido a compartir conmigo.\\r\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":120},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Muchas
+    gracias y disculpa las molestias!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -25870,7 +25871,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!1 &671625472953579607
 GameObject:
   m_ObjectHideFlags: 0
@@ -27497,11 +27498,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1No
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1No
     paro de limpiar esta cocina y siguen apareciendo malditas ratas! \xA1Alguien
     est\xE1 robando comida para alimentarlas, estoy seguro! Siguen el rastro hasta
     aqu\xED y ensucian mi cocina. Como pille al que est\xE1 haciendo esto...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    Chef\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Chef\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -28011,15 +28012,15 @@ MonoBehaviour:
     Bifia \xBFsupongo? Siento entrometerme.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":128},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
     pareces ser de conserjer\xEDa\u2026 Una intrusa. Da igual\u2026 pareces buena
     compa\xF1\xEDa. \xBFPor qu\xE9 no te quedas para la cena?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lady
-    Bifia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":233},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hmm\u2026
+    Bifia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":233},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hmm\u2026
     As\xED que este es tu verdadero cuerpo\u2026 te escondes aqu\xED mientras mandas
     ilusiones fuera\u2026 y todo el que se te acerca acaba devorado.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":339},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan
     solo busco pretendientes\u2026 sin embargo, t\xFA\u2026 ahora lo veo, t\xFA eres
     la traidora que huy\xF3 con la daga del dios de la muerte\u2026\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lady
-    Bifia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":446},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
+    Bifia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":446},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
     fin nos conocemos de verdad. Encantada.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":549},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ahora
     que sabes mi secreto, no puedo dejarte con vida.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lady
-    Bifia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":652},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    Bifia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":652},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
     mismo digo. Y ahora, tus ilusiones no te servir\xE1n.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -29134,7 +29135,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b7916589d4676eb4fb9fcb2b7dc9efb9, type: 3}
 --- !u!114 &1930282513057498248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29153,7 +29154,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62d64dcfd7922054eba6c90a39d021a0, type: 3}
 --- !u!224 &1932453630665244852
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30006,7 +30007,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!224 &2196739549019397681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33001,7 +33002,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b7916589d4676eb4fb9fcb2b7dc9efb9, type: 3}
 --- !u!114 &3153467026673727503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33243,7 +33244,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d887c05f0143d44da20a772294b497f, type: 3}
 --- !u!4 &3310080032199227335
 Transform:
   m_ObjectHideFlags: 0
@@ -34101,7 +34102,7 @@ MonoBehaviour:
     por ah\xED! El cocinero parec\xEDa molesto\u2026 \xBFPero qui\xE9n se va a quejar
     de algo as\xED? Cualquiera que vea estas cucadas estar\xEDa de acuerdo conmigo,
     \xBFno crees?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Amante
-    de las Ratas\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    de las Ratas\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -34551,7 +34552,7 @@ MonoBehaviour:
     pero lo \xFAnico que he encontrado es una nota suya que dice \u201CY al perder
     la raz\xF3n\u2026 Se aclara la visi\xF3n\u201D. Parece un santo y se\xF1a, pero
     no s\xE9 para qu\xE9\u2026 Est\xE9 donde est\xE9, espero que est\xE9 a salvo.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje
-    Desolado\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Desolado\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -35157,7 +35158,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -39000,10 +39001,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBF\xA1PORQUE
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBF\xA1PORQUE
     HAY UNA MANZANA EN LA BIBLIOTECA!? Como esto haya sido cosa del ********** de
     Ephrie, voy a arrancarle ese ojo que tiene y voy a met\xE9rselo por el ****.
-    \xA1\xA1\xA1*****!!!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    \xA1\xA1\xA1*****!!!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -39136,7 +39137,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 658351653057d46448c1ef700a132393, type: 3}
 --- !u!136 &5247913904740346296
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40297,7 +40298,7 @@ MonoBehaviour:
     compa\xF1ero se larg\xF3 y ahora lo \xFAnico que hace es leer libros mientras
     yo me parto el lomo\u2026 Y hoy toca limpieza completa\u2026 no s\xE9 c\xF3mo
     voy a poder hacerlo en un d\xEDa. A este paso para cuando se haga de noche reci\xE9n
-    empezar\xE9 con las habitaciones de los generales\u2026\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    empezar\xE9 con las habitaciones de los generales\u2026\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Conserje\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -40975,13 +40976,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hace
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hace
     poco me retir\xE9. Ser conserje no era lo m\xEDo, siempre me olvidaba del santo
     y se\xF1a\u2026 una parte dec\xEDa algo as\xED como que quien quiere algo \u201Cdel
     mar bebe\u201D\u2026 Una tonter\xEDa, porque eso es muy mala idea\u2026 Por suerte,
     eso ya no es mi problema. No quiero acabar como el anterior\u2026 su amigo a\xFAn
     se pasea por los jardines busc\xE1ndolo.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    Conserje Retirado\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Conserje Retirado\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -41146,7 +41147,7 @@ MonoBehaviour:
   NodeID: 12
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!114 &5867665152117102389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41184,7 +41185,7 @@ MonoBehaviour:
   NodeID: 10
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
 --- !u!114 &5867665152117102391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41222,7 +41223,7 @@ MonoBehaviour:
   NodeID: 8
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d887c05f0143d44da20a772294b497f, type: 3}
 --- !u!1 &5868906663665077488
 GameObject:
   m_ObjectHideFlags: 0
@@ -41260,7 +41261,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!23 &5879519256146949580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41954,7 +41955,7 @@ MonoBehaviour:
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62d64dcfd7922054eba6c90a39d021a0, type: 3}
 --- !u!114 &6052926690486863389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41988,7 +41989,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 658351653057d46448c1ef700a132393, type: 3}
 --- !u!1 &6092335096654547767
 GameObject:
   m_ObjectHideFlags: 0
@@ -42776,7 +42777,7 @@ MonoBehaviour:
   NodeID: 8
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
 --- !u!1 &6302281756121933877
 GameObject:
   m_ObjectHideFlags: 0
@@ -42826,7 +42827,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 757964014}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: GetBifiaRoomKey
+        m_MethodName: HasReachedFinalNodeJanitorConversation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42839,7 +42840,7 @@ MonoBehaviour:
   NodeID: 24
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b7916589d4676eb4fb9fcb2b7dc9efb9, type: 3}
 --- !u!114 &6302281756121933879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42915,7 +42916,7 @@ MonoBehaviour:
   NodeID: 19
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
 --- !u!114 &6302281756121933883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42946,7 +42947,7 @@ MonoBehaviour:
   NodeID: 17
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d887c05f0143d44da20a772294b497f, type: 3}
 --- !u!114 &6302281756121933884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43022,7 +43023,7 @@ MonoBehaviour:
   NodeID: 13
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b7916589d4676eb4fb9fcb2b7dc9efb9, type: 3}
 --- !u!114 &6302281756121933888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43060,7 +43061,7 @@ MonoBehaviour:
   NodeID: 11
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
 --- !u!114 &6302281756121933890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43098,7 +43099,7 @@ MonoBehaviour:
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62d64dcfd7922054eba6c90a39d021a0, type: 3}
 --- !u!114 &6302281756121933892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47354,18 +47355,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 13
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasRatsInfo\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasRatsInfo\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":8},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasRatsInfo\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasRatsInfo\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasRatsInfo\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":8},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasRatsInfo\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":215.5,\"yPos\":32},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
     est\xE1s haciendo aqu\xED? Tu no trabajas en la cocina.\\r\\nA no ser... \xBFNo
-    ser\xE1s t\xFA la que me ha estado robando comida?\\r\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chef\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-10,\"yPos\":118},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan
-    solo pasaba por aqu\xED.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-12,\"yPos\":218},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    ser\xE1s t\xFA la que me ha estado robando comida?\\r\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chef\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":29,\"yPos\":128},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan
+    solo pasaba por aqu\xED.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":27,\"yPos\":228},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
     pienso dejar que entren m\xE1s ratas en mi cocina. \xA1Largo!\\r\\nEs la hora
-    de la cena, tengo cosas que hacer!\\r\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chef\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-15,\"yPos\":320},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ufff...
-    Qu\xE9 mal genio\u2026\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":338,\"yPos\":120},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh,
+    de la cena, tengo cosas que hacer!\\r\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chef\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":24,\"yPos\":330},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ufff...
+    Qu\xE9 mal genio\u2026\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":377,\"yPos\":130},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh,
     \xBFEst\xE1s buscando a alguien que ha estado robando comida? Antes he pasado
     cerca de la entrada de la cueva y me ha parecido ver a alguien cerca de un mont\xF3n
     de basura y sobras; tambi\xE9n hab\xEDa ratas. Tal vez sea la persona que est\xE1s
-    buscando.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":339,\"yPos\":223},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBF\xA1C\xF3mo!?
-    \xA1No me lo puedo creer! \xA1Cuando le pille se va a enterar!\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chef\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    buscando.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":378,\"yPos\":233},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBF\xA1C\xF3mo!?
+    \xA1No me lo puedo creer! \xA1Cuando le pille se va a enterar!\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Chef\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -49259,7 +49260,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
 --- !u!114 &8299010645592522462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49290,7 +49291,7 @@ MonoBehaviour:
   NodeID: 12
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b7916589d4676eb4fb9fcb2b7dc9efb9, type: 3}
 --- !u!114 &8299010645592522463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49347,7 +49348,7 @@ MonoBehaviour:
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d887c05f0143d44da20a772294b497f, type: 3}
 --- !u!114 &8299010645592522466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49546,6 +49547,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NPCName: Conserje
   _NPCSprite: {fileID: 21300000, guid: fa3c2626919272043a8bb931940db197, type: 3}
+--- !u!114 &8473172810476209786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378441575131338262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d90b7e7f1ce7854b842e9dc68e61022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8479443902622034425
 Transform:
   m_ObjectHideFlags: 0

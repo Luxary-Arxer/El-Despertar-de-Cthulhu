@@ -36,6 +36,10 @@ public class PlayerInputController : MonoBehaviour
     [SerializeField]
     GameObject _placeUI;
 
+    public GameObject HintsInventory { get { return _hintsInventory; } }
+    public GameObject ItemsInventory { get { return _itemsInventory; } }
+    public GameObject LogsInventory { get { return _logsInventory; } }
+
     public PlayerControllsDefault PlayerControlls;
 
     InputAction _move;
@@ -138,37 +142,34 @@ public class PlayerInputController : MonoBehaviour
                     _inventoryManager.AddItemToInventory(_interactableObject.GetComponent<ItemPickUp>().Item);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
 
-                    CharacterStoppedMoving();
+                    OpenInventoryNotByInputAction();
                     _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
 
                     _hintsInventory.SetActive(false);
                     _itemsInventory.SetActive(true);
                     _logsInventory.SetActive(false);
-                    Inventory(context);
                     break;
                 case "Log":
                     _inventoryManager.AddLogToInventory(_interactableObject.GetComponent<LogPickUp>().Log);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
 
-                    CharacterStoppedMoving();
+                    OpenInventoryNotByInputAction();
                     _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
 
                     _hintsInventory.SetActive(false);
                     _itemsInventory.SetActive(false);
                     _logsInventory.SetActive(true);
-                    Inventory(context);
                     break;
                 case "Hint":
                     _inventoryManager.AddHintToInventory(_interactableObject.GetComponent<HintPickUp>().Hint);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
 
-                    CharacterStoppedMoving();
+                    OpenInventoryNotByInputAction();
                     _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
 
                     _hintsInventory.SetActive(true);
                     _itemsInventory.SetActive(false);
                     _logsInventory.SetActive(false);
-                    Inventory(context);
                     break;
                 case "NPC":
                     if (!ConversationManager.Instance.IsConversationActive)
@@ -213,6 +214,19 @@ public class PlayerInputController : MonoBehaviour
         {
             ConversationManager.Instance.EndConversation();
         }
+    }
+    public void OpenInventoryNotByInputAction()
+    {
+        CharacterStoppedMoving();
+
+        PlayerControlls.Player.Disable();
+        PlayerControlls.UI.Enable();
+        _globalInventoryUI.SetActive(true);
+        _timeUI.SetActive(false);
+        _placeUI.SetActive(false);
+
+        Time.timeScale = 0f;
+        Cursor.visible = true;
     }
     void Back(InputAction.CallbackContext context)
     {
