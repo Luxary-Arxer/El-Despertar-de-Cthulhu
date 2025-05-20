@@ -18,9 +18,13 @@ public class QuestManager : MonoBehaviour
     //Korby death quest
     public static bool HasRatsInfo;
     public static bool ReachedFinalNodeChefConversation;
+    public static bool ReachedFinalNodeDishConversation;
+    public static bool ReachedFinalNodeKorbyDeathConversation;
     [Header("Korby quest")]
     [SerializeField]
     GameObject _chefGameObject;
+    [SerializeField]
+    ItemObject _apple;
 
     //Bifia death quest
     public static bool HasFailedToSayJanitorPassword;
@@ -75,6 +79,19 @@ public class QuestManager : MonoBehaviour
     public void HasReachedFinalNodeChefConversation()
     {
         ReachedFinalNodeChefConversation = true;
+    }
+    public void CheckAppleOnInventory()
+    {
+        if (InventoryGenerator.ItemsInventory.Contains(_apple))
+            ConversationManager.Instance.SetBool("HasApple", true);
+    }
+    public void HasReachedFinalNodeDishConversation()
+    {
+        ReachedFinalNodeDishConversation = true;
+    }
+    public void HasReachedFinalNodeKorbyDeathConversation()
+    {
+        ReachedFinalNodeKorbyDeathConversation = true;
     }
 
     //Bifia death quest
