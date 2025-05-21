@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Colmillo de Sashijiva
   m_EditorClassIdentifier: 
   Name: Colmillo de Sashijiva
-  Description: "Descripci\xF3n"
+  Description: "Colmillo de una bestia que anta\xF1o cazaba con estos cegando a las
+    presas por su gran brillo a la luz del atardecer. Cuando brilla es capaz de dejar
+    ciego a quien lo ve por un gran periodo de tiempo.\n"
   Image: {fileID: 21300000, guid: 52cf249f174737e4b8ffd093291e2070, type: 3}

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
   m_Name: Ratas en la cocina
   m_EditorClassIdentifier: 
-  Name: "\xA1Limpio y limpio esta cocina y siguen apareciendo malditas ratas! \xA1Alguien
-    est\xE1 robando comida para alimentarlas, estoy seguro! Siguen el rastro hasta
-    aqu\xED y ensucian mi cocina. Como pille al que est\xE1 haciendo esto\u2026"
+  Name: "\xA1No paro de limpiar esta cocina y siguen apareciendo esas malditas ratas!
+    \xA1Alguien est\xE1 robando comida para alimentarlas, estoy seguro! Siguen el
+    rastro hasta aqu\xED y ensucian mi cocina. Como pille al que est\xE1 haciendo
+    esto..."
   Hint: "Qu\xE9 comentario tan extra\xF1o hizo el chef. Si encuentro a este extra\xF1o
     individuo, tal vez pueda convencer al chef para que me deje pasar a su cocina\u2026"
