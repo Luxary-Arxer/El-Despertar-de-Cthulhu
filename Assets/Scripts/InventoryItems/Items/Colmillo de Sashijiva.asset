@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Colmillo de Sashijiva
   Description: "Descripci\xF3n"
-  Image: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
+  Image: {fileID: 21300000, guid: 52cf249f174737e4b8ffd093291e2070, type: 3}
