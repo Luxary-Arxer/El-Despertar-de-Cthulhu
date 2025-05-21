@@ -7,6 +7,8 @@ public class InventoryManager : MonoBehaviour
     [Header("Starter items")]
     [SerializeField]
     ItemObject _daggerItem;
+    [SerializeField]
+    LogObject _letterLog;
 
     [Header("Inventory slots")]
     [SerializeField]
@@ -25,6 +27,7 @@ public class InventoryManager : MonoBehaviour
     void Awake()
     {
         AddItemToInventory(_daggerItem);
+        AddLogToInventory(_letterLog);
     }
     public void AddItemToInventory(ItemObject item)
     {
