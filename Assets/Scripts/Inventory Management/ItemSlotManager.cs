@@ -11,16 +11,16 @@ public class ItemSlotManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI _itemNameBox;
     [SerializeField]
-    Image _itemImageBox;
+    GameObject _itemImageBox;
 
     Sprite _itemImage;
     string _itemName;
     string _itemDescription;
-    
+
     public Sprite ItemImage { set { _itemImage = value; } }
     public string ItemName { set { _itemName = value; } }
     public string ItemDescription { set { _itemDescription = value; } }
-    
+
     CharacterAudioManager _characterAudioManager;
 
     void Awake()
@@ -29,17 +29,26 @@ public class ItemSlotManager : MonoBehaviour
     }
     public void DisplayImageOnInventory()
     {
-        _itemImageBox.sprite = _itemImage;
+        if (!ComponentHasImage())
+        {
+            _itemImageBox.AddComponent<Image>();
+        }
 
-        Color imgColor = _itemImageBox.color;
-        imgColor.a = 255;
-        _itemImageBox.color = imgColor;
+        _itemImageBox.GetComponent<Image>().sprite = _itemImage;
     }
     public void DisplayItemDescription()
     {
-        _itemDescriptionBox.text = _itemDescription;
-        _itemNameBox.text = _itemName;
+        if (ComponentHasImage())
+        {
+            _itemDescriptionBox.text = _itemDescription;
+            _itemNameBox.text = _itemName;
 
-        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[2], false, .6f, 1);
+            _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[2], false, .6f, 1);
+        }
+    }
+    
+    bool ComponentHasImage()
+    {
+        return _itemImageBox.GetComponent<Image>();
     }
 }
