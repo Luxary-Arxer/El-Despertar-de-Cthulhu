@@ -11,7 +11,7 @@ public class HintSlotManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI _hintNameBox;
     [SerializeField]
-    GameObject _hintTextBox;
+    TextMeshProUGUI _hintTextBox;
 
     string _hintName;
     string _hintDescription;
@@ -27,7 +27,7 @@ public class HintSlotManager : MonoBehaviour
     }
     public void DisplayTextOnInventory()
     {
-        _hintTextBox.GetComponent<TextMeshProUGUI>().text = _hintName;
+        _hintTextBox.text = _hintName;
     }
     public void DisplayHintDescription()
     {
@@ -42,6 +42,6 @@ public class HintSlotManager : MonoBehaviour
     
     bool ComponentHasHint()
     {
-        return _hintName != "";
+        return _hintName != null;
     }
 }

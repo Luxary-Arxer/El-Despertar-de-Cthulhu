@@ -160,17 +160,6 @@ public class PlayerInputController : MonoBehaviour
                     _itemsInventory.SetActive(false);
                     _logsInventory.SetActive(true);
                     break;
-                case "Hint":
-                    _inventoryManager.AddHintToInventory(_interactableObject.GetComponent<HintPickUp>().Hint);
-                    _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
-
-                    OpenInventoryNotByInputAction();
-                    _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[0], false, .75f, 1);
-
-                    _hintsInventory.SetActive(true);
-                    _itemsInventory.SetActive(false);
-                    _logsInventory.SetActive(false);
-                    break;
                 case "NPC":
                     if (!ConversationManager.Instance.IsConversationActive)
                         _interactableObject.GetComponent<TalkToNPC>().StartTalkToNPC();

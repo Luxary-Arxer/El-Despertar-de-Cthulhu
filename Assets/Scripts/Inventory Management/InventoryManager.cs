@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -92,15 +93,21 @@ public class InventoryManager : MonoBehaviour
     {
         for (int i = 0; i < _logsSlots.Length && i < InventoryGenerator.LogsInventory.Count; i++)
         {
-            ItemSlotManager currentItem = _logsSlots[i].GetComponent<ItemSlotManager>();
-            currentItem.ItemImage = InventoryGenerator.LogsInventory[i].Image;
-            currentItem.ItemName = InventoryGenerator.LogsInventory[i].Name;
-            currentItem.ItemDescription = InventoryGenerator.LogsInventory[i].Log;
-            currentItem.DisplayImageOnInventory();
+            ItemSlotManager currentLog = _logsSlots[i].GetComponent<ItemSlotManager>();
+            currentLog.ItemImage = InventoryGenerator.LogsInventory[i].Image;
+            currentLog.ItemName = InventoryGenerator.LogsInventory[i].Name;
+            currentLog.ItemDescription = InventoryGenerator.LogsInventory[i].Log;
+            currentLog.DisplayImageOnInventory();
         }
     }
     void UpdateHintInventoryUI()
     {
-
+        for (int i = 0; i < _hintsSlots.Length && i < InventoryGenerator.HintsInventory.Count; i++)
+        {
+            HintSlotManager currentHint = _hintsSlots[i].GetComponent<HintSlotManager>();
+            currentHint.HintName = InventoryGenerator.HintsInventory[i].Name;
+            currentHint.HintDescription = InventoryGenerator.HintsInventory[i].Hint;
+            currentHint.DisplayTextOnInventory();
+        }        
     }
 }

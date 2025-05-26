@@ -25,6 +25,8 @@ public class QuestManager : MonoBehaviour
     GameObject _chefGameObject;
     [SerializeField]
     ItemObject _apple;
+    [SerializeField]
+    HintObject _ratLoverHint;
 
     //Bifia death quest
     public static bool HasFailedToSayJanitorPassword;
@@ -75,6 +77,7 @@ public class QuestManager : MonoBehaviour
     public void GetRatsInfo()
     {
         HasRatsInfo = true;
+        _inventoryManager.AddHintToInventory(_ratLoverHint);
     }
     public void HasReachedFinalNodeChefConversation()
     {

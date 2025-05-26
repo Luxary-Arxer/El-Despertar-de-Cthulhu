@@ -1614,7 +1614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hintDescriptionBox: {fileID: 1165530856}
   _hintNameBox: {fileID: 1487834718}
-  _hintTextBox: {fileID: 1981973046}
+  _hintTextBox: {fileID: 1981973048}
 --- !u!1001 &97691425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3512,13 +3512,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6430,7 +6430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hintDescriptionBox: {fileID: 1165530856}
   _hintNameBox: {fileID: 1487834718}
-  _hintTextBox: {fileID: 166030585}
+  _hintTextBox: {fileID: 166030587}
 --- !u!114 &263259921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8641,7 +8641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hintDescriptionBox: {fileID: 1165530856}
   _hintNameBox: {fileID: 1487834718}
-  _hintTextBox: {fileID: 2023129659}
+  _hintTextBox: {fileID: 2023129661}
 --- !u!114 &334693090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18426,7 +18426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hintDescriptionBox: {fileID: 1165530856}
   _hintNameBox: {fileID: 1487834718}
-  _hintTextBox: {fileID: 1997381688}
+  _hintTextBox: {fileID: 1997381690}
 --- !u!114 &727032054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19043,6 +19043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _chefGameObject: {fileID: 7828875845969737379}
   _apple: {fileID: 11400000, guid: 005aee7bdee1ff54d8ae53ad90096788, type: 2}
+  _ratLoverHint: {fileID: 11400000, guid: 96a66fb2ef69d8144ae938f3f9c7ced3, type: 2}
   _bifiaKey: {fileID: 11400000, guid: 634dcc680eebc60419e480bf0a15c5cf, type: 2}
 --- !u!114 &757964015
 MonoBehaviour:
@@ -22119,13 +22120,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -24542,7 +24543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &970377627
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27208,13 +27209,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -27911,7 +27912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hintDescriptionBox: {fileID: 1165530856}
   _hintNameBox: {fileID: 1487834718}
-  _hintTextBox: {fileID: 862719877}
+  _hintTextBox: {fileID: 862719879}
 --- !u!114 &1120221562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28388,13 +28389,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -33594,7 +33595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hintDescriptionBox: {fileID: 1165530856}
   _hintNameBox: {fileID: 1487834718}
-  _hintTextBox: {fileID: 1079948411}
+  _hintTextBox: {fileID: 1079948413}
 --- !u!114 &1355909795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36907,13 +36908,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -43167,13 +43168,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -44665,7 +44666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1835670510
 RectTransform:
   m_ObjectHideFlags: 0
@@ -45251,7 +45252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1861462340
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48216,13 +48217,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -48638,13 +48639,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -49253,13 +49254,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -49446,13 +49447,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -63295,7 +63296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":255,\"yPos\":147},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"De
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"De
     vez en cuando tomo prestada parte de la comida de la cocina para alimentar a
     las ratitas que rondan por la cueva. \xA1Ahora me tienen cari\xF1o y me persiguen
     por ah\xED! El cocinero parec\xEDa molesto\u2026 \xBFPero qui\xE9n se va a quejar
