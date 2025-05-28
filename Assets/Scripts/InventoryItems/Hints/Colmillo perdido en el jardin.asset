@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
   m_Name: Colmillo perdido en el jardin
   m_EditorClassIdentifier: 
-  Name: "El objeto es un colmillo de cierta bestia, lo perdimos en la zona del jard\xEDn,
-    en la zona noreste, lo probable es que se lo comiera una de las plantas carn\xEDvoras
-    de la zona. Necesitar\xE1s un cebo para qu\xE9 abra la boca, ten te lo doy, ya
-    que no lo necesitaremos para nada."
-  Hint: "Con el colmillo podr\xEDa acabar con Ephraim, si es de la bestia que creo
-    que es.\r\n"
+  Name: "El colmillo est\xE1 en una planta carn\xEDvora..."
+  Hint: "-El objeto es un colmillo de cierta bestia. Lo perdimos en la zona del jard\xEDn,
+    en la zona noreste. Lo m\xE1s probable es que se lo comiera una de las plantas
+    carn\xEDvoras de la zona. Necesitar\xE1s un cebo para qu\xE9 abra la boca. Ten,
+    te lo doy, ya que no lo necesitaremos para nada.-\n\nCon el colmillo podr\xEDa
+    acabar con Ephraim, si es de la bestia que creo que es.\r\n"

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
   m_Name: "Almac\xE9n desordenado"
   m_EditorClassIdentifier: 
-  Name: "Los patanes a los que les ordene que llevaran los cristales m\xE1gicos al
-    almac\xE9n los han dejado por cualquier sitio y no los encuentro. Si das con
+  Name: "El almac\xE9n estaba muy desordenado..."
+  Hint: "-Los patanes a los que les ordene que llevaran los cristales m\xE1gicos
+    al almac\xE9n los han dejado por cualquier sitio y no los encuentro. Si das con
     ellos, av\xEDsame de donde est\xE1n y te recompensar\xE9 con la informaci\xF3n
     de un objeto que lord Korby quer\xEDa usar para hacerle una jugarreta al se\xF1or
-    Ephraim."
-  Hint: "La informaci\xF3n que me puede dar el encargado por ayudarlo puede serme
-    \xFAtil para acabar con Ephraim."
+    Ephraim.-\n\nLa informaci\xF3n que me puede dar el encargado por ayudarlo me
+    ser\xE1 \xFAtil para acabar con Ephraim..."

@@ -1,6 +1,4 @@
 
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -40,10 +38,6 @@ public class InventoryManager : MonoBehaviour
 
                 UpdateItemInventoryUI();
             }
-            else
-            {
-                Debug.Log("¡No hay espacio en el inventario!");
-            }
         }
     }
     public void AddHintToInventory(HintObject hint)
@@ -56,10 +50,6 @@ public class InventoryManager : MonoBehaviour
 
                 UpdateHintInventoryUI();
             }
-            else
-            {
-                Debug.Log("¡No hay espacio en el inventario!");
-            }
         }
     }
     public void AddLogToInventory(LogObject log)
@@ -71,10 +61,6 @@ public class InventoryManager : MonoBehaviour
                 InventoryGenerator.LogsInventory.Add(log);
 
                 UpdateLogInventoryUI();
-            }
-            else
-            {
-                Debug.Log("¡No hay espacio en el inventario!");
             }
         }
     }
@@ -108,6 +94,13 @@ public class InventoryManager : MonoBehaviour
             currentHint.HintName = InventoryGenerator.HintsInventory[i].Name;
             currentHint.HintDescription = InventoryGenerator.HintsInventory[i].Hint;
             currentHint.DisplayTextOnInventory();
-        }        
+        }
+    }
+    public static void ResetItemInventory()
+    {
+        for (int i = 1; i < InventoryGenerator.ItemsInventory.Count; i++)
+        {
+            InventoryGenerator.ItemsInventory[i] = null;
+        }
     }
 }

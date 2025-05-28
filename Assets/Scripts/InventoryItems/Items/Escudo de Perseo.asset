@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Escudo de Perseo
   Description: "Descripci\xF3n"
-  Image: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
+  Image: {fileID: 21300000, guid: 3a54ca67adbb69a48ae248735fca321d, type: 3}
