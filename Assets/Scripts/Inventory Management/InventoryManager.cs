@@ -28,7 +28,6 @@ public class InventoryManager : MonoBehaviour
         AddItemToInventory(_daggerItem);
         AddLogToInventory(_letterLog);
     }
-
     public void AddItemToInventory(ItemObject item)
     {
         if (!InventoryGenerator.ItemsInventory.Contains(item))
@@ -99,9 +98,11 @@ public class InventoryManager : MonoBehaviour
     }
     public static void ResetItemInventory()
     {
-        for (int i = 1; i < InventoryGenerator.ItemsInventory.Count; i++)
+        int itemCount = InventoryGenerator.ItemsInventory.Count;
+
+        for (int i = 1; i < itemCount; i++)
         {
-            InventoryGenerator.ItemsInventory.Remove(InventoryGenerator.ItemsInventory[i]);
-        }
+            InventoryGenerator.ItemsInventory.RemoveAt(1);
+        }        
     }
 }
