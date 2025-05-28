@@ -39,6 +39,8 @@ public class QuestManager : MonoBehaviour
     public static bool HasFailedToSayJanitorPassword;
     public static bool ReachedFinalNodeJanitorConversation;
     public static bool ReachedFinalNodeBifiaConversation;
+    public static bool ReachedFinalNodeBifiaDoorConversation;
+    public static bool IsBifiaDoorOpened;
     [Header("Bifia quest")]
     [SerializeField]
     ItemObject _bifiaKey;
@@ -151,16 +153,16 @@ public class QuestManager : MonoBehaviour
     }
     public void CheckBifiaKey()
     {
-        if (InventoryGenerator.ItemsInventory.Contains(_bifiaKey))
+        if (InventoryGenerator.ItemsInventory.Contains(_bifiaKey) && !IsBifiaDead)
         {
             ConversationManager.Instance.SetBool("HasBifiaKey", true);
         }
     }
-    public void OpenBifiaDoor()
+    public void HasReachedFinalNodeBifiaDoorConversation()
     {
-        
+        ReachedFinalNodeBifiaDoorConversation = true;
     }
-
+    
     void ReproduceGetHintSound()
     {
         _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[3], false, .75f, 1);

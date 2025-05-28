@@ -1,7 +1,7 @@
 
 public class DaytimeTracker  
 {
-    public static int MomentOfTheDay=2;
+    public static int MomentOfTheDay;
 
     public static void RestartDay()
     {
@@ -13,7 +13,7 @@ public class DaytimeTracker
         QuestManager.IsEphrieDead = false;
         QuestManager.IsEurialeDead = false;
 
-        QuestManager.HasFailedToSayJanitorPassword = false;    
+        QuestManager.HasFailedToSayJanitorPassword = false;
     }
     public static void AdvanceThroughTheDay()
     {

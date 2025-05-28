@@ -7,7 +7,6 @@ public class LadyBifiaDoorManager : MonoBehaviour
     [SerializeField]
     GameObject _doorVFX;
 
-
     void Awake()
     {
         _doorVFX.SetActive(false);
@@ -15,14 +14,14 @@ public class LadyBifiaDoorManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !QuestManager.IsBifiaDoorOpened)
         {
             _doorVFX.SetActive(true);
         }
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !QuestManager.IsBifiaDoorOpened)
         {
             _doorVFX.SetActive(false);
             ConversationManager.Instance.EndConversation();
