@@ -3219,8 +3219,8 @@ Transform:
   m_GameObject: {fileID: 150712174}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3383, y: -1.4665, z: -0.1386}
-  m_LocalScale: {x: 0.34946355, y: 0.14605, z: 0.025217954}
+  m_LocalPosition: {x: -0.3383, y: -1.4665, z: -0.1468}
+  m_LocalScale: {x: 0.34946355, y: 0.14605, z: 0.025}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 693883538}
@@ -3519,7 +3519,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4117,6 +4117,121 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 300871211235410630, guid: 89ce9f13c12efbb47a56eb148a856f13, type: 3}
   m_PrefabInstance: {fileID: 1893613331}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &203127844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 203127845}
+  - component: {fileID: 203127848}
+  - component: {fileID: 203127847}
+  - component: {fileID: 203127846}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &203127845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203127844}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.26363, y: -4.85, z: 20.505379}
+  m_LocalScale: {x: 0.49999994, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1998960864}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203127846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203127844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 757964014}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: OpenBifiaDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 2
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 36355fbb616a8ac469857cfe2d307910, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &203127847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203127844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 1
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 36355fbb616a8ac469857cfe2d307910, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &203127848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203127844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 757964014}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckBifiaKey
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 36355fbb616a8ac469857cfe2d307910, type: 3}
+  Audio: {fileID: 0}
 --- !u!4 &211956412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 179338653616235823, guid: bab63ed324e9caa48b5af2da50489b76, type: 3}
@@ -13793,7 +13908,7 @@ Transform:
   m_GameObject: {fileID: 557200082}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.016630137, y: -0.0901165, z: -0.2891702}
+  m_LocalPosition: {x: 0.016630137, y: -0.0901165, z: -0.3334}
   m_LocalScale: {x: 0.058347728, y: 1, z: 0.02348628}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20636,6 +20751,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 179338653616235823, guid: bab63ed324e9caa48b5af2da50489b76, type: 3}
   m_PrefabInstance: {fileID: 1979977074}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &804685345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804685346}
+  - component: {fileID: 804685349}
+  - component: {fileID: 804685348}
+  - component: {fileID: 804685347}
+  m_Layer: 0
+  m_Name: VFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804685346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804685345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 3.83, z: 2.85}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1998960864}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &804685347
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804685345}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &804685348
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804685345}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &804685349
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804685345}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &811678570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22146,7 +22366,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -27204,7 +27424,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -28384,7 +28604,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -30364,6 +30584,7 @@ GameObject:
   - component: {fileID: 1226081436}
   - component: {fileID: 1226081435}
   - component: {fileID: 1226081434}
+  - component: {fileID: 1226081439}
   - component: {fileID: 1226081433}
   m_Layer: 0
   m_Name: 'IntNPC-OldLibrarian '
@@ -30385,78 +30606,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 41
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":450,\"yPos\":918},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":237,\"yPos\":919},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":452,\"yPos\":1271},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":221,\"yPos\":1270},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":450,\"yPos\":1645},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"??????\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":229,\"yPos\":1644},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":454,\"yPos\":2017},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[31],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":223,\"yPos\":2018},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[31],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":322,\"yPos\":129},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":317.5,\"yPos\":-1619},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":104.5,\"yPos\":-1618},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":319.5,\"yPos\":-1266},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":88.5,\"yPos\":-1267},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":317.5,\"yPos\":-892},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"??????\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":96.5,\"yPos\":-893},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":321.5,\"yPos\":-520},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[31],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":90.5,\"yPos\":-519},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[31],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":189.5,\"yPos\":-2408},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
     joven \xBFNecesitas ayuda con algo?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":321.5,\"yPos\":228},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
-    ahora no necesito nada, gracias.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":322,\"yPos\":326},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189,\"yPos\":-2309},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    ahora no necesito nada, gracias.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189.5,\"yPos\":-2211},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
     supuesto, los cultistas de hoy en d\xEDa ya no necesitan nada de una vieja bibliotecaria
     retirada\u2026\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":324,\"yPos\":628},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Espere\u2026
-    \xBFUsted era la anterior bibliotecaria?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":322,\"yPos\":428},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Estoy
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.5,\"yPos\":-1909},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Espere\u2026
+    \xBFUsted era la anterior bibliotecaria?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189.5,\"yPos\":-2109},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Estoy
     segura de que los Generales est\xE1n deseando que me muera para dejar de pagarme
     los montones de medicinas especiales que necesito para seguir con vida.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":325,\"yPos\":529},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Pues
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.5,\"yPos\":-2008},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Pues
     que se sienten a esperar, esta vieja a\xFAn tiene fuerza para mucho, mucho tiempo!\\r\\n\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":325,\"yPos\":727},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.5,\"yPos\":-1810},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
     es, estuve en el cargo durante m\xE1s de cincuenta a\xF1os. Si yo te contara
     la de cosas que he visto en esa biblioteca\u2026\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":326,\"yPos\":820},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Recuerdo
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.5,\"yPos\":-1717},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Recuerdo
     una vez, cuando Ephrie no era m\xE1s que un ni\xF1o, muy feo por cierto, aunque
     supongo que todos los c\xEDclopes lo son, el muchacho se present\xF3 delante
     de m\xED y me dijo que\u2026\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":330,\"yPos\":984},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":197.5,\"yPos\":-1553},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     dijo que quer\xEDa entrar a la zona prohibida de la biblioteca, que hab\xEDan
     tra\xEDdo un nuevo cacharro del reino de nosequ\xE9, y que le hac\xEDa mucha
     ilusi\xF3n jugar con ese trasto.\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":331,\"yPos\":1081},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tendr\xEDas
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.5,\"yPos\":-1456},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tendr\xEDas
     que haberlo visto, puso la mejor cara de pena que jam\xE1s vi en un ni\xF1o;
     de hecho, casi se pone a llorar all\xED mismo.\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":332,\"yPos\":1177},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Obviamente,
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":199.5,\"yPos\":-1360},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Obviamente,
     le dije que no pod\xEDa entrar, que all\xED dentro hab\xEDa objetos m\xE1gicos
     muy peligrosos y que podr\xEDa poner en peligro a todo el culto\u2026\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":329,\"yPos\":1344},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":196.5,\"yPos\":-1193},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
     tiempos aquellos\u2026 Espera, \xBFDe qu\xE9 est\xE1bamos hablando? Ah, ya me
     acuerdo. De verdad, a los malos no hay quien os entienda. Sab\xE9is que al final
     gana el h\xE9roe, pero siempre os resist\xEDs.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":331,\"yPos\":1446},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Como
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.5,\"yPos\":-1091},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Como
     aquel tipo de New Haven. La ciudad ardiendo, la gente muriendose\u2026 y va un
     tio y me ataca con una cuchara, \xA1Una cuchara! Y yo parti\xE9ndome de risa.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":331,\"yPos\":1545},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.5,\"yPos\":-992},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
     que le saco los ojos con ella y sus hijos se ponen en plan: \xA1AAAAAHHHHHH!
     Y el t\xEDo a\xFAn se resiste m\xE1s. Menudo espect\xE1culo. El caso es que eres
     gilipollas\u2026\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":330,\"yPos\":1717},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":197.5,\"yPos\":-820},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     acuerdo perfectamente de c\xF3mo se puso Ephrie cuando le dije que no pod\xEDa
     entrar a la biblioteca: fue una pataleta que marc\xF3 una \xE9poca, la recuerdo
     como si fuera ayer;\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":330,\"yPos\":1819},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"aunque,
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":197.5,\"yPos\":-718},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"aunque,
     bueno, dos a\xF1os tampoco es tanto tiempo, ser\xEDa raro que lo hubiera olvidado.
     Me pregunto que debe estar haciendo el peque\xF1o Ephrie ahora\u2026 Bueno, que
     me estoy desviando del tema.\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":331,\"yPos\":1917},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Para
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.5,\"yPos\":-620},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Para
     conseguir que el ni\xF1o dejara de llorar, gritar y de darse golpes contra la
     pared, al final llegamos a un acuerdo\u2026\",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":330,\"yPos\":2087},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":197.5,\"yPos\":-450},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
     final, acordamos que pod\xEDa entrar en la zona prohibida bajo mi estricta supervisi\xF3n,
     y jugar un ratito con el nuevo artilugio.\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":331,\"yPos\":2188},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.5,\"yPos\":-349},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
     gracioso se puso cuando vio el cacharro, que, en realidad, era una espada muy
     grande; qu\xE9 b\xE1sicos son los c\xEDclopes, en cuanto ven una arma muy grande
     se ponen a dar saltos de alegr\xEDa.\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":332,\"yPos\":2287},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":199.5,\"yPos\":-250},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
     que m\xE1s me llam\xF3 la atenci\xF3n fue lo que dijo cuando vio la espada:\",\"parentUIDs\":[35],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":333,\"yPos\":2385},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":200.5,\"yPos\":-152},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
     are red, Violets are blue; Unexpected \u2018{\u2018 on line 42.\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":334,\"yPos\":2485},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A\xFAn
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":201.5,\"yPos\":-52},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A\xFAn
     me sigo preguntando c\xF3mo fue capaz de pronunciar el s\xEDmbolo \u2018{\u2019.
     De hecho, me hizo tanta gracia su reacci\xF3n, que empezamos a utilizarlo como
     contrase\xF1a para entrar en la sala prohibida\u2026\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":334,\"yPos\":2584},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":201.5,\"yPos\":47},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Qu\xE9
     historia tan interesante! Por desgracia se me est\xE1 haciendo tarde. Que le
-    vaya muy bien el d\xEDa.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":334,\"yPos\":2681},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    vaya muy bien el d\xEDa.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":201.5,\"yPos\":144},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
     favor, qu\xE9 vieja tan pesada\u2026 pero tengo la sensaci\xF3n de que lo \xFAltimo
     que ha dicho es algo muy importante.\",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -30500,7 +30721,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757964014}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: GetPasswordLibraryForbiddenRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1226081434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30619,6 +30852,18 @@ Transform:
   - {fileID: 222539680}
   m_Father: {fileID: 1469592426}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226081439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226081432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1227821896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 179338653616235823, guid: bab63ed324e9caa48b5af2da50489b76, type: 3}
@@ -36342,6 +36587,7 @@ GameObject:
   - component: {fileID: 1478091264}
   - component: {fileID: 1478091263}
   - component: {fileID: 1478091267}
+  - component: {fileID: 1478091269}
   - component: {fileID: 1478091268}
   m_Layer: 0
   m_Name: IntNPC-Librarian
@@ -36523,6 +36769,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1478091269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478091261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1481020112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38916,7 +39174,8 @@ Transform:
   m_LocalPosition: {x: -1.2877861, y: 0.00015306473, z: 0.6128702}
   m_LocalScale: {x: 0.05834773, y: 1, z: 0.02348628}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1998960864}
   m_Father: {fileID: 3474481297354668216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1579895740
@@ -43163,7 +43422,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -48211,7 +48470,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -48633,7 +48892,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -48755,6 +49014,155 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 179338653616235823, guid: bab63ed324e9caa48b5af2da50489b76, type: 3}
   m_PrefabInstance: {fileID: 352894174}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1998960863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998960864}
+  - component: {fileID: 1998960868}
+  - component: {fileID: 1998960867}
+  - component: {fileID: 1998960866}
+  - component: {fileID: 1998960869}
+  - component: {fileID: 1998960865}
+  m_Layer: 0
+  m_Name: IntNPC-BifiaDoor
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998960864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998960863}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.802473, y: -0.090269566, z: -32.3325}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 804685346}
+  - {fileID: 203127845}
+  m_Father: {fileID: 1579836977}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1998960865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998960863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 3
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasBifiaKey\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasBifiaKey\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":1},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasBifiaKey\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":180.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Parece
+    que la puerta de la habitaci\xF3n de Lady Bifia est\xE1 cerrada.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":298,\"yPos\":122},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Deber\xEDa
+    tratar de conseguir la llave de alguna manera.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":57,\"yPos\":122},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Suerte
+    que el conserje me ha dado la llave\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 203127848}
+  - {fileID: 203127847}
+  - {fileID: 203127846}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 757964014}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckBifiaKey
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1998960866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998960863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5872360d7a4c794c8cd113ed4317917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _doorVFX: {fileID: 804685345}
+--- !u!136 &1998960867
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998960863}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.5
+  m_Height: 4
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.00000023841858, z: 0}
+--- !u!65 &1998960868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998960863}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 2.25, z: 2.85}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1998960869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998960863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1999447247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49248,7 +49656,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -49441,7 +49849,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -52922,6 +53330,7 @@ GameObject:
   - component: {fileID: 5402422955704684203}
   - component: {fileID: 6698545474394360505}
   - component: {fileID: 8154922633745555517}
+  - component: {fileID: 8154922633745555518}
   - component: {fileID: 570312824139467507}
   m_Layer: 0
   m_Name: IntNPC-KorbyNight
@@ -53563,6 +53972,7 @@ GameObject:
   - component: {fileID: 5639518441249253615}
   - component: {fileID: 6362698644844391677}
   - component: {fileID: 8473172810476209785}
+  - component: {fileID: 8473172810476209787}
   - component: {fileID: 8473172810476209786}
   - component: {fileID: 238958337091333303}
   m_Layer: 0
@@ -53585,6 +53995,7 @@ GameObject:
   - component: {fileID: 5639518442642993679}
   - component: {fileID: 6362698644090385949}
   - component: {fileID: 8473172810326088857}
+  - component: {fileID: 8473172810326088858}
   - component: {fileID: 238958335664109143}
   m_Layer: 0
   m_Name: IntNPC-KorbyMorning
@@ -56903,10 +57314,11 @@ GameObject:
   - component: {fileID: 6835080447689731498}
   - component: {fileID: 5247913904740346296}
   - component: {fileID: 7281841862648808252}
+  - component: {fileID: 7281841862648808254}
   - component: {fileID: 7281841862648808253}
   - component: {fileID: 1425527854675585522}
   m_Layer: 0
-  m_Name: IntNPC-BifiaRoom
+  m_Name: IntNPC-Bifia
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57197,6 +57609,7 @@ GameObject:
   - component: {fileID: 6748356500693433038}
   - component: {fileID: 5452094346174512860}
   - component: {fileID: 7382424089493001304}
+  - component: {fileID: 7382424089493001305}
   - component: {fileID: 1204027940364942998}
   m_Layer: 0
   m_Name: IntNPC-ChefMornEve
@@ -63167,11 +63580,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 557200083}
+  - {fileID: 946513592}
   - {fileID: 1028788484}
   - {fileID: 825251739}
   - {fileID: 1466269374}
   - {fileID: 882169412}
-  - {fileID: 946513592}
   - {fileID: 693883538}
   - {fileID: 430166892}
   - {fileID: 1579836977}
@@ -63574,19 +63987,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 757964014}
-        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: GetRatsInfo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &3605862807649114492
 GameObject:
   m_ObjectHideFlags: 0
@@ -63650,6 +64051,7 @@ GameObject:
   - component: {fileID: 8733727088667481047}
   - component: {fileID: 8015050624281958341}
   - component: {fileID: 4819193963317083457}
+  - component: {fileID: 8733727088667481048}
   - component: {fileID: 3757978944320837519}
   m_Layer: 0
   m_Name: IntNPC-DespairedJanitor
@@ -64032,6 +64434,7 @@ GameObject:
   - component: {fileID: 9156362553454535604}
   - component: {fileID: 7574684770403788710}
   - component: {fileID: 4955286533329079586}
+  - component: {fileID: 9156362553454535605}
   - component: {fileID: 3603588101551155180}
   m_Layer: 0
   m_Name: IntNPC-RatsLover
@@ -67348,7 +67751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _NPCName: Korby
-  _NPCSprite: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
+  _NPCSprite: {fileID: 21300000, guid: 38a914c04801bca408ac874104d11bd8, type: 3}
 --- !u!4 &4535187759518196880
 Transform:
   m_ObjectHideFlags: 0
@@ -70574,6 +70977,7 @@ GameObject:
   - component: {fileID: 364635547864804164}
   - component: {fileID: 1369149850827108182}
   - component: {fileID: 4528980730649626066}
+  - component: {fileID: 8637231137504960947}
   - component: {fileID: 5196056016129191708}
   m_Layer: 0
   m_Name: IntNPC-KorbyEvening
@@ -73497,6 +73901,7 @@ GameObject:
   - component: {fileID: 2028869274371811615}
   - component: {fileID: 732043070383648013}
   - component: {fileID: 2878543675902723977}
+  - component: {fileID: 8181288006085604880}
   - component: {fileID: 5851467468291026247}
   m_Layer: 0
   m_Name: IntNPC-RetiredJanitor
@@ -76988,6 +77393,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fadeManager: {fileID: 1391783213}
   _postBifiaDeathConversation: {fileID: 1843866804}
+--- !u!114 &7281841862648808254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574276123387220819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &7285058085819780161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77334,6 +77751,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NPCName: 'Chef '
   _NPCSprite: {fileID: 21300000, guid: fa3c2626919272043a8bb931940db197, type: 3}
+--- !u!114 &7382424089493001305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631742071328719927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7388340610944653923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79298,6 +79727,7 @@ GameObject:
   - component: {fileID: 2857014604758059098}
   - component: {fileID: 3578504856565386312}
   - component: {fileID: 2050121096790206156}
+  - component: {fileID: 7828875845969737381}
   - component: {fileID: 7828875845969737380}
   - component: {fileID: 7689136423599492098}
   m_Layer: 0
@@ -79320,6 +79750,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fadeManager: {fileID: 1391783213}
+--- !u!114 &7828875845969737381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828875845969737379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &7831283904989938736
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -80291,6 +80733,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NPCName: Korby
   _NPCSprite: {fileID: 21300000, guid: 38a914c04801bca408ac874104d11bd8, type: 3}
+--- !u!114 &8154922633745555518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142608517947060306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8164776158101427391
 GameObject:
   m_ObjectHideFlags: 0
@@ -80389,6 +80843,18 @@ Transform:
   - {fileID: 1410412770184237959}
   m_Father: {fileID: 870509966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8181288006085604880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279173897271023590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8182942181361345261
 Transform:
   m_ObjectHideFlags: 0
@@ -81494,7 +81960,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _NPCName: Korby
-  _NPCSprite: {fileID: 21300000, guid: 3ae3958982f6cc041b851024706b0f30, type: 3}
+  _NPCSprite: {fileID: 21300000, guid: 38a914c04801bca408ac874104d11bd8, type: 3}
+--- !u!114 &8473172810326088858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378441576959151350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8473172810476209785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81519,6 +81997,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d90b7e7f1ce7854b842e9dc68e61022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8473172810476209787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378441575131338262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &8479443902622034425
@@ -81959,6 +82449,7 @@ GameObject:
   - component: {fileID: 4340161405824529223}
   - component: {fileID: 3041083539465828181}
   - component: {fileID: 571394402371771857}
+  - component: {fileID: 8590826788661988800}
   - component: {fileID: 8590826788661988799}
   - component: {fileID: 8153822918365198111}
   m_Layer: 0
@@ -81983,6 +82474,18 @@ MonoBehaviour:
   _fadeManager: {fileID: 1391783213}
   _korbyDeathConversation: {fileID: 275938401}
   _apple: {fileID: 0}
+--- !u!114 &8590826788661988800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8590826788661988798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8596543883549143637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -82205,6 +82708,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8637231137504960947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5624033476872918461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8637800969320847825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82366,6 +82881,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 3, z: 1.5}
   m_Center: {x: 0, y: 0.6, z: 0}
+--- !u!114 &8733727088667481048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618510619481156910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8744064874484408013
 Transform:
   m_ObjectHideFlags: 0
@@ -82504,7 +83031,7 @@ Transform:
   m_GameObject: {fileID: 6743538993520978181}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0002792141, y: 0.14008331, z: -0.29967514}
+  m_LocalPosition: {x: -0.0002792141, y: 0.14008331, z: -0.3356}
   m_LocalScale: {x: 0.008995246, y: 5.602, z: 1.0180832}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83783,6 +84310,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 3, z: 1.5}
   m_Center: {x: 0, y: 0.6, z: 0}
+--- !u!114 &9156362553454535605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3752071909848964429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &9158835841516880686
 Transform:
   m_ObjectHideFlags: 0

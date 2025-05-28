@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5639518442800606113}
   - component: {fileID: 6362698643979825075}
   - component: {fileID: 8473172810416981303}
+  - component: {fileID: 5465955643150312352}
   - component: {fileID: 238958335573602297}
   m_Layer: 0
   m_Name: IntNPC-Default
@@ -137,8 +138,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dd0ea19e053eb46b07db1e6798bd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactCanvas: {fileID: 5773839814368113974}
   _NPCName: Default Interactive NPC
+  _NPCSprite: {fileID: 0}
+--- !u!114 &5465955643150312352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378441577052804440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &238958335573602297
 MonoBehaviour:
   m_ObjectHideFlags: 0

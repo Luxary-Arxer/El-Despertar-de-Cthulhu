@@ -149,6 +149,17 @@ public class QuestManager : MonoBehaviour
     {
         HasFailedToSayJanitorPassword = true;
     }
+    public void CheckBifiaKey()
+    {
+        if (InventoryGenerator.ItemsInventory.Contains(_bifiaKey))
+        {
+            ConversationManager.Instance.SetBool("HasBifiaKey", true);
+        }
+    }
+    public void OpenBifiaDoor()
+    {
+        
+    }
 
     void ReproduceGetHintSound()
     {

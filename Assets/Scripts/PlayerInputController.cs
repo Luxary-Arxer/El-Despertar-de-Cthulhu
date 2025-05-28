@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using DialogueEditor;
+using Unity.VisualScripting;
 
 public class PlayerInputController : MonoBehaviour
 {
@@ -166,7 +167,9 @@ public class PlayerInputController : MonoBehaviour
                     break;
                 case "NPC":
                     if (!ConversationManager.Instance.IsConversationActive)
-                        _interactableObject.GetComponent<TalkToNPC>().StartTalkToNPC();
+                    {
+                        _interactableObject.GetComponent<StartTalkToNPC>().BeginConversation();                        
+                    }
                     break;
             }
         }
