@@ -5,6 +5,7 @@ using DialogueEditor;
 public class QuestManager : MonoBehaviour
 {
     InventoryManager _inventoryManager;
+    CharacterAudioManager _characterAudioManager;
 
     //Generals death markers
     public static bool IsKorbyDead;
@@ -14,6 +15,10 @@ public class QuestManager : MonoBehaviour
 
     //Library forbidden room Sidequest
     public static bool HasPasswordLibraryRoom;
+    [SerializeField]
+    HintObject _forbiddenRoomHint;
+    [SerializeField]
+    HintObject _passwordHint;
 
     //Korby death quest
     public static bool HasRatsInfo;
@@ -27,6 +32,8 @@ public class QuestManager : MonoBehaviour
     ItemObject _apple;
     [SerializeField]
     HintObject _ratLoverHint;
+    [SerializeField]
+    HintObject _chefHint;
 
     //Bifia death quest
     public static bool HasFailedToSayJanitorPassword;
@@ -43,6 +50,7 @@ public class QuestManager : MonoBehaviour
     void Awake()
     {
         _inventoryManager = GetComponent<InventoryManager>();
+        _characterAudioManager = GetComponent<CharacterAudioManager>();
     }
 
     //Library forbidden room Sidequest
@@ -53,11 +61,19 @@ public class QuestManager : MonoBehaviour
     }
     public void GetHintLibraryForbiddenRoom()
     {
-        //get the hint
+        if (!InventoryGenerator.HintsInventory.Contains(_forbiddenRoomHint))
+        {
+            _inventoryManager.AddHintToInventory(_forbiddenRoomHint);
+            ReproduceGetHintSound();
+        }
     }
     public void GetHintPasswordLibraryForbiddenRoom()
     {
-        //get the hint
+        if (!InventoryGenerator.HintsInventory.Contains(_passwordHint))
+        {
+            _inventoryManager.AddHintToInventory(_passwordHint);
+            ReproduceGetHintSound();
+        }
     }
     public void GetPasswordLibraryForbiddenRoom()
     {
@@ -69,6 +85,14 @@ public class QuestManager : MonoBehaviour
     }
 
     //Korby death quest
+    public void GetChefInfo()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_chefHint))
+        {
+            _inventoryManager.AddHintToInventory(_chefHint);
+            ReproduceGetHintSound();
+        }
+    }
     public void CheckRatsInfo()
     {
         if (HasRatsInfo)
@@ -76,8 +100,16 @@ public class QuestManager : MonoBehaviour
     }
     public void GetRatsInfo()
     {
-        HasRatsInfo = true;
-        _inventoryManager.AddHintToInventory(_ratLoverHint);
+        if (!InventoryGenerator.HintsInventory.Contains(_ratLoverHint))
+        {
+            if (InventoryGenerator.HintsInventory.Contains(_chefHint))
+            {
+                InventoryGenerator.HintsInventory.Remove(_chefHint);
+            }
+            _inventoryManager.AddHintToInventory(_ratLoverHint);
+            ReproduceGetHintSound();
+            HasRatsInfo = true;
+        }
     }
     public void HasReachedFinalNodeChefConversation()
     {
@@ -116,5 +148,10 @@ public class QuestManager : MonoBehaviour
     public void FailedToSayJanitorPassword()
     {
         HasFailedToSayJanitorPassword = true;
+    }
+
+    void ReproduceGetHintSound()
+    {
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[3], false, .75f, 1);
     }
 }

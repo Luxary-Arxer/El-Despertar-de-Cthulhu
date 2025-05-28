@@ -5,6 +5,7 @@ public class DaytimeTracker
 
     public static void RestartDay()
     {
+        InventoryManager.ResetItemInventory();
         MomentOfTheDay = 0;
 
         QuestManager.IsKorbyDead = false;
@@ -12,8 +13,7 @@ public class DaytimeTracker
         QuestManager.IsEphrieDead = false;
         QuestManager.IsEurialeDead = false;
 
-        QuestManager.HasFailedToSayJanitorPassword = false;
-        InventoryManager.ResetItemInventory();
+        QuestManager.HasFailedToSayJanitorPassword = false;    
     }
     public static void AdvanceThroughTheDay()
     {

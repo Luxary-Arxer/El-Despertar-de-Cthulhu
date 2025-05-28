@@ -100,9 +100,9 @@ public class InventoryManager : MonoBehaviour
     {
         int itemCount = InventoryGenerator.ItemsInventory.Count;
 
-        for (int i = 1; i < itemCount; i++)
+        for (int i = 0; i < itemCount; i++)
         {
-            InventoryGenerator.ItemsInventory.RemoveAt(1);
+            InventoryGenerator.ItemsInventory.RemoveAt(0);
         }        
     }
 }

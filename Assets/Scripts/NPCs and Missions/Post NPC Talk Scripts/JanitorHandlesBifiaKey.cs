@@ -30,7 +30,7 @@ public class JanitorHandlesBifiaKey : MonoBehaviour
     }
     IEnumerator WaitThenHandleItem()
     {
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.65f);
 
         _playerInputController.OpenInventoryNotByInputAction();
 

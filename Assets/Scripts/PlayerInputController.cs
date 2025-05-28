@@ -139,6 +139,10 @@ public class PlayerInputController : MonoBehaviour
                     _interactableObject.GetComponent<LeaveCurrentPlace>().LeaveCurrentPlaceFunction();
                     break;
                 case "Item":
+                    if (_interactableObject.GetComponent<ItemAdditionallyGivesHint>())
+                    {
+                        _inventoryManager.AddHintToInventory(_interactableObject.GetComponent<ItemAdditionallyGivesHint>().HintObject);
+                    }
                     _inventoryManager.AddItemToInventory(_interactableObject.GetComponent<ItemPickUp>().Item);
                     _interactableObject.GetComponent<GeneralObjectPickUpManager>().OnObjectPicked();
 

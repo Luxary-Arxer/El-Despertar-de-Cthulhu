@@ -8,6 +8,8 @@ public class KorbyDeath : MonoBehaviour
     FadeManager _fadeManager;
     [SerializeField]
     NPCConversation _korbyDeathConversation;
+    [SerializeField]
+    Sprite _apple;
     void OnEnable()
     {
         ConversationManager.OnConversationEnded += KorbyDeathSequence;
@@ -26,7 +28,9 @@ public class KorbyDeath : MonoBehaviour
     }
     IEnumerator WaitForFade()
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(1.5f);
+        GetComponentInChildren<SpriteRenderer>().sprite = _apple;
+        yield return new WaitForSeconds(4.5f);
         ConversationManager.Instance.StartConversation(_korbyDeathConversation);
         QuestManager.IsKorbyDead = true;
         QuestManager.ReachedFinalNodeDishConversation = false;
