@@ -28,6 +28,7 @@ public class InventoryManager : MonoBehaviour
         AddItemToInventory(_daggerItem);
         AddLogToInventory(_letterLog);
     }
+
     public void AddItemToInventory(ItemObject item)
     {
         if (!InventoryGenerator.ItemsInventory.Contains(item))
@@ -66,7 +67,7 @@ public class InventoryManager : MonoBehaviour
     }
     void UpdateItemInventoryUI()
     {
-        for (int i = 0; i < _itemSlots.Length && i < InventoryGenerator.ItemsInventory.Count; i++)
+        for (int i = 0; i < InventoryGenerator.ItemsInventory.Count; i++)
         {
             ItemSlotManager currentItem = _itemSlots[i].GetComponent<ItemSlotManager>();
             currentItem.ItemImage = InventoryGenerator.ItemsInventory[i].Image;
@@ -77,7 +78,7 @@ public class InventoryManager : MonoBehaviour
     }
     void UpdateLogInventoryUI()
     {
-        for (int i = 0; i < _logsSlots.Length && i < InventoryGenerator.LogsInventory.Count; i++)
+        for (int i = 0; i < InventoryGenerator.LogsInventory.Count; i++)
         {
             ItemSlotManager currentLog = _logsSlots[i].GetComponent<ItemSlotManager>();
             currentLog.ItemImage = InventoryGenerator.LogsInventory[i].Image;
@@ -88,7 +89,7 @@ public class InventoryManager : MonoBehaviour
     }
     void UpdateHintInventoryUI()
     {
-        for (int i = 0; i < _hintsSlots.Length && i < InventoryGenerator.HintsInventory.Count; i++)
+        for (int i = 0; i < InventoryGenerator.HintsInventory.Count; i++)
         {
             HintSlotManager currentHint = _hintsSlots[i].GetComponent<HintSlotManager>();
             currentHint.HintName = InventoryGenerator.HintsInventory[i].Name;
@@ -100,7 +101,7 @@ public class InventoryManager : MonoBehaviour
     {
         for (int i = 1; i < InventoryGenerator.ItemsInventory.Count; i++)
         {
-            InventoryGenerator.ItemsInventory[i] = null;
+            InventoryGenerator.ItemsInventory.Remove(InventoryGenerator.ItemsInventory[i]);
         }
     }
 }
