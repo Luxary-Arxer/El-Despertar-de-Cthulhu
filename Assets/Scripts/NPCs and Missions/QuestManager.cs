@@ -15,6 +15,7 @@ public class QuestManager : MonoBehaviour
 
     //Library forbidden room Sidequest
     public static bool HasPasswordLibraryRoom;
+    [Header("Librarian quest")]
     [SerializeField]
     HintObject _forbiddenRoomHint;
     [SerializeField]
@@ -63,7 +64,7 @@ public class QuestManager : MonoBehaviour
     }
     public void GetHintLibraryForbiddenRoom()
     {
-        if (!InventoryGenerator.HintsInventory.Contains(_forbiddenRoomHint))
+        if (!InventoryGenerator.HintsInventory.Contains(_forbiddenRoomHint) && !InventoryGenerator.HintsInventory.Contains(_passwordHint))
         {
             _inventoryManager.AddHintToInventory(_forbiddenRoomHint);
             ReproduceGetHintSound();
@@ -73,13 +74,14 @@ public class QuestManager : MonoBehaviour
     {
         if (!InventoryGenerator.HintsInventory.Contains(_passwordHint))
         {
+            if (InventoryGenerator.HintsInventory.Contains(_forbiddenRoomHint))
+            {
+                InventoryGenerator.HintsInventory.Remove(_forbiddenRoomHint);
+            }
+            HasPasswordLibraryRoom = true;
             _inventoryManager.AddHintToInventory(_passwordHint);
             ReproduceGetHintSound();
         }
-    }
-    public void GetPasswordLibraryForbiddenRoom()
-    {
-        HasPasswordLibraryRoom = true;
     }
     public void UnlockLibraryForbiddenRoom()
     {
@@ -87,9 +89,9 @@ public class QuestManager : MonoBehaviour
     }
 
     //Korby death quest
-    public void GetChefInfo()
+    public void GetChefHint()
     {
-        if (!InventoryGenerator.HintsInventory.Contains(_chefHint))
+        if (!InventoryGenerator.HintsInventory.Contains(_chefHint) && !InventoryGenerator.HintsInventory.Contains(_ratLoverHint))
         {
             _inventoryManager.AddHintToInventory(_chefHint);
             ReproduceGetHintSound();
@@ -100,7 +102,7 @@ public class QuestManager : MonoBehaviour
         if (HasRatsInfo)
             ConversationManager.Instance.SetBool("HasRatsInfo", true);
     }
-    public void GetRatsInfo()
+    public void GetRatsHint()
     {
         if (!InventoryGenerator.HintsInventory.Contains(_ratLoverHint))
         {
@@ -108,9 +110,9 @@ public class QuestManager : MonoBehaviour
             {
                 InventoryGenerator.HintsInventory.Remove(_chefHint);
             }
+            HasRatsInfo = true;
             _inventoryManager.AddHintToInventory(_ratLoverHint);
             ReproduceGetHintSound();
-            HasRatsInfo = true;
         }
     }
     public void HasReachedFinalNodeChefConversation()
