@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Escudo de Perseo
   m_EditorClassIdentifier: 
   Name: Escudo de Perseo
-  Description: "Descripci\xF3n"
+  Description: "Escudo que perteneci\xF3 al h\xE9roe griego Perseo. Fue utilizado
+    para evitar convertirse en piedra y derrotar a Medusa. \r\nEn el centro del escudo
+    hay el negativo de una cabeza con serpientes. Pese a esto, el escudo est\xE1
+    tan reluciente que puedes verte reflejado en \xE9l.\r\n"
   Image: {fileID: 21300000, guid: 3a54ca67adbb69a48ae248735fca321d, type: 3}

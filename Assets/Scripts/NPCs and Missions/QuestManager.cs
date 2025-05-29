@@ -45,6 +45,12 @@ public class QuestManager : MonoBehaviour
     [Header("Bifia quest")]
     [SerializeField]
     ItemObject _bifiaKey;
+    [SerializeField]
+    HintObject _firstHalfJanitorCode;
+    [SerializeField]
+    HintObject _secondHalfJanitorCode;
+    [SerializeField]
+    HintObject _fullJanitorCode;
 
     //Ephrie death quest
 
@@ -153,6 +159,38 @@ public class QuestManager : MonoBehaviour
     {
         HasFailedToSayJanitorPassword = true;
     }
+    public void GetFirstHalfJanitorCode()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCode))
+        {
+            if (InventoryGenerator.HintsInventory.Contains(_secondHalfJanitorCode))
+            {
+                InventoryGenerator.HintsInventory.Remove(_secondHalfJanitorCode);
+                InventoryGenerator.HintsInventory.Add(_fullJanitorCode);
+            }
+            else
+            {
+                InventoryGenerator.HintsInventory.Add(_firstHalfJanitorCode);
+            }
+            ReproduceGetHintSound();
+        }
+    }
+    public void GetSecondHalfJanitorCode()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCode))
+        {
+            if (InventoryGenerator.HintsInventory.Contains(_firstHalfJanitorCode))
+            {
+                InventoryGenerator.HintsInventory.Remove(_firstHalfJanitorCode);
+                InventoryGenerator.HintsInventory.Add(_fullJanitorCode);
+            }
+            else
+            {
+                InventoryGenerator.HintsInventory.Add(_secondHalfJanitorCode);
+                ReproduceGetHintSound();
+            }
+        }
+    }
     public void CheckBifiaKey()
     {
         if (InventoryGenerator.ItemsInventory.Contains(_bifiaKey) && !IsBifiaDead)
@@ -164,7 +202,8 @@ public class QuestManager : MonoBehaviour
     {
         ReachedFinalNodeBifiaDoorConversation = true;
     }
-    
+
+
     void ReproduceGetHintSound()
     {
         _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[3], false, .75f, 1);
