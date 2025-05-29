@@ -1,7 +1,7 @@
 
 public class DaytimeTracker  
 {
-    public static int MomentOfTheDay;
+    public static int MomentOfTheDay=2;
 
     public static void RestartDay()
     {

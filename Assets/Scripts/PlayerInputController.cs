@@ -178,8 +178,7 @@ public class PlayerInputController : MonoBehaviour
     {
         if (!ConversationManager.Instance.IsConversationActive)
         {
-            PlayerControlls.Player.Disable();
-            PlayerControlls.UI.Enable();
+            DisablePlayerControlls();            
 
             _pauseMenuUI.SetActive(true);
             _timeUI.SetActive(false);
@@ -197,8 +196,8 @@ public class PlayerInputController : MonoBehaviour
     {
         if (!ConversationManager.Instance.IsConversationActive)
         {
-            PlayerControlls.Player.Disable();
-            PlayerControlls.UI.Enable();
+            DisablePlayerControlls();
+            
             _globalInventoryUI.SetActive(true);
             _timeUI.SetActive(false);
             _placeUI.SetActive(false);
@@ -214,9 +213,8 @@ public class PlayerInputController : MonoBehaviour
     public void OpenInventoryNotByInputAction()
     {
         CharacterStoppedMoving();
-
-        PlayerControlls.Player.Disable();
-        PlayerControlls.UI.Enable();
+        DisablePlayerControlls();
+        
         _globalInventoryUI.SetActive(true);
         _timeUI.SetActive(false);
         _placeUI.SetActive(false);
@@ -226,9 +224,8 @@ public class PlayerInputController : MonoBehaviour
     }
     void Back(InputAction.CallbackContext context)
     {
-        PlayerControlls.Player.Enable();
-        PlayerControlls.UI.Disable();
-
+        EnablePlayerControlls();
+        
         _pauseMenuUI.SetActive(false);
         _optionsMenuUI.SetActive(false);
         _globalInventoryUI.SetActive(false);
@@ -269,6 +266,16 @@ public class PlayerInputController : MonoBehaviour
     {
         _characterStartedMoving = false;
         _characterAudioManager.StopSound();
+    }
+    public void DisablePlayerControlls()
+    {
+        PlayerControlls.Player.Disable();
+        PlayerControlls.UI.Enable();
+    }
+    public void EnablePlayerControlls()
+    {
+        PlayerControlls.Player.Enable();
+        PlayerControlls.UI.Disable();
     }
     bool IsPlayerMoving()
     {
