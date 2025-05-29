@@ -161,32 +161,32 @@ public class QuestManager : MonoBehaviour
     }
     public void GetFirstHalfJanitorCode()
     {
-        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCode))
+        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCode) && !InventoryGenerator.HintsInventory.Contains(_firstHalfJanitorCode))
         {
             if (InventoryGenerator.HintsInventory.Contains(_secondHalfJanitorCode))
             {
                 InventoryGenerator.HintsInventory.Remove(_secondHalfJanitorCode);
-                InventoryGenerator.HintsInventory.Add(_fullJanitorCode);
+                _inventoryManager.AddHintToInventory(_fullJanitorCode);
             }
             else
             {
-                InventoryGenerator.HintsInventory.Add(_firstHalfJanitorCode);
+                _inventoryManager.AddHintToInventory(_firstHalfJanitorCode);
             }
             ReproduceGetHintSound();
         }
     }
     public void GetSecondHalfJanitorCode()
     {
-        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCode))
+        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCode) && !InventoryGenerator.HintsInventory.Contains(_secondHalfJanitorCode))
         {
             if (InventoryGenerator.HintsInventory.Contains(_firstHalfJanitorCode))
             {
                 InventoryGenerator.HintsInventory.Remove(_firstHalfJanitorCode);
-                InventoryGenerator.HintsInventory.Add(_fullJanitorCode);
+                _inventoryManager.AddHintToInventory(_fullJanitorCode);
             }
             else
             {
-                InventoryGenerator.HintsInventory.Add(_secondHalfJanitorCode);
+                _inventoryManager.AddHintToInventory(_secondHalfJanitorCode);
                 ReproduceGetHintSound();
             }
         }

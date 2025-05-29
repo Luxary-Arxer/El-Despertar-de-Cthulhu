@@ -72041,19 +72041,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 757964014}
-        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: GetFirstHalfJanitorCode
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5851698178573646105
 MonoBehaviour:
   m_ObjectHideFlags: 0
