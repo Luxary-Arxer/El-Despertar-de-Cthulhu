@@ -28,13 +28,15 @@ public class QuestManager : MonoBehaviour
     public static bool ReachedFinalNodeKorbyDeathConversation;
     [Header("Korby quest")]
     [SerializeField]
-    GameObject _chefGameObject;
-    [SerializeField]
     ItemObject _apple;
     [SerializeField]
     HintObject _ratLoverHint;
     [SerializeField]
     HintObject _chefHint;
+    [SerializeField]
+    HintObject _appleUseHint;
+    [SerializeField]
+    HintObject _pickUpAppleHint;
 
     //Bifia death quest
     public static bool HasFailedToSayJanitorPassword;
@@ -100,6 +102,15 @@ public class QuestManager : MonoBehaviour
         if (!InventoryGenerator.HintsInventory.Contains(_chefHint) && !InventoryGenerator.HintsInventory.Contains(_ratLoverHint))
         {
             _inventoryManager.AddHintToInventory(_chefHint);
+            ReproduceGetHintSound();
+        }
+    }
+    public void GetAppleRealUseHint()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_appleUseHint))
+        {
+            InventoryGenerator.HintsInventory.Remove(_pickUpAppleHint);
+            _inventoryManager.AddHintToInventory(_appleUseHint);
             ReproduceGetHintSound();
         }
     }
