@@ -262,7 +262,7 @@ public class PlayerInputController : MonoBehaviour
     }
     void SpriteMovementRotation()
     {
-        _characterSprite.localEulerAngles = new Vector3(30,45, Mathf.PingPong(Time.time * 80, 30)-15);
+        _characterSprite.localEulerAngles = new Vector3(30,45, Mathf.PingPong(Time.time * 30, 10)-5);
     }
     void SpriteMovementRotation_Reset()
     {
