@@ -257,7 +257,7 @@ public class PlayerInputController : MonoBehaviour
     }
     void SpriteMovement()
     {
-        _characterSprite.position = new Vector3(transform.position.x, transform.position.y - 1.6f, transform.position.z); ;
+        _characterSprite.position = new Vector3(transform.position.x, transform.position.y - 1.8f, transform.position.z); ;
 
     }
     void SpriteMovementRotation()
