@@ -262,11 +262,33 @@ public class PlayerInputController : MonoBehaviour
     }
     void SpriteMovementRotation()
     {
-        _characterSprite.localEulerAngles = new Vector3(30,45, Mathf.PingPong(Time.time * 30, 10)-5);
+        float Angle_y = transform.eulerAngles.y;
+
+        if ((Angle_y >= 0 && Angle_y <= 45) || (Angle_y >= 225 && Angle_y <= 360))
+        {
+            //Mirar Derecha
+            _characterSprite.localEulerAngles = new Vector3(30, 45, Mathf.PingPong(Time.time * 30, 10) - 5);
+        }
+        else if (Angle_y >= 45 && Angle_y <= 224)
+        {
+            //Mirar Izquierda
+            _characterSprite.localEulerAngles = new Vector3(-30, 45 + 180, Mathf.PingPong(Time.time * 30, 10) - 5);
+        }
     }
     void SpriteMovementRotation_Reset()
     {
-        _characterSprite.localEulerAngles = new Vector3(30, 45, 0);
+        float Angle_y = transform.eulerAngles.y;
+
+        if ((Angle_y >= 0 && Angle_y <= 45) || (Angle_y >= 225 && Angle_y <= 360))
+        {
+            //Mirar Derecha
+            _characterSprite.localEulerAngles = new Vector3(30, 45, 0);
+        }
+        if (Angle_y >= 45 && Angle_y <= 224)
+        {
+            //Mirar Izquierda
+            _characterSprite.localEulerAngles = new Vector3(-30, 45 + 180, 0);
+        }
     }
     void CharacterStartedMoving()
     {
