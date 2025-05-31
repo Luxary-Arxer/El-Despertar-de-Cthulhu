@@ -109,6 +109,8 @@ public class PlayerInputController : MonoBehaviour
             CharacterMovement();
             CharacterRotation();
 
+            SpriteMovementRotation();
+
             CameraMovement();
             SpriteMovement();
             if (!_characterStartedMoving)
@@ -257,6 +259,14 @@ public class PlayerInputController : MonoBehaviour
     {
         _characterSprite.position = transform.position;
     }
+    void SpriteMovementRotation()
+    {
+        _characterSprite.localEulerAngles = new Vector3(30,45, Mathf.PingPong(Time.time * 120, 40)-20);
+    }
+    void SpriteMovementRotation_Reset()
+    {
+        _characterSprite.localEulerAngles = new Vector3(30, 45, 0);
+    }
     void CharacterStartedMoving()
     {
         _characterStartedMoving = true;
@@ -266,6 +276,7 @@ public class PlayerInputController : MonoBehaviour
     {
         _characterStartedMoving = false;
         _characterAudioManager.StopSound();
+        SpriteMovementRotation_Reset();
     }
     public void DisablePlayerControlls()
     {
