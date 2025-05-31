@@ -257,11 +257,12 @@ public class PlayerInputController : MonoBehaviour
     }
     void SpriteMovement()
     {
-        _characterSprite.position = transform.position;
+        _characterSprite.position = new Vector3(transform.position.x, transform.position.y - 1.6f, transform.position.z); ;
+
     }
     void SpriteMovementRotation()
     {
-        _characterSprite.localEulerAngles = new Vector3(30,45, Mathf.PingPong(Time.time * 120, 40)-20);
+        _characterSprite.localEulerAngles = new Vector3(30,45, Mathf.PingPong(Time.time * 80, 30)-15);
     }
     void SpriteMovementRotation_Reset()
     {
