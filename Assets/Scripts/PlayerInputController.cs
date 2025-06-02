@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using DialogueEditor;
-using Unity.VisualScripting;
 
 public class PlayerInputController : MonoBehaviour
 {
@@ -275,7 +274,7 @@ public class PlayerInputController : MonoBehaviour
             _characterSprite.localEulerAngles = new Vector3(-30, 45 + 180, Mathf.PingPong(Time.time * 30, 10) - 5);
         }
     }
-    void SpriteMovementRotation_Reset()
+    void SpriteMovementRotationReset()
     {
         float Angle_y = transform.eulerAngles.y;
 
@@ -299,7 +298,7 @@ public class PlayerInputController : MonoBehaviour
     {
         _characterStartedMoving = false;
         _characterAudioManager.StopSound();
-        SpriteMovementRotation_Reset();
+        SpriteMovementRotationReset();
     }
     public void DisablePlayerControlls()
     {
