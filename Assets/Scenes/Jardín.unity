@@ -6959,15 +6959,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _forbiddenRoomHint: {fileID: 0}
   _passwordHint: {fileID: 0}
-  _apple: {fileID: 0}
+  _appleObject: {fileID: 0}
   _ratLoverHint: {fileID: 0}
   _chefHint: {fileID: 0}
   _appleUseHint: {fileID: 0}
   _pickUpAppleHint: {fileID: 0}
-  _bifiaKey: {fileID: 11400000, guid: 634dcc680eebc60419e480bf0a15c5cf, type: 2}
-  _firstHalfJanitorCode: {fileID: 0}
-  _secondHalfJanitorCode: {fileID: 0}
-  _fullJanitorCode: {fileID: 0}
+  _bifiaKeyObject: {fileID: 0}
+  _firstHalfJanitorCodeHint: {fileID: 0}
+  _secondHalfJanitorCodeHint: {fileID: 0}
+  _fullJanitorCodeHint: {fileID: 0}
+  _sashijivaJaw: {fileID: 0}
+  _unorderedWarehouseHint: {fileID: 0}
+  _lostJawHint: {fileID: 0}
+  _jawInPlantHint: {fileID: 0}
+  _jefHint: {fileID: 0}
+  _jawLocationHint: {fileID: 0}
+  _victoryImage: {fileID: 0}
+  _defeatImage: {fileID: 0}
+  _blackBackgroundImage: {fileID: 0}
+  _endgameDialogueBackground: {fileID: 0}
 --- !u!114 &735060953
 MonoBehaviour:
   m_ObjectHideFlags: 0
