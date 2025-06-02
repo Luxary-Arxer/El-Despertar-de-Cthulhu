@@ -254,18 +254,27 @@ public class QuestManager : MonoBehaviour
     //Ephrie death quest
     public void HasFoundFirstCrystal()
     {
-        FoundFirstCrystal = true;
-        WarehouseCrystalsDiscovered++;
+        if (!FoundFirstCrystal)
+        {
+            FoundFirstCrystal = true;
+            WarehouseCrystalsDiscovered++;
+        }
     }
     public void HasFoundSecondCrystal()
     {
-        FoundSecondCrystal = true;
-        WarehouseCrystalsDiscovered++;
+        if (!FoundSecondCrystal)
+        {
+            FoundSecondCrystal = true;
+            WarehouseCrystalsDiscovered++;
+        }
     }
     public void HasFoundThirdCrystal()
     {
-        FoundThirdCrystal = true;
-        WarehouseCrystalsDiscovered++;
+        if (!FoundThirdCrystal)
+        {
+            FoundThirdCrystal = true;
+            WarehouseCrystalsDiscovered++;
+        }
     }
     public void CheckCrystalAmount()
     {
@@ -276,9 +285,9 @@ public class QuestManager : MonoBehaviour
     }
     public void CheckPlantInfo()
     {
-        if (InventoryGenerator.HintsInventory.Contains(_jawLocationHint) || InventoryGenerator.HintsInventory.Contains(_unorderedWarehouseHint) || InventoryGenerator.HintsInventory.Contains(_lostJawHint) || InventoryGenerator.HintsInventory.Contains(_jawInPlantHint))
+        if (InventoryGenerator.HintsInventory.Contains(_jawLocationHint) || InventoryGenerator.HintsInventory.Contains(_lostJawHint) || InventoryGenerator.HintsInventory.Contains(_jawInPlantHint))
         {
-            ConversationManager.Instance.SetBool("HasPlanInfo", true);
+            ConversationManager.Instance.SetBool("HasPlantInfo", true);
         }
     }
     public void CheckBait()
@@ -347,9 +356,12 @@ public class QuestManager : MonoBehaviour
     }
     public void GetJawLocationHint()
     {
-        if (InventoryGenerator.HintsInventory.Contains(_jefHint) && !InventoryGenerator.HintsInventory.Contains(_jawLocationHint))
+        if (!InventoryGenerator.HintsInventory.Contains(_jawLocationHint))
         {
-            InventoryGenerator.HintsInventory.Remove(_jefHint);
+            if (InventoryGenerator.HintsInventory.Contains(_jefHint))
+            {
+                InventoryGenerator.HintsInventory.Remove(_jefHint);
+            }
             _inventoryManager.AddHintToInventory(_jawLocationHint);
             ReproduceGetHintSound();
         }
