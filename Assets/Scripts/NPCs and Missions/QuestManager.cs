@@ -28,7 +28,7 @@ public class QuestManager : MonoBehaviour
     public static bool ReachedFinalNodeKorbyDeathConversation;
     [Header("Korby quest")]
     [SerializeField]
-    ItemObject _apple;
+    ItemObject _appleObject;
     [SerializeField]
     HintObject _ratLoverHint;
     [SerializeField]
@@ -47,15 +47,35 @@ public class QuestManager : MonoBehaviour
     public static bool IsBifiaDoorOpened;
     [Header("Bifia quest")]
     [SerializeField]
-    ItemObject _bifiaKey;
+    ItemObject _bifiaKeyObject;
     [SerializeField]
-    HintObject _firstHalfJanitorCode;
+    HintObject _firstHalfJanitorCodeHint;
     [SerializeField]
-    HintObject _secondHalfJanitorCode;
+    HintObject _secondHalfJanitorCodeHint;
     [SerializeField]
-    HintObject _fullJanitorCode;
+    HintObject _fullJanitorCodeHint;
 
     //Ephrie death quest
+    public static int WarehouseCrystalsDiscovered;
+    public static bool FoundFirstCrystal;
+    public static bool FoundSecondCrystal;
+    public static bool FoundThirdCrystal;
+    public static bool HasPlantBait;
+    public static bool ReachedFinalNodeEphrieConversation;
+    public static bool ReachedFinalNodePlantConversation;
+    [Header("Ephrie quest")]
+    [SerializeField]
+    ItemObject _sashijivaJaw;
+    [SerializeField]
+    HintObject _unorderedWarehouseHint;
+    [SerializeField]
+    HintObject _lostJawHint;
+    [SerializeField]
+    HintObject _jawInPlantHint;
+    [SerializeField]
+    HintObject _jefHint;
+    [SerializeField]
+    HintObject _jawLocationHint;
 
     //Euriale death quest
 
@@ -151,7 +171,7 @@ public class QuestManager : MonoBehaviour
     }
     public void CheckAppleOnInventory()
     {
-        if (InventoryGenerator.ItemsInventory.Contains(_apple))
+        if (InventoryGenerator.ItemsInventory.Contains(_appleObject))
             ConversationManager.Instance.SetBool("HasApple", true);
     }
     public void HasReachedFinalNodeDishConversation()
@@ -172,7 +192,7 @@ public class QuestManager : MonoBehaviour
     {
         ReachedFinalNodeJanitorConversation = true;
 
-        _inventoryManager.AddItemToInventory(_bifiaKey);
+        _inventoryManager.AddItemToInventory(_bifiaKeyObject);
     }
     public void CheckJanitorPasswordFail()
     {
@@ -185,39 +205,39 @@ public class QuestManager : MonoBehaviour
     }
     public void GetFirstHalfJanitorCode()
     {
-        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCode) && !InventoryGenerator.HintsInventory.Contains(_firstHalfJanitorCode))
+        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCodeHint) && !InventoryGenerator.HintsInventory.Contains(_firstHalfJanitorCodeHint))
         {
-            if (InventoryGenerator.HintsInventory.Contains(_secondHalfJanitorCode))
+            if (InventoryGenerator.HintsInventory.Contains(_secondHalfJanitorCodeHint))
             {
-                InventoryGenerator.HintsInventory.Remove(_secondHalfJanitorCode);
-                _inventoryManager.AddHintToInventory(_fullJanitorCode);
+                InventoryGenerator.HintsInventory.Remove(_secondHalfJanitorCodeHint);
+                _inventoryManager.AddHintToInventory(_fullJanitorCodeHint);
             }
             else
             {
-                _inventoryManager.AddHintToInventory(_firstHalfJanitorCode);
+                _inventoryManager.AddHintToInventory(_firstHalfJanitorCodeHint);
             }
             ReproduceGetHintSound();
         }
     }
     public void GetSecondHalfJanitorCode()
     {
-        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCode) && !InventoryGenerator.HintsInventory.Contains(_secondHalfJanitorCode))
+        if (!InventoryGenerator.HintsInventory.Contains(_fullJanitorCodeHint) && !InventoryGenerator.HintsInventory.Contains(_secondHalfJanitorCodeHint))
         {
-            if (InventoryGenerator.HintsInventory.Contains(_firstHalfJanitorCode))
+            if (InventoryGenerator.HintsInventory.Contains(_firstHalfJanitorCodeHint))
             {
-                InventoryGenerator.HintsInventory.Remove(_firstHalfJanitorCode);
-                _inventoryManager.AddHintToInventory(_fullJanitorCode);
+                InventoryGenerator.HintsInventory.Remove(_firstHalfJanitorCodeHint);
+                _inventoryManager.AddHintToInventory(_fullJanitorCodeHint);
             }
             else
             {
-                _inventoryManager.AddHintToInventory(_secondHalfJanitorCode);
+                _inventoryManager.AddHintToInventory(_secondHalfJanitorCodeHint);
                 ReproduceGetHintSound();
             }
         }
     }
     public void CheckBifiaKey()
     {
-        if (InventoryGenerator.ItemsInventory.Contains(_bifiaKey) && !IsBifiaDead)
+        if (InventoryGenerator.ItemsInventory.Contains(_bifiaKeyObject) && !IsBifiaDead)
         {
             ConversationManager.Instance.SetBool("HasBifiaKey", true);
         }
@@ -232,6 +252,108 @@ public class QuestManager : MonoBehaviour
     }
 
     //Ephrie death quest
+    public void HasFoundFirstCrystal()
+    {
+        FoundFirstCrystal = true;
+        WarehouseCrystalsDiscovered++;
+    }
+    public void HasFoundSecondCrystal()
+    {
+        FoundSecondCrystal = true;
+        WarehouseCrystalsDiscovered++;
+    }
+    public void HasFoundThirdCrystal()
+    {
+        FoundThirdCrystal = true;
+        WarehouseCrystalsDiscovered++;
+    }
+    public void CheckCrystalAmount()
+    {
+        if (WarehouseCrystalsDiscovered >= 3)
+        {
+            ConversationManager.Instance.SetBool("HasFoundCrystals", true);
+        }
+    }
+    public void CheckPlantInfo()
+    {
+        if (InventoryGenerator.HintsInventory.Contains(_jawLocationHint) || InventoryGenerator.HintsInventory.Contains(_unorderedWarehouseHint) || InventoryGenerator.HintsInventory.Contains(_lostJawHint) || InventoryGenerator.HintsInventory.Contains(_jawInPlantHint))
+        {
+            ConversationManager.Instance.SetBool("HasPlanInfo", true);
+        }
+    }
+    public void CheckBait()
+    {
+        if (HasPlantBait)
+        {
+            ConversationManager.Instance.SetBool("HasBait", true);
+        }
+    }
+    public void UseBait()
+    {
+        HasPlantBait = false;
+    }
+    public void GetJawItem()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_jawInPlantHint))
+        {
+            InventoryGenerator.HintsInventory.Remove(_lostJawHint);
+            _inventoryManager.AddHintToInventory(_jawInPlantHint);
+            ReproduceGetHintSound();
+        }
+        ReachedFinalNodePlantConversation = true;
+        _inventoryManager.AddItemToInventory(_sashijivaJaw);
+    }
+    public void HasReachedFinalNodeEphrieConversation()
+    {
+        ReachedFinalNodeEphrieConversation = true;
+    }
+    public void GetWarehouseHint()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_unorderedWarehouseHint) && !InventoryGenerator.HintsInventory.Contains(_lostJawHint) && !InventoryGenerator.HintsInventory.Contains(_jawInPlantHint))
+        {
+            _inventoryManager.AddHintToInventory(_unorderedWarehouseHint);
+            ReproduceGetHintSound();
+        }
+    }
+    public void GetLostJawHint()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_lostJawHint) && !InventoryGenerator.HintsInventory.Contains(_jawInPlantHint))
+        {
+            if (InventoryGenerator.HintsInventory.Contains(_unorderedWarehouseHint))
+            {
+                InventoryGenerator.HintsInventory.Remove(_unorderedWarehouseHint);
+            }
+            HasPlantBait = true;
+            _inventoryManager.AddHintToInventory(_lostJawHint);
+            ReproduceGetHintSound();
+        }
+    }
+    public void GetJawInPlantHint()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_jawInPlantHint))
+        {
+            InventoryGenerator.HintsInventory.Remove(_lostJawHint);
+            _inventoryManager.AddHintToInventory(_jawInPlantHint);
+            ReproduceGetHintSound();
+        }
+    }
+    public void GetJefHint()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_jefHint) && !InventoryGenerator.HintsInventory.Contains(_jawLocationHint) && !InventoryGenerator.HintsInventory.Contains(_lostJawHint) && !InventoryGenerator.HintsInventory.Contains(_jawInPlantHint))
+        {
+            _inventoryManager.AddHintToInventory(_jefHint);
+            ReproduceGetHintSound();
+        }
+    }
+    public void GetJawLocationHint()
+    {
+        if (InventoryGenerator.HintsInventory.Contains(_jefHint) && !InventoryGenerator.HintsInventory.Contains(_jawLocationHint))
+        {
+            InventoryGenerator.HintsInventory.Remove(_jefHint);
+            _inventoryManager.AddHintToInventory(_jawLocationHint);
+            ReproduceGetHintSound();
+        }
+    }
 
     //Euriale death quest
 
