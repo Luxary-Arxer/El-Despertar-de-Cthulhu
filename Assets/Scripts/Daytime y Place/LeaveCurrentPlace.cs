@@ -29,8 +29,7 @@ public class LeaveCurrentPlace : MonoBehaviour
         }
         else
         {
-            DaytimeTracker.RestartDay();
+            GetComponent<EndgameManager>().LoadEndGameScene();
         }
-        SceneManager.LoadScene(1);
     }
 }

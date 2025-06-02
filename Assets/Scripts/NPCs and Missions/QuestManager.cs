@@ -58,6 +58,15 @@ public class QuestManager : MonoBehaviour
 
     //Euriale death quest
 
+    [Header("Endgame images")]
+    [SerializeField]
+    GameObject _victoryImage;
+    [SerializeField]
+    GameObject _defeatImage;
+    [SerializeField]
+    GameObject _blackBackgroundImage;
+    public static bool ReachedFinalNodeEndgameConversation;
+
     void Awake()
     {
         _inventoryManager = GetComponent<InventoryManager>();
@@ -214,6 +223,27 @@ public class QuestManager : MonoBehaviour
         ReachedFinalNodeBifiaDoorConversation = true;
     }
 
+    //Ephrie death quest
+
+    //Euriale death quest
+
+    //Endgame functions
+    public void StartVictoryConversation()
+    {
+        _victoryImage.SetActive(true);
+    }
+    public void StartDefeatConversation()
+    {
+        _defeatImage.SetActive(true);
+    }
+    public void PopBlackImage()
+    {
+        _blackBackgroundImage.SetActive(true);
+    }
+    public void HasReachedFinalNodeEndgameConversation()
+    {
+        ReachedFinalNodeEndgameConversation = true;
+    }
 
     void ReproduceGetHintSound()
     {

@@ -1,4 +1,6 @@
 
+using UnityEngine.SceneManagement;
+
 public class DaytimeTracker  
 {
     public static int MomentOfTheDay=2;
@@ -6,7 +8,6 @@ public class DaytimeTracker
     public static void RestartDay()
     {
         InventoryManager.ResetItemInventory();
-        MomentOfTheDay = 0;
 
         QuestManager.IsKorbyDead = false;
         QuestManager.IsBifiaDead = false;
@@ -14,6 +15,9 @@ public class DaytimeTracker
         QuestManager.IsEurialeDead = false;
 
         QuestManager.HasFailedToSayJanitorPassword = false;
+
+        MomentOfTheDay = 0;
+        SceneManager.LoadScene(1);
     }
     public static void AdvanceThroughTheDay()
     {

@@ -79214,6 +79214,9 @@ MonoBehaviour:
   _firstHalfJanitorCode: {fileID: 11400000, guid: 1665ace247738b64d9495c4595e9d782, type: 2}
   _secondHalfJanitorCode: {fileID: 11400000, guid: 003b47a0b45ace544a056775b038da95, type: 2}
   _fullJanitorCode: {fileID: 11400000, guid: b2a01439bb7bc1d4c82cc430e4a4c800, type: 2}
+  _victoryImage: {fileID: 0}
+  _defeatImage: {fileID: 0}
+  _blackBackgroundImage: {fileID: 0}
 --- !u!65 &6748356500693433038
 BoxCollider:
   m_ObjectHideFlags: 0
