@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
-  m_Name: Colmillo de una planta carnivora
+  m_Name: "Ubicaci\xF3n exacta del colmillo"
   m_EditorClassIdentifier: 
-  Name: "Saqu\xE9 un colmillo de la boca de una planta\u2026"
-  Hint: "Este colmillo se podr\xEDa usar para cegar a Ephraim, preferiblemente en
-    un sitio solitario, como el jard\xEDn, y aprovechar para matarlo."
+  Name: "La ubicaci\xF3n exacta del colmillo..."
+  Hint: "-La planta carn\xEDvora es la que est\xE1 al lado del estanque.-\n\nEspero
+    que la informaci\xF3n de Jef sea correcta... solo tengo un cebo."

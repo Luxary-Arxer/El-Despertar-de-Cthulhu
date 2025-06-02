@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
-  m_Name: Colmillo de una planta carnivora
+  m_Name: Jef
   m_EditorClassIdentifier: 
-  Name: "Saqu\xE9 un colmillo de la boca de una planta\u2026"
-  Hint: "Este colmillo se podr\xEDa usar para cegar a Ephraim, preferiblemente en
-    un sitio solitario, como el jard\xEDn, y aprovechar para matarlo."
+  Name: Un cultista llamado Jef...
+  Hint: "-Ese objeto empez\xF3 a brillar y la pu\xF1etera planta carn\xEDvora casi
+    me arranca el brazo con el colmillo en ese momento.-\n\nHmm... estoy segura de
+    que ese objeto es muy importante. Deber\xEDa intentar averiguar m\xE1s al respecto..."
