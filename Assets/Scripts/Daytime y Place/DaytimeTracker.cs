@@ -1,11 +1,26 @@
 
 using UnityEngine.SceneManagement;
 
-public class DaytimeTracker  
+public class DaytimeTracker
 {
-    public static int MomentOfTheDay=2;
+    public static int MomentOfTheDay;
 
+    public static void AdvanceThroughTheDay()
+    {
+        MomentOfTheDay++;
+    }
     public static void RestartDay()
+    {
+        ResetEverything();
+        SceneManager.LoadScene(1);
+    }
+    public static void RestartGame()
+    {
+        ResetEverything();
+        SceneManager.LoadScene(0);
+    }
+
+    static void ResetEverything()
     {
         InventoryManager.ResetItemInventory();
 
@@ -17,10 +32,5 @@ public class DaytimeTracker
         QuestManager.HasFailedToSayJanitorPassword = false;
 
         MomentOfTheDay = 0;
-        SceneManager.LoadScene(1);
-    }
-    public static void AdvanceThroughTheDay()
-    {
-        MomentOfTheDay++;
     }
 }

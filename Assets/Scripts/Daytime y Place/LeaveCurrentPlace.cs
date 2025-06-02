@@ -1,11 +1,13 @@
 
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using DialogueEditor;
 
 public class LeaveCurrentPlace : MonoBehaviour
 {
     [SerializeField]   
     GameObject _interactCanvas;
+    [SerializeField]
+    NPCConversation _defeatConversation;
     
     void OnTriggerEnter(Collider other)
     {
@@ -29,7 +31,7 @@ public class LeaveCurrentPlace : MonoBehaviour
         }
         else
         {
-            GetComponent<EndgameManager>().LoadEndGameScene();
+            ConversationManager.Instance.StartConversation(_defeatConversation);
         }
     }
 }

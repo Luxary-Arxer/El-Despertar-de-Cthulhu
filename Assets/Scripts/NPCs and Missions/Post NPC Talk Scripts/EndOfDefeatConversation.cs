@@ -15,9 +15,9 @@ public class EndOfDefeatConversation : MonoBehaviour
 
     void EndOfDefeatSequence()
     {
-        if (QuestManager.ReachedFinalNodeEndgameConversation)
+        if (QuestManager.ReachedFinalNodeDefeatConversation)
         {
-            QuestManager.ReachedFinalNodeEndgameConversation = false;
+            QuestManager.ReachedFinalNodeDefeatConversation = false;
             DaytimeTracker.RestartDay();
         }
     }

@@ -43,6 +43,7 @@ public class QuestManager : MonoBehaviour
     public static bool ReachedFinalNodeJanitorConversation;
     public static bool ReachedFinalNodeBifiaConversation;
     public static bool ReachedFinalNodeBifiaDoorConversation;
+    public static bool ReachedFinalNodePostBifiaDeathConversation;
     public static bool IsBifiaDoorOpened;
     [Header("Bifia quest")]
     [SerializeField]
@@ -65,7 +66,10 @@ public class QuestManager : MonoBehaviour
     GameObject _defeatImage;
     [SerializeField]
     GameObject _blackBackgroundImage;
-    public static bool ReachedFinalNodeEndgameConversation;
+    [SerializeField]
+    GameObject _endgameDialogueBackground;
+    public static bool ReachedFinalNodeVictoryConversation;
+    public static bool ReachedFinalNodeDefeatConversation;
 
     void Awake()
     {
@@ -222,27 +226,40 @@ public class QuestManager : MonoBehaviour
     {
         ReachedFinalNodeBifiaDoorConversation = true;
     }
+    public void HasReachedFinalNodePostBifiaDeathConversation()
+    {
+        ReachedFinalNodePostBifiaDeathConversation = true;
+    }
 
     //Ephrie death quest
 
     //Euriale death quest
 
     //Endgame functions
-    public void StartVictoryConversation()
+    public void PopVictoryImage()
     {
         _victoryImage.SetActive(true);
+        _blackBackgroundImage.SetActive(false);
+        _endgameDialogueBackground.SetActive(true);
     }
-    public void StartDefeatConversation()
+    public void PopDefeatImage()
     {
         _defeatImage.SetActive(true);
+        _blackBackgroundImage.SetActive(false);
+        _endgameDialogueBackground.SetActive(true);
     }
     public void PopBlackImage()
     {
         _blackBackgroundImage.SetActive(true);
+        _endgameDialogueBackground.SetActive(true);
     }
-    public void HasReachedFinalNodeEndgameConversation()
+    public void HasReachedFinalNodeDefeatConversation()
     {
-        ReachedFinalNodeEndgameConversation = true;
+        ReachedFinalNodeDefeatConversation = true;
+    }
+    public void HasReachedFinalNodeVictoryConversation()
+    {
+        ReachedFinalNodeVictoryConversation = true;
     }
 
     void ReproduceGetHintSound()

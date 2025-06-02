@@ -37,5 +37,6 @@ public class EndOfKorbyDeath : MonoBehaviour
         _korby.SetActive(false);
         _cameraPivot.position = _viktraPosition.transform.position;
         _viktraPosition.GetComponent<PlayerInputController>().EnablePlayerControlls();
+        GetComponent<CheckVictory>().CheckVictoryByDeath();
     }
 }
