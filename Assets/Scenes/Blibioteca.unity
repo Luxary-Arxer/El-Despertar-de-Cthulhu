@@ -48057,11 +48057,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4683443190774516102, guid: 6d500bd058466604e87ae8ec2b8b5ab6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 113
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4683443190774516102, guid: 6d500bd058466604e87ae8ec2b8b5ab6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -173
+      value: -175
       objectReference: {fileID: 0}
     - target: {fileID: 4683443190774516102, guid: 6d500bd058466604e87ae8ec2b8b5ab6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -52289,7 +52289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c409a5b5d00aa54abab6df7435b7170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _daggerItem: {fileID: 11400000, guid: 634dcc680eebc60419e480bf0a15c5cf, type: 2}
+  _daggerItem: {fileID: 11400000, guid: d28fa546b522f454284fc09a5df46e55, type: 2}
   _letterLog: {fileID: 11400000, guid: 1762888f54465d048ac69f1e034d4822, type: 2}
   _itemSlots:
   - {fileID: 1789425694}
@@ -59179,6 +59179,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915423066}
   m_CullTransparentMesh: 1
+--- !u!1 &1918364500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1918364502}
+  - component: {fileID: 1918364501}
+  m_Layer: 0
+  m_Name: ShowNPCsAccordingToDaytime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1918364501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918364500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a3e51db7852804cb1c99880228071d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _morningNPCs:
+  - {fileID: 905648595}
+  - {fileID: 1121378114}
+  _eveningNPCs:
+  - {fileID: 510173647}
+  _nightNPCs:
+  - {fileID: 1818502882}
+--- !u!4 &1918364502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918364500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.198263, y: -38.647736, z: 49.024925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1919907372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60095,11 +60146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 300
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -173
+      value: -425
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -60117,6 +60168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Place
       objectReference: {fileID: 0}
+    - target: {fileID: 5929337084290341590, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8b9b3693b07815e499b4499b66063a3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66627,5 +66682,6 @@ SceneRoots:
   - {fileID: 1925225008}
   - {fileID: 1789754374}
   - {fileID: 71063462}
+  - {fileID: 1918364502}
   - {fileID: 1010939082}
   - {fileID: 997549884}
