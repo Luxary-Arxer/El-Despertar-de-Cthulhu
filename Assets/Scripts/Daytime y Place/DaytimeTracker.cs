@@ -30,6 +30,7 @@ public class DaytimeTracker
         QuestManager.IsEurialeDead = false;
 
         QuestManager.HasFailedToSayJanitorPassword = false;
+        
         QuestManager.FoundFirstCrystal = false;
         QuestManager.FoundSecondCrystal = false;
         QuestManager.FoundThirdCrystal = false;

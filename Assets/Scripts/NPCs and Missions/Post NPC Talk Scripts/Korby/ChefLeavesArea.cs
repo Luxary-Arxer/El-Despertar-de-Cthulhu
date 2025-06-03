@@ -17,7 +17,7 @@ public class ChefLeavesArea : MonoBehaviour
     }
     void ChefLeaves()
     {
-        if (QuestManager.HasRatsInfo && QuestManager.ReachedFinalNodeChefConversation)
+        if (QuestManager.ReachedFinalNodeChefConversation)
         {
             _fadeManager.gameObject.SetActive(true);
             StartCoroutine(WaitForFade());

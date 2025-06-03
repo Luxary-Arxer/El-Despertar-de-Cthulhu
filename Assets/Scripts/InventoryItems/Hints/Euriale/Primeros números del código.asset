@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664bf50e7d367a04c8fd7dfba635a767, type: 3}
+  m_Name: "Primeros n\xFAmeros del c\xF3digo"
+  m_EditorClassIdentifier: 
+  Name: "El laboratorio est\xE1 protegido..."
+  Hint: "-Si no me equivoco el c\xF3digo objeto empieza con un 04 pero no recuerdo
+    el resto, a lo mejor me viene a lo largo del d\xEDa...-\n\nAl viejo guardian
+    del laboratorio de Eur\xEDale se le han escapado los dos primeros n\xFAmeros
+    del c\xF3digo que necesito para entrar al laboratorio... Con algo de suerte, 
+    podr\xE9 hablar con \xE9l en otro momento y conseguir que me diga el resto de
+    la combinaci\xF3n."

@@ -13,16 +13,27 @@ public class QuestManager : MonoBehaviour
     public static bool IsEphrieDead;
     public static bool IsEurialeDead;
 
-    //Library forbidden room Sidequest
-    public static bool HasPasswordLibraryRoom;
+    //Library forbidden room sidequest
+    public static bool ReachedFinalNodeLibrarianConverastion;
     [Header("Librarian quest")]
     [SerializeField]
     HintObject _forbiddenRoomHint;
     [SerializeField]
     HintObject _passwordHint;
 
+    //Library laboratory sidequest
+    public static bool ReachedFinalNodeGuardianConversation;
+    [Header("Laboratory quest")]
+    [SerializeField]
+    HintObject _firstSecondNumberHint;
+    [SerializeField]
+    HintObject _thirdNumberHint;
+    [SerializeField]
+    HintObject _fourthNumberHint;
+    [SerializeField]
+    HintObject _fullCodeHint;
+
     //Korby death quest
-    public static bool HasRatsInfo;
     public static bool ReachedFinalNodeChefConversation;
     public static bool ReachedFinalNodeDishConversation;
     public static bool ReachedFinalNodeKorbyDeathConversation;
@@ -62,7 +73,6 @@ public class QuestManager : MonoBehaviour
     public static bool FoundThirdCrystal;
     public static bool HasPlantBait;
     public static bool ReachedFinalNodeEphrieConversation;
-    public static bool ReachedFinalNodeEphrieDeathConversation;
     public static bool ReachedFinalNodePlantConversation;
     [Header("Ephrie quest")]
     [SerializeField]
@@ -80,7 +90,9 @@ public class QuestManager : MonoBehaviour
 
     //Euriale death quest
     public static bool ReachedFinalNodeEurialeConversation;
-    public static bool ReachedFinalNodeEurialeDeathConversation;
+    [Header("Euríale quest")]
+    [SerializeField]
+    ItemObject _perseusShield;
 
     //Endgame stuff
     [Header("Endgame images")]
@@ -104,7 +116,7 @@ public class QuestManager : MonoBehaviour
     //Library forbidden room Sidequest
     public void CheckPasswordLibraryForbiddenRoom()
     {
-        if (HasPasswordLibraryRoom)
+        if (InventoryGenerator.HintsInventory.Contains(_passwordHint))
             ConversationManager.Instance.SetBool("HasPasswordLibraryRoom", true);
     }
     public void GetHintLibraryForbiddenRoom()
@@ -123,14 +135,13 @@ public class QuestManager : MonoBehaviour
             {
                 InventoryGenerator.HintsInventory.Remove(_forbiddenRoomHint);
             }
-            HasPasswordLibraryRoom = true;
             _inventoryManager.AddHintToInventory(_passwordHint);
             ReproduceGetHintSound();
         }
     }
-    public void UnlockLibraryForbiddenRoom()
+    public void HasReachedFinalNodeLibrarianConverastion()
     {
-        //unlock the forbidden room
+        ReachedFinalNodeLibrarianConverastion = true;
     }
 
     //Korby death quest
@@ -153,7 +164,7 @@ public class QuestManager : MonoBehaviour
     }
     public void CheckRatsInfo()
     {
-        if (HasRatsInfo)
+        if (InventoryGenerator.HintsInventory.Contains(_ratLoverHint))
             ConversationManager.Instance.SetBool("HasRatsInfo", true);
     }
     public void GetRatsHint()
@@ -164,7 +175,6 @@ public class QuestManager : MonoBehaviour
             {
                 InventoryGenerator.HintsInventory.Remove(_chefHint);
             }
-            HasRatsInfo = true;
             _inventoryManager.AddHintToInventory(_ratLoverHint);
             ReproduceGetHintSound();
         }
@@ -327,10 +337,6 @@ public class QuestManager : MonoBehaviour
     {
         ReachedFinalNodeEphrieConversation = true;
     }
-    public void HasReachedFinalNodeEphrieDeathConversation()
-    {
-        ReachedFinalNodeEphrieDeathConversation = true;
-    }
     public void GetWarehouseHint()
     {
         if (!InventoryGenerator.HintsInventory.Contains(_unorderedWarehouseHint) && !InventoryGenerator.HintsInventory.Contains(_lostFangHint) && !InventoryGenerator.HintsInventory.Contains(_fangInPlantHint))
@@ -383,15 +389,84 @@ public class QuestManager : MonoBehaviour
     }
 
     //Euriale death quest    
+    public void CheckHasShield()
+    {
+        if (InventoryGenerator.ItemsInventory.Contains(_perseusShield))
+        {
+            ConversationManager.Instance.SetBool("HasShield", true);
+        }
+    }
+    public void CheckHasFullLabCode()
+    {
+        if (InventoryGenerator.HintsInventory.Contains(_fullCodeHint))
+        {
+            ConversationManager.Instance.SetBool("HasFullCode", true);
+        }
+    }
     public void HasReachedFinalNodeEurialeConversation()
     {
         ReachedFinalNodeEurialeConversation = true;
     }
-    public void HasReachedFinalNodeEurialeDeathConversation()
-    {
-        ReachedFinalNodeEurialeDeathConversation = true;
-    }
 
+    //Library laboratory sidequest
+    public void GetFirstSecondNumberHint()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_firstSecondNumberHint))
+        {
+            if (InventoryGenerator.HintsInventory.Contains(_thirdNumberHint) && InventoryGenerator.HintsInventory.Contains(_fourthNumberHint))
+            {
+                InventoryGenerator.HintsInventory.Remove(_thirdNumberHint);
+                InventoryGenerator.HintsInventory.Remove(_fourthNumberHint);
+                _inventoryManager.AddHintToInventory(_fullCodeHint);
+                ReproduceGetHintSound();
+            }
+            else if(!InventoryGenerator.HintsInventory.Contains(_fullCodeHint))
+            {
+                _inventoryManager.AddHintToInventory(_firstSecondNumberHint);
+                ReproduceGetHintSound();
+            }
+        }
+    }
+    public void GetThirdNumberHint()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_thirdNumberHint))
+        {
+            if (InventoryGenerator.HintsInventory.Contains(_firstSecondNumberHint) && InventoryGenerator.HintsInventory.Contains(_fourthNumberHint))
+            {
+                InventoryGenerator.HintsInventory.Remove(_firstSecondNumberHint);
+                InventoryGenerator.HintsInventory.Remove(_fourthNumberHint);
+                _inventoryManager.AddHintToInventory(_fullCodeHint);
+                ReproduceGetHintSound();
+            }
+            else if(!InventoryGenerator.HintsInventory.Contains(_fullCodeHint))
+            {
+                _inventoryManager.AddHintToInventory(_thirdNumberHint);
+                ReproduceGetHintSound();
+            }
+        }
+    }
+    public void GetFourthNumberHint()
+    {
+        if (!InventoryGenerator.HintsInventory.Contains(_fourthNumberHint))
+        {
+            if (InventoryGenerator.HintsInventory.Contains(_firstSecondNumberHint) && InventoryGenerator.HintsInventory.Contains(_thirdNumberHint))
+            {
+                InventoryGenerator.HintsInventory.Remove(_firstSecondNumberHint);
+                InventoryGenerator.HintsInventory.Remove(_thirdNumberHint);
+                _inventoryManager.AddHintToInventory(_fullCodeHint);
+                ReproduceGetHintSound();
+            }
+            else if (!InventoryGenerator.HintsInventory.Contains(_fullCodeHint))
+            {
+                _inventoryManager.AddHintToInventory(_fourthNumberHint);
+                ReproduceGetHintSound();
+            }
+        }
+    }
+    public void HasReachedFinalNodeGuardianConversation()
+    {
+        ReachedFinalNodeGuardianConversation = true;
+    }
 
     //Endgame functions
     public void PopVictoryImage()
