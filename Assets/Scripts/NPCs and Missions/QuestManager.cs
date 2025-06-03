@@ -73,9 +73,12 @@ public class QuestManager : MonoBehaviour
     public static bool HasPlantBait;
     public static bool ReachedFinalNodeEphrieConversation;
     public static bool ReachedFinalNodePlantConversation;
+    public static bool ReachedFinalNodeLogPlantConversation;
     [Header("Ephrie quest")]
     [SerializeField]
     ItemObject _sashijivaFang;
+    [SerializeField]
+    LogObject _ephrieLog;
     [SerializeField]
     HintObject _unorderedWarehouseHint;
     [SerializeField]
@@ -332,6 +335,11 @@ public class QuestManager : MonoBehaviour
         ReachedFinalNodePlantConversation = true;
         _inventoryManager.AddItemToInventory(_sashijivaFang);
     }
+    public void GetEphrieLog()
+    {
+        ReachedFinalNodeLogPlantConversation = true;
+        _inventoryManager.AddLogToInventory(_ephrieLog);
+    }
     public void HasReachedFinalNodeEphrieConversation()
     {
         ReachedFinalNodeEphrieConversation = true;
@@ -419,7 +427,7 @@ public class QuestManager : MonoBehaviour
                 _inventoryManager.AddHintToInventory(_fullCodeHint);
                 ReproduceGetHintSound();
             }
-            else if(!InventoryGenerator.HintsInventory.Contains(_fullCodeHint))
+            else if (!InventoryGenerator.HintsInventory.Contains(_fullCodeHint))
             {
                 _inventoryManager.AddHintToInventory(_firstSecondNumberHint);
                 ReproduceGetHintSound();
@@ -437,7 +445,7 @@ public class QuestManager : MonoBehaviour
                 _inventoryManager.AddHintToInventory(_fullCodeHint);
                 ReproduceGetHintSound();
             }
-            else if(!InventoryGenerator.HintsInventory.Contains(_fullCodeHint))
+            else if (!InventoryGenerator.HintsInventory.Contains(_fullCodeHint))
             {
                 _inventoryManager.AddHintToInventory(_thirdNumberHint);
                 ReproduceGetHintSound();
