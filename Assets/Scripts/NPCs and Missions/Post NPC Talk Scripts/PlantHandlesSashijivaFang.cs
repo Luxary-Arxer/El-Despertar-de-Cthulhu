@@ -2,7 +2,7 @@ using System.Collections;
 using DialogueEditor;
 using UnityEngine;
 
-public class PlantHandlesSashijivaJaw : MonoBehaviour
+public class PlantHandlesSashijivaFang : MonoBehaviour
 {
     PlayerInputController _playerInputController;
     CharacterAudioManager _characterAudioManager;
