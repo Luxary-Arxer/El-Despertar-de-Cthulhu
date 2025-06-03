@@ -3728,7 +3728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &139582758
 Transform:
   m_ObjectHideFlags: 0
@@ -3738,15 +3738,16 @@ Transform:
   m_GameObject: {fileID: 139582757}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00015194714}
-  m_LocalPosition: {x: 38.1, y: 3.9000006, z: -6.02}
+  m_LocalPosition: {x: 0.32447815, y: 0.9371054, z: -13.255226}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1259369098}
+  - {fileID: 761286803}
   - {fileID: 1905841428}
   - {fileID: 1250372091}
   - {fileID: 551459532}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2017217006}
   m_LocalEulerAnglesHint: {x: 0, y: -179.983, z: 0}
 --- !u!4 &141727039 stripped
 Transform:
@@ -5010,8 +5011,8 @@ Transform:
   m_GameObject: {fileID: 181760093}
   serializedVersion: 2
   m_LocalRotation: {x: -0.49999964, y: -0.50000024, z: -0.5000003, w: 0.49999988}
-  m_LocalPosition: {x: -38.324295, y: -10.592708, z: -11.08}
-  m_LocalScale: {x: 6.4472804, y: 5.8202596, z: 1}
+  m_LocalPosition: {x: -36.85, y: -9.39, z: -11.08}
+  m_LocalScale: {x: 6.4472804, y: 5.8202596, z: 0.59098}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 791582934}
@@ -8680,12 +8681,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302807215}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.49999964, y: -0.50000024, z: -0.5000003, w: 0.49999988}
-  m_LocalPosition: {x: 75.07571, y: -10.592708, z: -15.718147}
-  m_LocalScale: {x: 10.3992405, y: 5.8202596, z: 1}
+  m_LocalRotation: {x: -0.5000763, y: 0.49992388, z: 0.49992365, w: 0.50007623}
+  m_LocalPosition: {x: -0.6, y: -2.79, z: -12.94}
+  m_LocalScale: {x: 7.42828, y: 5.8202586, z: 0.55387914}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 791582934}
+  m_Father: {fileID: 1259369098}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!65 &302807217
 BoxCollider:
@@ -19428,11 +19429,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 320
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -175
+      value: -425
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -23355,6 +23356,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fa8122a6fe65894c9acd7d1d42959f3, type: 3}
+--- !u!1 &761286802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 761286803}
+  - component: {fileID: 761286805}
+  - component: {fileID: 761286804}
+  m_Layer: 0
+  m_Name: Entrada-Jardin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &761286803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761286802}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00015194714}
+  m_LocalPosition: {x: 2.08, y: -0.2200005, z: -12.72}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 139582758}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &761286804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761286802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0158e39bf5c99a4491a906f03896b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enteringRoom: {fileID: 1730550469}
+  _leavingRoom: {fileID: 139582757}
+--- !u!65 &761286805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761286802}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.25, y: 2.25, z: 2.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &761499503
 GameObject:
   m_ObjectHideFlags: 0
@@ -23877,7 +23946,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 734684545}
-  - {fileID: 302807216}
   - {fileID: 181760094}
   - {fileID: 1081676426}
   - {fileID: 2012149203}
@@ -38273,6 +38341,7 @@ Transform:
   - {fileID: 1264182797}
   - {fileID: 600952620}
   - {fileID: 1710161363}
+  - {fileID: 302807216}
   m_Father: {fileID: 139582758}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1260633561 stripped
@@ -39763,7 +39832,7 @@ Transform:
   m_GameObject: {fileID: 1312780937}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00015194714}
-  m_LocalPosition: {x: -13.52, y: -1.7200005, z: 1.63}
+  m_LocalPosition: {x: -6.91, y: -1.7200005, z: 6.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -51484,6 +51553,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fa8122a6fe65894c9acd7d1d42959f3, type: 3}
+--- !u!1 &1696614596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1696614597}
+  - component: {fileID: 1696614599}
+  - component: {fileID: 1696614598}
+  m_Layer: 0
+  m_Name: Jardin-Invocacion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1696614597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696614596}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -39.24, y: -6.812707, z: -11.24}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1730550470}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1696614598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696614596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0158e39bf5c99a4491a906f03896b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enteringRoom: {fileID: 2050221467}
+  _leavingRoom: {fileID: 1730550469}
+--- !u!65 &1696614599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696614596}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.25, y: 2.25, z: 2.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1697352506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1677506223965766441, guid: 8fa8122a6fe65894c9acd7d1d42959f3, type: 3}
@@ -53274,17 +53411,19 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730550469}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.075706, y: 10.492707, z: 18.058147}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -69.85123, y: 7.529812, z: 10.822922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 791582934}
+  - {fileID: 1974946285}
+  - {fileID: 1696614597}
   - {fileID: 1417022361}
   - {fileID: 686338123}
   - {fileID: 1648548184}
   - {fileID: 733231577}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2017217006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1732063056
 PrefabInstance:
@@ -59997,6 +60136,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1677506223965766441, guid: 8fa8122a6fe65894c9acd7d1d42959f3, type: 3}
   m_PrefabInstance: {fileID: 1213441973}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1974946284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974946285}
+  - component: {fileID: 1974946287}
+  - component: {fileID: 1974946286}
+  m_Layer: 0
+  m_Name: Jardin-Entrada
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1974946285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974946284}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 71.29, y: -6.812707, z: -11.36}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1730550470}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1974946286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974946284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0158e39bf5c99a4491a906f03896b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enteringRoom: {fileID: 139582757}
+  _leavingRoom: {fileID: 1730550469}
+--- !u!65 &1974946287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974946284}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.25, y: 2.25, z: 2.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1978322414
 GameObject:
   m_ObjectHideFlags: 0
@@ -60712,6 +60919,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987994807}
   m_CullTransparentMesh: 1
+--- !u!1 &1989001359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1989001360}
+  - component: {fileID: 1989001362}
+  - component: {fileID: 1989001361}
+  m_Layer: 0
+  m_Name: Invocacion-Jardin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1989001360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989001359}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.07, y: -0.2200005, z: -13.181852}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2050221468}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1989001361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989001359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0158e39bf5c99a4491a906f03896b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enteringRoom: {fileID: 1730550469}
+  _leavingRoom: {fileID: 2050221467}
+--- !u!65 &1989001362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989001359}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.25, y: 2.25, z: 2.85}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1989054975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1677506223965766441, guid: 8fa8122a6fe65894c9acd7d1d42959f3, type: 3}
@@ -62052,6 +62327,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1677506223965766441, guid: 8fa8122a6fe65894c9acd7d1d42959f3, type: 3}
   m_PrefabInstance: {fileID: 991257506}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2017217005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2017217006}
+  m_Layer: 0
+  m_Name: Jardin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2017217006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017217005}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.77552, y: 2.9628952, z: 7.235226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1730550470}
+  - {fileID: 2050221468}
+  - {fileID: 139582758}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2020289440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62327,7 +62636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2050221468
 Transform:
   m_ObjectHideFlags: 0
@@ -62336,16 +62645,17 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050221467}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -70.3, y: 3.9000006, z: 20}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -108.07552, y: 0.9371054, z: 12.764774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1396840569}
+  - {fileID: 1989001360}
   - {fileID: 506691839}
   - {fileID: 1459561619}
   - {fileID: 633606442}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2017217006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2051005778 stripped
 Transform:
@@ -65452,9 +65762,7 @@ SceneRoots:
   - {fileID: 1727557062}
   - {fileID: 1762049960}
   - {fileID: 1502384850}
-  - {fileID: 1730550470}
-  - {fileID: 2050221468}
-  - {fileID: 139582758}
+  - {fileID: 2017217006}
   - {fileID: 1408441365}
   - {fileID: 686062404}
   - {fileID: 488629633}

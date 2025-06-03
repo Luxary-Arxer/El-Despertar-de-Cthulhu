@@ -34118,11 +34118,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 320
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -175
+      value: -425
       objectReference: {fileID: 0}
     - target: {fileID: 242809102723915002, guid: ae5b69ba290b0ca46b434f3750d15d6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -57244,7 +57244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450652523492664}
   m_Layer: 0
-  m_Name: MansionBlock
+  m_Name: Mansion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73109,6 +73109,7 @@ MonoBehaviour:
   _secondHalfJanitorCodeHint: {fileID: 11400000, guid: 003b47a0b45ace544a056775b038da95, type: 2}
   _fullJanitorCodeHint: {fileID: 11400000, guid: b2a01439bb7bc1d4c82cc430e4a4c800, type: 2}
   _sashijivaFang: {fileID: 11400000, guid: 57e50eb1c722dd1469af8994d121b893, type: 2}
+  _ephrieLog: {fileID: 0}
   _unorderedWarehouseHint: {fileID: 11400000, guid: 7b9d6e12ccef1e54c85017ff5518e1a3, type: 2}
   _lostFangHint: {fileID: 11400000, guid: ab9888ec90ddb954aa56138bcdeaf407, type: 2}
   _fangInPlantHint: {fileID: 11400000, guid: d557312a7cf7668479dad85e051eb264, type: 2}
