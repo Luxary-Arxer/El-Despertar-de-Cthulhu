@@ -79,7 +79,10 @@ public class QuestManager : MonoBehaviour
     HintObject _fangLocationHint;
 
     //Euriale death quest
+    public static bool ReachedFinalNodeEurialeConversation;
+    public static bool ReachedFinalNodeEurialeDeathConversation;
 
+    //Endgame stuff
     [Header("Endgame images")]
     [SerializeField]
     GameObject _victoryImage;
@@ -379,7 +382,16 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    //Euriale death quest
+    //Euriale death quest    
+    public void HasReachedFinalNodeEurialeConversation()
+    {
+        ReachedFinalNodeEurialeConversation = true;
+    }
+    public void HasReachedFinalNodeEurialeDeathConversation()
+    {
+        ReachedFinalNodeEurialeDeathConversation = true;
+    }
+
 
     //Endgame functions
     public void PopVictoryImage()
