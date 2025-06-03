@@ -4,9 +4,21 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtonController : MonoBehaviour
 {
+    void Update()
+    {
+        Debug.Log(FirstTimePlaying.FirstTime);
+    }
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        if (FirstTimePlaying.FirstTime)
+        {
+            SceneManager.LoadScene(2);
+            FirstTimePlaying.FirstTime = false;
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
     }
     public void Quit(){
         Application.Quit();

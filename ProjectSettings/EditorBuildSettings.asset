@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xFA Selecci\xF3n Lugar.unity"
     guid: a683093bc786a9546a6b854882e420a9
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 7184de8791570e840aa462716c203400
+  - enabled: 1
     path: "Assets/Scenes/Mansi\xF3n.unity"
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
