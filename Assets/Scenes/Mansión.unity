@@ -40956,6 +40956,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1226081438}
+  - {fileID: 6400915505700635443}
   m_Father: {fileID: 1321811732059003451}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1470159087 stripped
@@ -51520,6 +51521,7 @@ MonoBehaviour:
   - {fileID: 1631742071328719927}
   - {fileID: 5469950783440178473}
   - {fileID: 5279672590374492151}
+  - {fileID: 9113389818926621402}
   _nightNPCs:
   - {fileID: 142608517947060306}
   - {fileID: 7828875845969737379}
@@ -61111,8 +61113,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":176.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hola","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Interactive
-    NPC","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh\u2026
+    Nueva compa\xF1\xEDa. Me gusta pasear por aqu\xED siempre que puedo, me tranquiliza
+    ver la distorsi\xF3n en el reflejo, hace que me entre el hambre\u2026 Por desgracia,
+    ya es tarde\u2026 pero tras el ritual quiz\xE1s te invito a que me acompa\xF1es
+    en uno de mis paseos\u2026 As\xED podemos celebrar.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Lady
+    Bifia\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -61962,7 +61968,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckHasShield
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 71a9bf4b2822cdd47a4af2fe1718d741, type: 3}
@@ -67001,9 +67019,10 @@ GameObject:
   - component: {fileID: 4900607818855049112}
   - component: {fileID: 7626966551643196700}
   - component: {fileID: 6310763393868999563}
+  - component: {fileID: 7626966551643196701}
   - component: {fileID: 2242334373479589842}
   m_Layer: 0
-  m_Name: IntNPC-EphrieMorn
+  m_Name: IntNPC-EphrieNight
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67491,8 +67510,8 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 8d92c0900319bb949bb483974504160b, type: 3}
-  Audio: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a972719e8cef849488d5e3085d7123f5, type: 3}
+  Audio: {fileID: 8300000, guid: 658351653057d46448c1ef700a132393, type: 3}
 --- !u!224 &1939174273448777672
 RectTransform:
   m_ObjectHideFlags: 0
@@ -67761,6 +67780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1005423851470607254}
   - component: {fileID: 6254630252466675593}
+  - component: {fileID: 6254630252466675594}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -67980,6 +68000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 773006372967371228}
   - component: {fileID: 5874197540701281731}
+  - component: {fileID: 5874197540701281732}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -69002,21 +69023,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
+  CurrentIDCounter: 9
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
     magn\xEDfico lo lejos que el poder del dinero puede llevarnos. Cuando el gran
-    Cthulhu regrese, podr\xE9 entregarle todo lo que guste para ser uno de sus elegidos.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
+    Cthulhu regrese, podr\xE9 entregarle todo lo que guste para ser uno de sus elegidos.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":123},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
+    demasiado arriesgado atacar a Eur\xEDale ahora, deber\xEDa buscar una ocasi\xF3n
+    mejor...\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 470364321020794125}
+  - {fileID: 6753151363256555795}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckHasShield
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2251139459313392165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73620,7 +73656,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckHasShield
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ec9390bd970f2dd43ae28a60f183bef3, type: 3}
@@ -75421,6 +75469,7 @@ GameObject:
   - component: {fileID: 7954045125604710459}
   - component: {fileID: 4879765188187353791}
   - component: {fileID: 9075968072268534824}
+  - component: {fileID: 9075968072268534825}
   - component: {fileID: 3854617310939961457}
   m_Layer: 0
   m_Name: IntNPC-EurialeNight
@@ -76075,19 +76124,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Espero
+  CurrentIDCounter: 9
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasShield\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasShield\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Espero
     que nadie sepa que el escudo est\xE1 aqu\xED, por fin consegu\xED separar su
     cabeza del metal. \\r\\nPero tenerlo cerca\u2026 aunque est\xE9 en el almac\xE9n,
     es un peligro. En cuanto el ritual est\xE9 completado y est\xE9s de nuevo en
     el mudo de los vivos podremos finalmente destruir lo que tanto sufrimiento nos
-    ha causado. Nos veremos pronto hermana.\\r\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Eur\xEDale\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
+    ha causado. Nos veremos pronto hermana.\\r\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Eur\xEDale\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":122},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
+    demasiado arriesgado atacar a Eur\xEDale ahora, deber\xEDa buscar una ocasi\xF3n
+    mejor...\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 3235577832683186862}
+  - {fileID: 8635659279369103026}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -82171,17 +82223,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBF\xA1PORQUE
-    HAY UNA MANZANA EN LA BIBLIOTECA!? Como esto haya sido cosa del ********** de
-    Ephrie, voy a arrancarle ese ojo que tiene y voy a met\xE9rselo por el ****.
-    \xA1\xA1\xA1*****!!!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
+  CurrentIDCounter: 9
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasApple\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasApple\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBF\xA1ME
+    HE ENTERADO DE QUE HAY UNA MANZANA EN LA BIBLIOTECA!? Como esto haya sido cosa
+    del ********** de Ephrie, voy a arrancarle ese ojo que tiene y voy a met\xE9rselo
+    por el ****. \xA1\xA1\xA1*****!!!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":126},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
+    demasiado arriesgado atacar a Korby ahora, deber\xEDa buscar una ocasi\xF3n mejor...\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 5874197540701281731}
+  - {fileID: 5874197540701281732}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -82514,6 +82568,7 @@ GameObject:
   - component: {fileID: 1461853554952973596}
   - component: {fileID: 4148823937305593752}
   - component: {fileID: 567362388406296847}
+  - component: {fileID: 8112149974715999225}
   - component: {fileID: 5716659966620757334}
   m_Layer: 0
   m_Name: "IntNPC-Eur\xEDaleEve"
@@ -83015,6 +83070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6753151363256555794}
   - component: {fileID: 470364321020794125}
+  - component: {fileID: 6753151363256555795}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -84415,13 +84471,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQui\xE9n
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":173.5,\"yPos\":19},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQui\xE9n
     eres t\xFA? No tengo tiempo para peque\xF1eces en mi momento de descanso, a menos
-    que tengas alg\xFAn negocio entre manos, ser\xE1 mejor que te vayas.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":129},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"De
+    que tengas alg\xFAn negocio entre manos, ser\xE1 mejor que te vayas.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":127},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"De
     hecho, tengo una cosa que me gustar\xEDa que examinaseis; un objeto que podr\xEDa
-    resultar de vuestro inter\xE9s.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":233},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Que
+    resultar de vuestro inter\xE9s.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":231},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Que
     has hecho chica. Porque tienes ese colmillo, te ha enviado Korby. Maldito patan,
-    necio estupido.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":340},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tu
+    necio estupido.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":338},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tu
     momento de morir ha llegado.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7}]}"
   saveVersion: 110
   DefaultName: 
@@ -84436,19 +84492,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6745147959644862769}
-        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: HasReachedFinalNodeEphrieConversation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5716659966620757334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84461,17 +84505,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bifia
+  CurrentIDCounter: 9
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasShield\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasShield\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bifia
     es una maestra de ilusiones, pero a m\xED no me enga\xF1a. Esconde algo\u2026
     aunque a\xFAn no s\xE9 el qu\xE9\u2026 siempre va envuelta en ilusiones, a veces
-    dudo que ella misma sea una\u2026\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Eur\xEDale\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
+    dudo que ella misma sea una\u2026\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Eur\xEDale\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179,\"yPos\":124},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
+    demasiado arriesgado atacar a Eur\xEDale ahora, deber\xEDa buscar una ocasi\xF3n
+    mejor...\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 6254630252466675593}
+  - {fileID: 6254630252466675594}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -85305,11 +85352,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckAppleOnInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 69f15d229a4480d4bba7a1d3f8f8e74b, type: 3}
   Audio: {fileID: 8300000, guid: b6e4298d79b69e6458a5571c5b6bcac4, type: 3}
+--- !u!114 &5874197540701281732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034177738210388894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 8
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6441b7b27aac52a4dba8bff2e1fd6e3a, type: 3}
+  Audio: {fileID: 8300000, guid: 6048356c4c0d18848a1c0d30e6182d60, type: 3}
 --- !u!224 &5878160942411020953
 RectTransform:
   m_ObjectHideFlags: 0
@@ -88259,11 +88337,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckHasShield
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: ec9390bd970f2dd43ae28a60f183bef3, type: 3}
   Audio: {fileID: 8300000, guid: 9d249e5d460cceb429a16dfb6ae14dae, type: 3}
+--- !u!114 &6254630252466675594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978038431778908628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 8
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6441b7b27aac52a4dba8bff2e1fd6e3a, type: 3}
+  Audio: {fileID: 8300000, guid: 6048356c4c0d18848a1c0d30e6182d60, type: 3}
 --- !u!114 &6255928844417744294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89219,14 +89328,14 @@ Transform:
   m_GameObject: {fileID: 9113389818926621402}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.22, y: 8.28, z: 7.48}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.12, y: -0.8002696, z: 0.95}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3070474031428772015}
   - {fileID: 8784722699776654859}
   - {fileID: 4237766665681987259}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1469592426}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6401086760634288488
 MonoBehaviour:
@@ -90668,6 +90777,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4585525939013614746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6753151363256555795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5420257737798247248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 8
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6441b7b27aac52a4dba8bff2e1fd6e3a, type: 3}
+  Audio: {fileID: 8300000, guid: 39198273e6e6c1145880628892826046, type: 3}
 --- !u!212 &6804041268248285155
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -91754,6 +91882,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8635659279369103025}
   - component: {fileID: 3235577832683186862}
+  - component: {fileID: 8635659279369103026}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -94737,6 +94866,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NPCName: Ephrie
   _NPCSprite: {fileID: 21300000, guid: 0fd0e7e791a6d164db3b31fe7b16412d, type: 3}
+--- !u!114 &7626966551643196701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805612461561552243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84df568be20e54d4faba2f5e8de14fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7627124210823348729
 RectTransform:
   m_ObjectHideFlags: 0
@@ -96803,6 +96944,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8112149974715999225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5279672590374492151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29de0a27bc267dd4f9ee7c7fb37a1164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8116849995056666924
 Transform:
   m_ObjectHideFlags: 0
@@ -99713,6 +99866,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1568108868339041081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8635659279369103026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7014526359167114483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 8
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6441b7b27aac52a4dba8bff2e1fd6e3a, type: 3}
+  Audio: {fileID: 8300000, guid: 27770cc14312f0547bd1ecb578a6f348, type: 3}
 --- !u!23 &8637231137504960946
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -101149,6 +101321,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f838c66020ff648a1e08616aa93f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9075968072268534825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706136803274056400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29de0a27bc267dd4f9ee7c7fb37a1164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9078731065645690753
 GameObject:
   m_ObjectHideFlags: 0
@@ -101957,4 +102141,3 @@ SceneRoots:
   - {fileID: 1847047098}
   - {fileID: 1617650005}
   - {fileID: 328843540}
-  - {fileID: 6400915505700635443}
