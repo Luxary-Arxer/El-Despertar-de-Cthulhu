@@ -39,6 +39,8 @@ public class RandomSpawner : MonoBehaviour
 
             GameObject obj = Instantiate(selectedPrefab, position, Quaternion.identity);
 
+            obj.transform.SetParent(this.transform, worldPositionStays: true);
+
             float scale = Random.Range(scaleRange.x, scaleRange.y);
             obj.transform.localScale = new Vector3(scale, scale, scale);
 
