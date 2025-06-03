@@ -55,7 +55,6 @@ public class QuestManager : MonoBehaviour
     public static bool ReachedFinalNodeBifiaConversation;
     public static bool ReachedFinalNodeBifiaDoorConversation;
     public static bool ReachedFinalNodePostBifiaDeathConversation;
-    public static bool IsBifiaDoorOpened;
     [Header("Bifia quest")]
     [SerializeField]
     ItemObject _bifiaKeyObject;

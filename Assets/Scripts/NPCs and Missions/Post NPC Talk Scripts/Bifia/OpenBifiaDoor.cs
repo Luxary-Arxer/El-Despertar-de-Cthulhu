@@ -27,8 +27,7 @@ public class OpenBifiaDoor : MonoBehaviour
     IEnumerator WaitThenOpenDoor()
     {
         yield return new WaitForSeconds(1.5f);
-        _doorObject.SetActive(false);
-        QuestManager.IsBifiaDoorOpened = true;
+        _doorObject.transform.rotation = Quaternion.Euler(0, 330, 0);
         QuestManager.ReachedFinalNodeBifiaDoorConversation = false;
     }
 }

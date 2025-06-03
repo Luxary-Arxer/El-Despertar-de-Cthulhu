@@ -20,8 +20,7 @@ public class LadyBifiaDeath : MonoBehaviour
     GameObject _bifiaRoom;
     [SerializeField]
     GameObject _corridor;
-    [SerializeField]
-    GameObject _postDeathBifiaDoor;
+
     void OnEnable()
     {
         ConversationManager.OnConversationEnded += BifiaDeath;
@@ -46,10 +45,8 @@ public class LadyBifiaDeath : MonoBehaviour
         _cameraPivot.position = _endOfSequencePosition.position;
         _bifiaRoom.SetActive(false);
         _corridor.SetActive(true);
-        _postDeathBifiaDoor.SetActive(true);
         QuestManager.IsBifiaDead = true;
         QuestManager.ReachedFinalNodeBifiaConversation = false;
-        QuestManager.IsBifiaDoorOpened = false;
         ConversationManager.Instance.StartConversation(_postBifiaDeathConversation);
     }
 }
