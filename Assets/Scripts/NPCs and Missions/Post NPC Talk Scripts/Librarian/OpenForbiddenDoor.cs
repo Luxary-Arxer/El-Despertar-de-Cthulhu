@@ -2,7 +2,7 @@ using System.Collections;
 using DialogueEditor;
 using UnityEngine;
 
-public class OpenBifiaDoor : MonoBehaviour
+public class OpenForbiddenDoor : MonoBehaviour
 {
     [SerializeField]
     FadeManager _fadeManager;
@@ -10,15 +10,15 @@ public class OpenBifiaDoor : MonoBehaviour
     GameObject _openedDoorObject;
     void OnEnable()
     {
-        ConversationManager.OnConversationEnded += OpenBifiaRoomDoor;
+        ConversationManager.OnConversationEnded += OpenForbiddenRoomDoor;
     }
     void OnDisable()
     {
-        ConversationManager.OnConversationEnded -= OpenBifiaRoomDoor;
+        ConversationManager.OnConversationEnded -= OpenForbiddenRoomDoor;
     }
-    void OpenBifiaRoomDoor()
+    void OpenForbiddenRoomDoor()
     {
-        if (QuestManager.ReachedFinalNodeBifiaDoorConversation)
+        if (QuestManager.ReachedFinalNodeLibrarianConverastion)
         {
             _fadeManager.gameObject.SetActive(true);
             StartCoroutine(WaitThenOpenDoor());
@@ -27,7 +27,7 @@ public class OpenBifiaDoor : MonoBehaviour
     IEnumerator WaitThenOpenDoor()
     {
         yield return new WaitForSeconds(1.5f);
-        QuestManager.ReachedFinalNodeBifiaDoorConversation = false;
+        QuestManager.ReachedFinalNodeLibrarianConverastion = false;
         _openedDoorObject.SetActive(true);
         gameObject.SetActive(false);
     }

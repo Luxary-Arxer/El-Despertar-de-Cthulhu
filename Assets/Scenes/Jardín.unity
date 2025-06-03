@@ -5725,7 +5725,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762049955}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: CheckHasShield
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &192510238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10724,7 +10736,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: UseBait
         m_Mode: 1
@@ -10774,7 +10786,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: CheckBait
         m_Mode: 1
@@ -23309,13 +23321,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":173.5,\"yPos\":19},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQui\xE9n
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFang\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQui\xE9n
     eres t\xFA? No tengo tiempo para peque\xF1eces en mi momento de descanso, a menos
-    que tengas alg\xFAn negocio entre manos, ser\xE1 mejor que te vayas.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":127},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"De
+    que tengas alg\xFAn negocio entre manos, ser\xE1 mejor que te vayas.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":130},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"De
     hecho, tengo una cosa que me gustar\xEDa que examinaseis; un objeto que podr\xEDa
-    resultar de vuestro inter\xE9s.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":231},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Que
+    resultar de vuestro inter\xE9s.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":234},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Que
     has hecho chica. Porque tienes ese colmillo, te ha enviado Korby. Maldito patan,
-    necio estupido.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175,\"yPos\":338},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tu
+    necio estupido.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ephrie\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":180,\"yPos\":341},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tu
     momento de morir ha llegado.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7}]}"
   saveVersion: 110
   DefaultName: 
@@ -23330,7 +23342,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762049955}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: HasReachedFinalNodeEphrieConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &814915069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26550,7 +26574,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: GetRatsHint
         m_Mode: 1
@@ -26703,7 +26727,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762049955}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: UseBait
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &925019200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26869,7 +26905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh\u2026
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh\u2026
     Nueva compa\xF1\xEDa. Me gusta pasear por aqu\xED siempre que puedo, me tranquiliza
     ver la distorsi\xF3n en el reflejo, hace que me entre el hambre\u2026 Por desgracia,
     ya es tarde\u2026 pero tras el ritual quiz\xE1s te invito a que me acompa\xF1es
@@ -27635,9 +27671,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: UseBait
+        m_MethodName: GetFangItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27647,9 +27683,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: GetFangItem
+        m_MethodName: UseBait
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27697,7 +27733,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: CheckBait
         m_Mode: 1
@@ -32204,7 +32240,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762049955}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: GetRatsHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1117970863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35124,7 +35172,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: HasReachedFinalNodeEphrieConversation
         m_Mode: 1
@@ -35193,7 +35241,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: CheckFangInInventory
         m_Mode: 1
@@ -41378,7 +41426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasBait\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasBait\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":8},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasBait\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Una
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasBait\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasBait\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":8},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasBait\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Una
     planta carn\xEDvora...\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":51,\"yPos\":123},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
     veo ninguna manera de que esta cosa abra la boca sin perder media mano en el
     proceso...\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":288,\"yPos\":123},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
@@ -41396,9 +41444,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: UseBait
+        m_MethodName: GetFangItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41408,9 +41456,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: GetFangItem
+        m_MethodName: UseBait
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -43403,7 +43451,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: CheckHasShield
         m_Mode: 1
@@ -53832,7 +53880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Desde
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Desde
     que los generales llegaron no han parado de ocurrir cosas extra\xF1as. Mi amigo
     desapareci\xF3 la semana pasada haciendo un turno de limpieza. Lo he estado buscando,
     pero lo \xFAnico que he encontrado es una nota suya que dice \u201CY al perder
@@ -53850,7 +53898,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: GetSecondHalfJanitorCode
         m_Mode: 1
@@ -57272,7 +57320,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: GetSecondHalfJanitorCode
         m_Mode: 1
@@ -58933,7 +58981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Murmurando)
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Murmurando)
     Ah! Ya me acuerdo del \xFAltimo n\xFAmero del c\xF3digo del escudo, es el n\xFAmero
     de mascotas que tiene Eur\xEDale, uno.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Guardian
     del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.35}]}"
@@ -58947,7 +58995,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762049955}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: GetFourthNumberHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1999164178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61839,7 +61899,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1762049955}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: GetFourthNumberHint
         m_Mode: 1
