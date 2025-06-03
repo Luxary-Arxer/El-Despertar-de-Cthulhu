@@ -8,6 +8,7 @@ public class DaytimeTracker
     public static void AdvanceThroughTheDay()
     {
         MomentOfTheDay++;
+        SceneManager.LoadScene(1);
     }
     public static void RestartDay()
     {

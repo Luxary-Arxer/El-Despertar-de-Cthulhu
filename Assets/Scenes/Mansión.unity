@@ -20391,7 +20391,6 @@ GameObject:
   - component: {fileID: 707082616}
   - component: {fileID: 707082617}
   - component: {fileID: 707082619}
-  - component: {fileID: 707082618}
   m_Layer: 0
   m_Name: Conversation-EphrieDeath
   m_TagString: Untagged
@@ -20441,18 +20440,6 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &707082618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707082615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a21bdec8d108644d9d626fa9467f9b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &707082619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21810,7 +21797,6 @@ GameObject:
   m_Component:
   - component: {fileID: 760711276}
   - component: {fileID: 760711279}
-  - component: {fileID: 760711277}
   m_Layer: 0
   m_Name: "Conversation-Eur\xEDaleDeath"
   m_TagString: Untagged
@@ -21834,18 +21820,6 @@ Transform:
   - {fileID: 1167010288}
   m_Father: {fileID: 2134463785}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &760711277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760711275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 513b3222a38dd8148b321f231ea4f4df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &760711279
 MonoBehaviour:
   m_ObjectHideFlags: 0

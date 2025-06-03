@@ -10,9 +10,11 @@ public class StopSoundOnConversationEnd : MonoBehaviour
     }
     void OnDisable()
     {
-        ConversationManager.OnConversationEnded += StopSounds;
+        ConversationManager.OnConversationEnded -= StopSounds;
     }
-    void StopSounds() {
-        GetComponent<AudioSource>().Stop();
+    void StopSounds()
+    {
+        if (ConversationManager.Instance.IsConversationActive)
+            GetComponent<AudioSource>().Stop();
     }
 }
