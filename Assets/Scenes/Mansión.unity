@@ -20208,7 +20208,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.22979978, y: 3.3611996, z: 5.4976974}
-  m_Center: {x: -5.196358, y: 5.0801997, z: -24.25718}
+  m_Center: {x: -5.196358, y: 5.0801997, z: -21.61}
 --- !u!1001 &726470559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68358,7 +68358,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0002792141, y: -4.9401164, z: 0.33509508}
-  m_LocalScale: {x: 0.058347728, y: 1, z: 0.023486279}
+  m_LocalScale: {x: 0.058347728, y: 1, z: 0.027510328}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 693883538}
@@ -77788,6 +77788,7 @@ MonoBehaviour:
   _jefHint: {fileID: 11400000, guid: e04c5a5ef254cf64c81601e2f82dfa86, type: 2}
   _fangLocationHint: {fileID: 11400000, guid: 8d286db9568e194489cbf7e6139752da, type: 2}
   _perseusShield: {fileID: 11400000, guid: 199be7f3a1036cb4291bdfde883b9ba0, type: 2}
+  _tutorialImage: {fileID: 0}
   _victoryImage: {fileID: 1113645797}
   _defeatImage: {fileID: 177028762}
   _blackBackgroundImage: {fileID: 950287403}

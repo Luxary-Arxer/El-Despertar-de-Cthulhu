@@ -56560,6 +56560,7 @@ MonoBehaviour:
   _jefHint: {fileID: 11400000, guid: e04c5a5ef254cf64c81601e2f82dfa86, type: 2}
   _fangLocationHint: {fileID: 11400000, guid: 8d286db9568e194489cbf7e6139752da, type: 2}
   _perseusShield: {fileID: 11400000, guid: 199be7f3a1036cb4291bdfde883b9ba0, type: 2}
+  _tutorialImage: {fileID: 0}
   _victoryImage: {fileID: 1145475742}
   _defeatImage: {fileID: 602349937}
   _blackBackgroundImage: {fileID: 1915423066}
