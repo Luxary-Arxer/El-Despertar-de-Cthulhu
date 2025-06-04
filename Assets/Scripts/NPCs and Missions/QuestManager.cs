@@ -98,6 +98,7 @@ public class QuestManager : MonoBehaviour
 
     //Tutorial quest
     public static bool ReachedFinalNodeGuideConversation;
+    public static bool ReachedFinalNodeRitualConversation;
     [Header("Tutorial quest")]
     [SerializeField]
     GameObject _tutorialImage;
@@ -485,6 +486,10 @@ public class QuestManager : MonoBehaviour
     public void HasReachedFinalNodeGuideConversation()
     {
         ReachedFinalNodeGuideConversation = true;
+    }
+    public void HasReachedFinalNodeRitualConversation()
+    {
+        ReachedFinalNodeRitualConversation = true;
     }
     public void ToggleTutorialImage()
     {
