@@ -38009,7 +38009,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085628805}
   m_LocalRotation: {x: 0.23911765, y: 0.3696438, z: -0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: 0, y: 0, z: -0.673}
+  m_LocalPosition: {x: 0, y: 0, z: -1.174}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38018,7 +38018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 30, y: 45, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.17, y: -0.119999886}
+  m_AnchoredPosition: {x: 0.119, y: 0.703}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1085628807
@@ -38556,7 +38556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press E to leave the manor
+  m_text: "Interact\xFAa para abandonar la biblioteca"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -71971,6 +71971,7 @@ GameObject:
   - component: {fileID: 2991823055475812602}
   - component: {fileID: 1635745376193541240}
   - component: {fileID: 5432714028379930818}
+  - component: {fileID: 8396619044140850374}
   m_Layer: 0
   m_Name: VFX
   m_TagString: Untagged
@@ -73166,6 +73167,27 @@ Transform:
   - {fileID: 9132435913463728794}
   m_Father: {fileID: 7108804161181306721}
   m_LocalEulerAnglesHint: {x: 0, y: -179.913, z: 0}
+--- !u!65 &8396619044140850374
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320168935717614791}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.312, y: 6, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &8541631426090970471
 BoxCollider:
   m_ObjectHideFlags: 0
