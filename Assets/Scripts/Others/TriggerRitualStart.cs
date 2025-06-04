@@ -12,6 +12,7 @@ public class TriggerRitualStart : MonoBehaviour
         {
             other.GetComponent<PlayerInputController>().PlayerControlls.Player.Disable();
             ConversationManager.Instance.StartConversation(_ritualStartConversation);
+            Cursor.visible = true;
         }
     }
 }
