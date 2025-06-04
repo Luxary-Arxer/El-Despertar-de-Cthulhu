@@ -8,7 +8,11 @@ public class EndOfEurialeDeath : MonoBehaviour
     FadeManager _fadeManager;
     [SerializeField]
     NPCConversation _postEurialeDeathConversation;
-
+    CharacterAudioManager _characterAudioManager;
+    void Awake()
+    {
+        _characterAudioManager = FindFirstObjectByType<CharacterAudioManager>();
+    }
     void OnEnable()
     {
         ConversationManager.OnConversationEnded += EurialeDeathSequenceEnd;
@@ -28,10 +32,11 @@ public class EndOfEurialeDeath : MonoBehaviour
     IEnumerator WaitForFade()
     {
         yield return new WaitForSeconds(1.5f);
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[4], false, .75f, 1);
         QuestManager.ReachedFinalNodeEurialeConversation = false;
         QuestManager.IsEurialeDead = true;
         ConversationManager.Instance.StartConversation(_postEurialeDeathConversation);
         gameObject.SetActive(false);
-    
+
     }
 }

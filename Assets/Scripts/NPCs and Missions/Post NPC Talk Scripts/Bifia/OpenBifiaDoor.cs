@@ -8,6 +8,11 @@ public class OpenBifiaDoor : MonoBehaviour
     FadeManager _fadeManager;
     [SerializeField]
     GameObject _openedDoorObject;
+    CharacterAudioManager _characterAudioManager;
+    void Awake()
+    {
+        _characterAudioManager = FindFirstObjectByType<CharacterAudioManager>();
+    }
     void OnEnable()
     {
         ConversationManager.OnConversationEnded += OpenBifiaRoomDoor;
@@ -27,6 +32,7 @@ public class OpenBifiaDoor : MonoBehaviour
     IEnumerator WaitThenOpenDoor()
     {
         yield return new WaitForSeconds(1.5f);
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[5], false, .75f, 1);
         QuestManager.ReachedFinalNodeBifiaDoorConversation = false;
         _openedDoorObject.SetActive(true);
         gameObject.SetActive(false);
