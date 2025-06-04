@@ -9,7 +9,12 @@ public class EndOfEphrieDeath : MonoBehaviour
     FadeManager _fadeManager;
     [SerializeField]
     NPCConversation _postEphrieDeathConversation;
+    CharacterAudioManager _characterAudioManager;
 
+    void Awake()
+    {
+        _characterAudioManager = FindFirstObjectByType<CharacterAudioManager>();
+    }
     void OnEnable()
     {
         ConversationManager.OnConversationEnded += EphrieDeathSequenceEnd;
@@ -29,10 +34,10 @@ public class EndOfEphrieDeath : MonoBehaviour
     IEnumerator WaitForFade()
     {
         yield return new WaitForSeconds(1.5f);
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[4], false, .75f, 1);
         QuestManager.ReachedFinalNodeEphrieConversation = false;
         QuestManager.IsEphrieDead = true;
         ConversationManager.Instance.StartConversation(_postEphrieDeathConversation);
         gameObject.SetActive(false);
-    
     }
 }
