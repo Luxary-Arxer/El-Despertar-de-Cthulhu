@@ -1,23 +1,23 @@
+
 using System.Collections;
-using UnityEngine;
 using DialogueEditor;
+using UnityEngine;
 
-
-public class ChefLeavesArea : MonoBehaviour
+public class GuideMovesAway : MonoBehaviour
 {
     [SerializeField]
     FadeManager _fadeManager;
     void OnEnable()
     {
-        ConversationManager.OnConversationEnded += ChefLeaves;
+        ConversationManager.OnConversationEnded += GuideLeaves;
     }
     void OnDisable()
     {
-        ConversationManager.OnConversationEnded -= ChefLeaves;
+        ConversationManager.OnConversationEnded -= GuideLeaves;
     }
-    void ChefLeaves()
+    void GuideLeaves()
     {
-        if (QuestManager.ReachedFinalNodeChefConversation)
+        if (QuestManager.ReachedFinalNodeGuideConversation)
         {
             _fadeManager.gameObject.SetActive(true);
             StartCoroutine(WaitForFade());
@@ -26,7 +26,7 @@ public class ChefLeavesArea : MonoBehaviour
     IEnumerator WaitForFade()
     {
         yield return new WaitForSeconds(1.5f);
-        QuestManager.ReachedFinalNodeChefConversation = false;
+        QuestManager.ReachedFinalNodeGuideConversation = false;
         gameObject.SetActive(false);
-    }    
+    }
 }

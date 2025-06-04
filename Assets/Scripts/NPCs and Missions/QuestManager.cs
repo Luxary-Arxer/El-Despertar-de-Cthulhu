@@ -96,6 +96,12 @@ public class QuestManager : MonoBehaviour
     [SerializeField]
     ItemObject _perseusShield;
 
+    //Tutorial quest
+    public static bool ReachedFinalNodeGuideConversation;
+    [Header("Tutorial quest")]
+    [SerializeField]
+    GameObject _tutorialImage;
+
     //Endgame stuff
     [Header("Endgame images")]
     [SerializeField]
@@ -473,6 +479,16 @@ public class QuestManager : MonoBehaviour
     public void HasReachedFinalNodeGuardianConversation()
     {
         ReachedFinalNodeGuardianConversation = true;
+    }
+
+    //Tutorial quest
+    public void HasReachedFinalNodeGuideConversation()
+    {
+        ReachedFinalNodeGuideConversation = true;
+    }
+    public void ToggleTutorialImage()
+    {
+        _tutorialImage.SetActive(false);
     }
 
     //Endgame functions
