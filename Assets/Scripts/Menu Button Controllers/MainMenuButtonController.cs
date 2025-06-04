@@ -4,10 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtonController : MonoBehaviour
 {
-    void Update()
-    {
-        Debug.Log(FirstTimePlaying.FirstTime);
-    }
     public void Play()
     {
         if (FirstTimePlaying.FirstTime)
