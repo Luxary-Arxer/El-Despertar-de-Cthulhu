@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: CartaInicial
   m_EditorClassIdentifier: 
   Name: "Carta de la Inquisici\xF3n"
-  Log: "COMUNICADO CLASIFICADO, ALTO SECRETO:\r\nRecientemente, se ha detectado gran
-    cantidad de actividad sospechosa alrededor de las cuevas de _________. Seg\xFAn
-    informan nuestros agentes desplegados en el campo, gran cantidad de individuos,
-    vestidos con grandes t\xFAnicas negras, se han introducido en las cuevas con
-    una importante cantidad de material sospechoso: cadenas, espadas, lanzas, velas
-    y __________, entre otros art\xEDculos. Estos sucesos son todav\xEDa m\xE1s preocupantes,
-    teniendo en cuenta la reciente desaparici\xF3n de cuatro de los criminales m\xE1s
-    buscados por esta instituci\xF3n: _____, __________________,  _________ y _______ 
-    Se conoce que las cuevas de _________ son el lugar donde el dios antiguo _______
-    fue depositado tras su muerte. Resta mencionar que este inusual suceso ha pasado
-    a ser la prioridad n\xFAmero uno de la inquisici\xF3n. Por lo tanto, se le encomienda
-    a la agente especial Viktra infiltrarse dentro de esas cuevas para investigar
-    estos extra\xF1os sucesos. Se permite el uso de CUALQUIER M\xC9TODO de persuasi\xF3n
-    que la agente considere necesario para poner fin a la amenaza; incluso la aplicaci\xF3n
-    de la fuerza letal.\n\r\n\t\t\t\t\t\t\t\t\t\tAsunawa, inquisidor supremo"
+  Log: "Agente Especial Viktra, se te ha asignado la misi\xF3n de impedir el ritual
+    de invocaci\xF3n de Cthulhu. Seg\xFAn nuestra informaci\xF3n, el ritual se har\xE1
+    en la sede del Culto de la Muerte en el interior de la monta\xF1a a la medianoche
+    del solsticio. El ritual ser\xE1 llevado a cabo por cuatro generales del Dios
+    de la Muerte, de los que solo sabemos sus nombres: \r\n-Eur\xEDale, la gorgona\r\n-Lady
+    Bifia, la ilusionista\r\n-Ephraim Aeph Varnell, el c\xEDclope\r\n-Korby, el devorador\r\nTu
+    misi\xF3n es volver al Culto de la Muerte, infiltrate en este y encargarte de
+    los generales uno a uno hasta que el ritual no se pueda llevar a cabo. No sabemos
+    cu\xE1ntos generales son necesarios para el funcionamiento del ritual. Tenemos
+    entendido que los generales son criaturas sobrenaturales y misteriosas, puede
+    que la manera de vencerlos sea m\xE1s intrincada de lo esperado; pero tu objetivo
+    es encontrar esa manera antes de la media noche del solsticio. Esta es la misi\xF3n
+    de mayor importancia hasta el momento, as\xED que se te permite usar la Daga
+    del Dios de la Muerte y sus poderes cronom\xE1nticos, pero solo en la peor de
+    las situaciones.\r\nMucha suerte, agente, por el bien de todos.\r\n\r\nConsejo
+    de inquisidores supremos\r"
   Image: {fileID: 21300000, guid: b830e9de24b18cc42b7216f641edef75, type: 3}
