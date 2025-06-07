@@ -32,7 +32,7 @@ public class EndOfEurialeDeath : MonoBehaviour
     IEnumerator WaitForFade()
     {
         yield return new WaitForSeconds(1.5f);
-        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[4], false, .75f, 1);
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[4], false, 1, 1);
         QuestManager.ReachedFinalNodeEurialeConversation = false;
         QuestManager.IsEurialeDead = true;
         ConversationManager.Instance.StartConversation(_postEurialeDeathConversation);

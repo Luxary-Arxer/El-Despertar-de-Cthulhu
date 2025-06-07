@@ -45,7 +45,7 @@ public class LadyBifiaDeath : MonoBehaviour
     IEnumerator WaitForFade()
     {
         yield return new WaitForSeconds(1.5f);
-        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[4], false, .75f, 1);
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[4], false, 1, 1);
         _viktraLogic.position = _endOfSequencePosition.position;
         _viktraSprite.position = _endOfSequencePosition.position;
         _cameraPivot.position = _endOfSequencePosition.position;

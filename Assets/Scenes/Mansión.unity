@@ -2390,6 +2390,38 @@ Transform:
   - {fileID: 8879802062455729202}
   m_Father: {fileID: 1321811732059003451}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &107965547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 107965548}
+  m_Layer: 0
+  m_Name: 'GenericDoor-OpenedBifiaDoor '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &107965548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107965547}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.815, y: -0.02, z: -32.333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 999469536}
+  m_Father: {fileID: 1025278289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &108399033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5451,19 +5483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6745147959644862769}
-        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: GetHintPasswordLibraryForbiddenRoom
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   NodeID: 40
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 6441b7b27aac52a4dba8bff2e1fd6e3a, type: 3}
@@ -5535,7 +5555,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: GetHintPasswordLibraryForbiddenRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 37
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 360ef73fc2d398d4a9b03505960c2e72, type: 3}
@@ -6052,7 +6084,7 @@ MonoBehaviour:
   NodeID: 8
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 6441b7b27aac52a4dba8bff2e1fd6e3a, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 27770cc14312f0547bd1ecb578a6f348, type: 3}
 --- !u!114 &222539711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7224,7 +7256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.477165
+      value: 15.980003
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7751,17 +7783,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":178.5,\"yPos\":-377},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Oh
-    no! \xA1Demasiado tarde, ha empezado el ritual!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":-282},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Ph\xB4nglui
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Oh
+    no! \xA1Demasiado tarde, ha empezado el ritual!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":117},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Ph\xB4nglui
     mglw\xB4nafh Cthulhu R\xB4lyeh wgah\xB4nagl fhtagn!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":-188},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Ph\xB4nglui
-    mglw\xB4nafh Cthulhu R\xB4lyeh wgah\xB4nagl fhtagn!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":-91},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Helo
+    \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":211},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Ph\xB4nglui
+    mglw\xB4nafh Cthulhu R\xB4lyeh wgah\xB4nagl fhtagn!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":308},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Helo
     Aqu\xED! \xA1El Antiguo, el Acechante de lo Profundo, el Dios de la Muerte! \xA1Cthulhu!\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    de \xE9lite\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":4},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1NO!
-    \xA1Esto es peor de lo que esperaba! \xA1No puede ser!\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":102},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Una
+    de \xE9lite\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":403},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1NO!
+    \xA1Esto es peor de lo que esperaba! \xA1No puede ser!\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":501},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Una
     intrusa! \xA1Apresad a la intrusa!\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    de \xE9lite\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":198},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1La
-    daga! \xA1La Daga del Dios de la Muerte! \xA1Vamos! \xA1FUNCIONA POR FAVOR!\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179,\"yPos\":293},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Uff\u2026
+    de \xE9lite\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":597},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1La
+    daga! \xA1La Daga del Dios de la Muerte! \xA1Vamos! \xA1FUNCIONA POR FAVOR!\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":692},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Uff\u2026
     Estoy a salvo. \xA1Ha funcionado! \xA1La daga ha retrocedido el tiempo! Vuelve
     a ser por la ma\xF1ana\u2026 Muy bien, otro intento, veamos si esta vez funciona.
     Manos a la obra.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7}]}"
@@ -7797,7 +7829,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 6745147959644862769}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: HasReachedFinalNodeDefeatConversation
+        m_MethodName: DisablePlayerControlls
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9507,7 +9539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.477165
+      value: 15.98
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12382,7 +12414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.477165
+      value: 15.980003
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15314,7 +15346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347005547740012497, guid: 09fc950c2e928f247bc05bc1369edc46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.903204
+      value: 10.654623
       objectReference: {fileID: 0}
     - target: {fileID: 6347005547740012497, guid: 09fc950c2e928f247bc05bc1369edc46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18563,11 +18595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalScale.z
-      value: 7.440216
+      value: 10.226329
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.387165
+      value: 13.07
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27943,6 +27975,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 179338653616235823, guid: bab63ed324e9caa48b5af2da50489b76, type: 3}
   m_PrefabInstance: {fileID: 97691425}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &999469535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 999469536}
+  - component: {fileID: 999469540}
+  - component: {fileID: 999469539}
+  - component: {fileID: 999469538}
+  - component: {fileID: 999469537}
+  m_Layer: 0
+  m_Name: VFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &999469536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999469535}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.99999976, z: -0, w: 0.0007587372}
+  m_LocalPosition: {x: -0.05, y: 0.34500027, z: -0.03}
+  m_LocalScale: {x: 0.5, y: 0.49999997, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1884094977}
+  m_Father: {fileID: 107965548}
+  m_LocalEulerAnglesHint: {x: 0, y: -179.913, z: 0}
+--- !u!65 &999469537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999469535}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.312, y: 6, z: 2}
+  m_Center: {x: 0, y: 0, z: 2.25}
+--- !u!65 &999469538
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999469535}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.312, y: 6, z: 2}
+  m_Center: {x: 0, y: 0, z: -2.25}
+--- !u!23 &999469539
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999469535}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 100e969d248057b4382e38961bdfe38d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &999469540
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999469535}
+  m_Mesh: {fileID: 2268895336617432729, guid: 03fb2ca2d028eb542bcc1c64bc96c800, type: 3}
 --- !u!4 &1001089948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 179338653616235823, guid: bab63ed324e9caa48b5af2da50489b76, type: 3}
@@ -28477,7 +28637,8 @@ Transform:
   m_LocalPosition: {x: 2.1123755, y: 0.00015306473, z: 0.3514988}
   m_LocalScale: {x: 0.038623028, y: 1, z: 0.06473985}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 107965548}
   m_Father: {fileID: 2613146771021393315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1025501784
@@ -28494,7 +28655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.477165
+      value: 15.980003
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32940,7 +33101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6642365599880432083, guid: e552fb4e8f154624eae779da6b46f407, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.844181
+      value: 10.67
       objectReference: {fileID: 0}
     - target: {fileID: 6642365599880432083, guid: e552fb4e8f154624eae779da6b46f407, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33230,7 +33391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hintDescriptionBox: {fileID: 1165530856}
   _hintNameBox: {fileID: 1487834718}
-  _hintTextBox: {fileID: 1140513689}
+  _hintTextBox: {fileID: 1140513691}
 --- !u!114 &1217715398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33523,78 +33684,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 41
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":300.5,\"yPos\":-1523},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":87.5,\"yPos\":-1522},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.5,\"yPos\":-1170},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":71.5,\"yPos\":-1171},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":300.5,\"yPos\":-796},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"??????\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":79.5,\"yPos\":-797},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":304.5,\"yPos\":-424},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
-    escuchando\",\"parentUIDs\":[31],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":73.5,\"yPos\":-423},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[31],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":172.5,\"yPos\":-2312},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":312.5,\"yPos\":-1296},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":99.5,\"yPos\":-1295},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":314.5,\"yPos\":-943},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":83.5,\"yPos\":-944},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[20],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":312.5,\"yPos\":-569},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"??????\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":91.5,\"yPos\":-570},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":316.5,\"yPos\":-197},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Seguir
+    escuchando\",\"parentUIDs\":[31],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":85.5,\"yPos\":-196},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Irse\",\"parentUIDs\":[31],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":184.5,\"yPos\":-2085},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
     joven \xBFNecesitas ayuda con algo?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":172,\"yPos\":-2213},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
-    ahora no necesito nada, gracias.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":172.5,\"yPos\":-2115},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184,\"yPos\":-1986},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    ahora no necesito nada, gracias.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.5,\"yPos\":-1888},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
     supuesto, los cultistas de hoy en d\xEDa ya no necesitan nada de una vieja bibliotecaria
     retirada\u2026\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":174.5,\"yPos\":-1813},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Espere\u2026
-    \xBFUsted era la anterior bibliotecaria?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":172.5,\"yPos\":-2013},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Estoy
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.5,\"yPos\":-1586},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Espere\u2026
+    \xBFUsted era la anterior bibliotecaria?\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.5,\"yPos\":-1786},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Estoy
     segura de que los Generales est\xE1n deseando que me muera para dejar de pagarme
     los montones de medicinas especiales que necesito para seguir con vida.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175.5,\"yPos\":-1912},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Pues
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187.5,\"yPos\":-1685},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Pues
     que se sienten a esperar, esta vieja a\xFAn tiene fuerza para mucho, mucho tiempo!\\r\\n\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175.5,\"yPos\":-1714},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187.5,\"yPos\":-1487},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
     es, estuve en el cargo durante m\xE1s de cincuenta a\xF1os. Si yo te contara
     la de cosas que he visto en esa biblioteca\u2026\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176.5,\"yPos\":-1621},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Recuerdo
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.5,\"yPos\":-1394},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Recuerdo
     una vez, cuando Ephrie no era m\xE1s que un ni\xF1o, muy feo por cierto, aunque
     supongo que todos los c\xEDclopes lo son, el muchacho se present\xF3 delante
     de m\xED y me dijo que\u2026\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":180.5,\"yPos\":-1457},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.5,\"yPos\":-1230},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     dijo que quer\xEDa entrar a la zona prohibida de la biblioteca, que hab\xEDan
     tra\xEDdo un nuevo cacharro del reino de nosequ\xE9, y que le hac\xEDa mucha
     ilusi\xF3n jugar con ese trasto.\",\"parentUIDs\":[16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":181.5,\"yPos\":-1360},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tendr\xEDas
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.5,\"yPos\":-1133},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tendr\xEDas
     que haberlo visto, puso la mejor cara de pena que jam\xE1s vi en un ni\xF1o;
     de hecho, casi se pone a llorar all\xED mismo.\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.5,\"yPos\":-1264},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Obviamente,
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.5,\"yPos\":-1037},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Obviamente,
     le dije que no pod\xEDa entrar, que all\xED dentro hab\xEDa objetos m\xE1gicos
     muy peligrosos y que podr\xEDa poner en peligro a todo el culto\u2026\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179.5,\"yPos\":-1097},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.5,\"yPos\":-870},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
     tiempos aquellos\u2026 Espera, \xBFDe qu\xE9 est\xE1bamos hablando? Ah, ya me
     acuerdo. De verdad, a los malos no hay quien os entienda. Sab\xE9is que al final
     gana el h\xE9roe, pero siempre os resist\xEDs.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":181.5,\"yPos\":-995},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Como
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.5,\"yPos\":-768},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Como
     aquel tipo de New Haven. La ciudad ardiendo, la gente muriendose\u2026 y va un
     tio y me ataca con una cuchara, \xA1Una cuchara! Y yo parti\xE9ndome de risa.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":181.5,\"yPos\":-896},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.5,\"yPos\":-669},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"As\xED
     que le saco los ojos con ella y sus hijos se ponen en plan: \xA1AAAAAHHHHHH!
     Y el t\xEDo a\xFAn se resiste m\xE1s. Menudo espect\xE1culo. El caso es que eres
     gilipollas\u2026\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":180.5,\"yPos\":-724},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.5,\"yPos\":-497},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     acuerdo perfectamente de c\xF3mo se puso Ephrie cuando le dije que no pod\xEDa
     entrar a la biblioteca: fue una pataleta que marc\xF3 una \xE9poca, la recuerdo
     como si fuera ayer;\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":180.5,\"yPos\":-622},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"aunque,
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.5,\"yPos\":-395},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"aunque,
     bueno, dos a\xF1os tampoco es tanto tiempo, ser\xEDa raro que lo hubiera olvidado.
     Me pregunto que debe estar haciendo el peque\xF1o Ephrie ahora\u2026 Bueno, que
     me estoy desviando del tema.\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":181.5,\"yPos\":-524},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Para
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.5,\"yPos\":-297},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Para
     conseguir que el ni\xF1o dejara de llorar, gritar y de darse golpes contra la
     pared, al final llegamos a un acuerdo\u2026\",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":180.5,\"yPos\":-354},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.5,\"yPos\":-127},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Al
     final, acordamos que pod\xEDa entrar en la zona prohibida bajo mi estricta supervisi\xF3n,
     y jugar un ratito con el nuevo artilugio.\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":181.5,\"yPos\":-253},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.5,\"yPos\":-26},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Qu\xE9
     gracioso se puso cuando vio el cacharro, que, en realidad, era una espada muy
     grande; qu\xE9 b\xE1sicos son los c\xEDclopes, en cuanto ven una arma muy grande
     se ponen a dar saltos de alegr\xEDa.\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.5,\"yPos\":-154},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.5,\"yPos\":73},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
     que m\xE1s me llam\xF3 la atenci\xF3n fue lo que dijo cuando vio la espada:\",\"parentUIDs\":[35],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.5,\"yPos\":-56},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.5,\"yPos\":171},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Roses
     are red, Violets are blue; Unexpected \u2018{\u2018 on line 42.\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.5,\"yPos\":44},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A\xFAn
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":196.5,\"yPos\":271},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A\xFAn
     me sigo preguntando c\xF3mo fue capaz de pronunciar el s\xEDmbolo \u2018{\u2019.
     De hecho, me hizo tanta gracia su reacci\xF3n, que empezamos a utilizarlo como
     contrase\xF1a para entrar en la sala prohibida\u2026\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Antigua
-    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":183.5,\"yPos\":143},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Qu\xE9
+    Bibliotecaria cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":195.5,\"yPos\":370},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Qu\xE9
     historia tan interesante! Por desgracia se me est\xE1 haciendo tarde. Que le
-    vaya muy bien el d\xEDa.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.5,\"yPos\":238},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    vaya muy bien el d\xEDa.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":196.5,\"yPos\":465},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
     favor, qu\xE9 vieja tan pesada\u2026 pero tengo la sensaci\xF3n de que lo \xFAltimo
     que ha dicho es algo muy importante.\",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7}]}"
   saveVersion: 110
@@ -35275,7 +35436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1274002938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37274,7 +37435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.477165
+      value: 15.980003
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38295,7 +38456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6642365599880432083, guid: e552fb4e8f154624eae779da6b46f407, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.841892
+      value: 10.667713
       objectReference: {fileID: 0}
     - target: {fileID: 6642365599880432083, guid: e552fb4e8f154624eae779da6b46f407, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38406,7 +38567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347005547740012497, guid: 09fc950c2e928f247bc05bc1369edc46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.901072
+      value: 10.652491
       objectReference: {fileID: 0}
     - target: {fileID: 6347005547740012497, guid: 09fc950c2e928f247bc05bc1369edc46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40276,7 +40437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.477165
+      value: 15.980003
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -42482,7 +42643,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6cf01b3c4b86cd941b6a9e798181d5a1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.75
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -43697,6 +43858,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: DisablePlayerControlls
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -44506,6 +44679,89 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1617763577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1617763578}
+  - component: {fileID: 1617763580}
+  - component: {fileID: 1617763579}
+  m_Layer: 0
+  m_Name: pCylinder1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1617763578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617763577}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.066924125, y: 0.364049, z: -2.090943}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1884094977}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1617763579
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617763577}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 100e969d248057b4382e38961bdfe38d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1617763580
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617763577}
+  m_Mesh: {fileID: -5076798556035486163, guid: 03fb2ca2d028eb542bcc1c64bc96c800, type: 3}
 --- !u!1 &1617945618
 GameObject:
   m_ObjectHideFlags: 0
@@ -46599,7 +46855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.477165
+      value: 15.980003
       objectReference: {fileID: 0}
     - target: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -51461,6 +51717,112 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bab63ed324e9caa48b5af2da50489b76, type: 3}
+--- !u!1 &1884094976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884094977}
+  - component: {fileID: 1884094980}
+  - component: {fileID: 1884094979}
+  - component: {fileID: 1884094978}
+  m_Layer: 0
+  m_Name: Puerta
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1884094977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884094976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.9659258, z: 0, w: 0.2588191}
+  m_LocalPosition: {x: -5.2864375e-13, y: -0.70319, z: 1.2184757}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1617763578}
+  m_Father: {fileID: 999469536}
+  m_LocalEulerAnglesHint: {x: 0, y: 150, z: 0}
+--- !u!65 &1884094978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884094976}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.22414632, y: 4.59362, z: 2.4128895}
+  m_Center: {x: 0.00000064447545, y: 0.00000023841858, z: -1.2284172}
+--- !u!23 &1884094979
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884094976}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 100e969d248057b4382e38961bdfe38d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1884094980
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884094976}
+  m_Mesh: {fileID: -4969243558794666181, guid: 03fb2ca2d028eb542bcc1c64bc96c800, type: 3}
 --- !u!4 &1886020263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6789705801688836517, guid: 56e021684860405409ac09dd8803de11, type: 3}
@@ -53115,6 +53477,18 @@ MonoBehaviour:
       - m_Target: {fileID: 6745147959644862769}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: PopBlackImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: DisablePlayerControlls
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -56312,7 +56686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347005547740012497, guid: 09fc950c2e928f247bc05bc1369edc46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.899189
+      value: 10.650608
       objectReference: {fileID: 0}
     - target: {fileID: 6347005547740012497, guid: 09fc950c2e928f247bc05bc1369edc46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -57360,14 +57734,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 7
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":216.5,\"yPos\":-329},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Al
-    fin! Tengo que salir de aqu\xED antes de que se den cuenta.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":216,\"yPos\":-231},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
-    ha pasado? \xA1Va a empezar el ritual!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":216,\"yPos\":-130},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1General
-    muerto!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":217,\"yPos\":-27},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1No
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Al
+    fin! Tengo que salir de aqu\xED antes de que se den cuenta.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":120},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
+    ha pasado? \xA1Va a empezar el ritual!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176,\"yPos\":221},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1General
+    muerto!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":324},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1No
     puede ser! \xA1El ritual no puede hacerse en estas condiciones!\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista
-    de \xE9lite\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":217,\"yPos\":73},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Estamos
-    perdidos!\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":219,\"yPos\":172},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFCuartel
-    general? Todo en orden. Se acabaron las sutilezas\u2026 Misi\xF3n Cumplida.\\r\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":219,\"yPos\":270},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Gran
+    de \xE9lite\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":424},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Estamos
+    perdidos!\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cultista\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179,\"yPos\":523},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFCuartel
+    general? Todo en orden. Se acabaron las sutilezas\u2026 Misi\xF3n Cumplida.\\r\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179,\"yPos\":621},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Gran
     trabajo, Viktra. Vuelve a la base cuanto antes.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Inquisidor\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
   DefaultName: 
@@ -57388,7 +57762,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6745147959644862769}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: HasReachedFinalNodeVictoryConversation
+        m_MethodName: PopBlackImage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: DisablePlayerControlls
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -62625,7 +63011,7 @@ Transform:
   m_GameObject: {fileID: 2739119327935707171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.5882778, y: 0.1400876, z: -6.468394}
+  m_LocalPosition: {x: 3.05, y: 0.1400876, z: -6.468394}
   m_LocalScale: {x: 0.383291, y: 5.6024923, z: 24.581196}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66081,7 +66467,7 @@ Transform:
   m_GameObject: {fileID: 4688868927752083046}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.08099, y: 0.1400876, z: 3.5806665}
+  m_LocalPosition: {x: 10.76, y: 0.1400876, z: 3.5806665}
   m_LocalScale: {x: 0.38329098, y: 5.6024923, z: 33.76368}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67961,7 +68347,7 @@ Transform:
   m_GameObject: {fileID: 1574276123387220819}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.194557, y: -0.7552695, z: -32.03025}
+  m_LocalPosition: {x: -4.47, y: -0.7552695, z: -30.14}
   m_LocalScale: {x: 0.50000006, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -73276,7 +73662,7 @@ Transform:
   m_GameObject: {fileID: 6221282445911211863}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.000957489, y: 0.1400876, z: 13.5605955}
+  m_LocalPosition: {x: 0.000957489, y: 0.1400876, z: 13.49}
   m_LocalScale: {x: 0.383291, y: 5.6024923, z: 33.62}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76684,7 +77070,7 @@ Transform:
   m_GameObject: {fileID: 9113389818926621402}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.12, y: -0.8002696, z: 0.95}
+  m_LocalPosition: {x: 2.7, y: -0.8002696, z: 1.05}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -84376,7 +84762,7 @@ Transform:
   m_GameObject: {fileID: 3197151170878007043}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.217, y: -0.7, z: -0.0638}
+  m_LocalPosition: {x: 0.263, y: -0.7, z: -0.2123}
   m_LocalScale: {x: 0.019311514, y: 0.5, z: 0.032369927}
   m_ConstrainProportionsScale: 0
   m_Children:

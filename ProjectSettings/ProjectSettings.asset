@@ -846,11 +846,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 1f7205cc-7172-4cce-ae76-535b1fe3f773
+  cloudProjectId: fc06a82b-2df0-497c-af6e-34dd85422f07
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: El Despertar de Cthulhu
-  organizationId: unity_f1b08c5f7c9b0a188ff4
+  projectName: El-Despertar-de-Chulhu
+  organizationId: derexito-as-publisher
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

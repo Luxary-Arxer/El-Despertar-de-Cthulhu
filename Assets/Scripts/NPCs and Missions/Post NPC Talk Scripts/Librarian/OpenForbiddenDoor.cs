@@ -32,7 +32,7 @@ public class OpenForbiddenDoor : MonoBehaviour
     IEnumerator WaitThenOpenDoor()
     {
         yield return new WaitForSeconds(1.5f);
-        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[5], false, .75f, 1);
+        _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[5], false, 1, 1);
         QuestManager.ReachedFinalNodeLibrarianConverastion = false;
         _openedDoorObject.SetActive(true);
         gameObject.SetActive(false);

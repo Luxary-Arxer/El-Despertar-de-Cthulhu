@@ -6,6 +6,7 @@ public class QuestManager : MonoBehaviour
 {
     InventoryManager _inventoryManager;
     CharacterAudioManager _characterAudioManager;
+    PlayerInputController _playerInputController;
 
     //Generals death markers
     public static bool IsKorbyDead;
@@ -120,6 +121,7 @@ public class QuestManager : MonoBehaviour
     {
         _inventoryManager = GetComponent<InventoryManager>();
         _characterAudioManager = GetComponent<CharacterAudioManager>();
+        _playerInputController = GetComponent<PlayerInputController>();
     }
 
     //Library forbidden room Sidequest
@@ -234,12 +236,13 @@ public class QuestManager : MonoBehaviour
             {
                 InventoryGenerator.HintsInventory.Remove(_secondHalfJanitorCodeHint);
                 _inventoryManager.AddHintToInventory(_fullJanitorCodeHint);
+                ReproduceGetHintSound();
             }
             else
             {
                 _inventoryManager.AddHintToInventory(_firstHalfJanitorCodeHint);
+                ReproduceGetHintSound();
             }
-            ReproduceGetHintSound();
         }
     }
     public void GetSecondHalfJanitorCode()
@@ -250,6 +253,7 @@ public class QuestManager : MonoBehaviour
             {
                 InventoryGenerator.HintsInventory.Remove(_firstHalfJanitorCodeHint);
                 _inventoryManager.AddHintToInventory(_fullJanitorCodeHint);
+                ReproduceGetHintSound();
             }
             else
             {
@@ -523,6 +527,10 @@ public class QuestManager : MonoBehaviour
         ReachedFinalNodeVictoryConversation = true;
     }
 
+    public void DisablePlayerControlls()
+    {
+        _playerInputController.PlayerControlls.Player.Disable();
+    }
     void ReproduceGetHintSound()
     {
         _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[3], false, .75f, 1);
