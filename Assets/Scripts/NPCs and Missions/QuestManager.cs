@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using DialogueEditor;
+using System;
 
 public class QuestManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class QuestManager : MonoBehaviour
 
     //Library forbidden room sidequest
     public static bool ReachedFinalNodeLibrarianConverastion;
+    public static bool ReachedFinalNodeForbiddenDoorConversation;
     [Header("Librarian quest")]
     [SerializeField]
     HintObject _forbiddenRoomHint;
@@ -129,6 +131,10 @@ public class QuestManager : MonoBehaviour
     {
         if (InventoryGenerator.HintsInventory.Contains(_passwordHint))
             ConversationManager.Instance.SetBool("HasPasswordLibraryRoom", true);
+    }    public void CheckTalkedToForbiddenDoor()
+    {
+        if (ReachedFinalNodeForbiddenDoorConversation)
+            ConversationManager.Instance.SetBool("HasTalkedToDoor", true);
     }
     public void GetHintLibraryForbiddenRoom()
     {
@@ -153,6 +159,10 @@ public class QuestManager : MonoBehaviour
     public void HasReachedFinalNodeLibrarianConverastion()
     {
         ReachedFinalNodeLibrarianConverastion = true;
+    }
+    public void HasReachedFinalNodeForbiddenDoorConversation()
+    {
+        ReachedFinalNodeForbiddenDoorConversation = true;
     }
 
     //Korby death quest
