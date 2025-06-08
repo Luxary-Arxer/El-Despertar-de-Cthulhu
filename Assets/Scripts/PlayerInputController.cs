@@ -137,9 +137,6 @@ public class PlayerInputController : MonoBehaviour
             string tag = _interactableObject.tag;
             switch (tag)
             {
-                case "Leave":
-                    _interactableObject.GetComponent<LeaveCurrentPlace>().LeaveCurrentPlaceFunction();
-                    break;
                 case "Item":
                     if (_interactableObject.GetComponent<ItemAdditionallyGivesHint>())
                     {
@@ -265,12 +262,10 @@ public class PlayerInputController : MonoBehaviour
 
         if ((Angle_y >= 0 && Angle_y <= 45) || (Angle_y >= 225 && Angle_y <= 360))
         {
-            //Mirar Derecha
             _characterSprite.localEulerAngles = new Vector3(30, 45, Mathf.PingPong(Time.time * 30, 10) - 5);
         }
         else if (Angle_y >= 45 && Angle_y <= 224)
         {
-            //Mirar Izquierda
             _characterSprite.localEulerAngles = new Vector3(-30, 45 + 180, Mathf.PingPong(Time.time * 30, 10) - 5);
         }
     }
@@ -280,12 +275,10 @@ public class PlayerInputController : MonoBehaviour
 
         if ((Angle_y >= 0 && Angle_y <= 45) || (Angle_y >= 225 && Angle_y <= 360))
         {
-            //Mirar Derecha
             _characterSprite.localEulerAngles = new Vector3(30, 45, 0);
         }
         if (Angle_y >= 45 && Angle_y <= 224)
         {
-            //Mirar Izquierda
             _characterSprite.localEulerAngles = new Vector3(-30, 45 + 180, 0);
         }
     }

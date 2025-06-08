@@ -4,11 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Leave
   - NPC
   - Item
   - Log
-  - Hint
   layers:
   - Default
   - TransparentFX

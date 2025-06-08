@@ -107,7 +107,7 @@ public class QuestManager : MonoBehaviour
     GameObject _tutorialImage;
 
     //Endgame stuff
-    [Header("Endgame images")]
+    [Header("Endgame stuff")]
     [SerializeField]
     GameObject _victoryImage;
     [SerializeField]
@@ -118,6 +118,7 @@ public class QuestManager : MonoBehaviour
     GameObject _endgameDialogueBackground;
     public static bool ReachedFinalNodeVictoryConversation;
     public static bool ReachedFinalNodeDefeatConversation;
+    public static bool ReachedFinalNodeLeaveConversation;
 
     void Awake()
     {
@@ -535,6 +536,10 @@ public class QuestManager : MonoBehaviour
     public void HasReachedFinalNodeVictoryConversation()
     {
         ReachedFinalNodeVictoryConversation = true;
+    }
+    public void HasReachedFinalNodeLeaveConversation()
+    {
+        ReachedFinalNodeLeaveConversation = true;
     }
 
     public void DisablePlayerControlls()
