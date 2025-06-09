@@ -1,7 +1,6 @@
 
 using UnityEngine;
 using DialogueEditor;
-using System;
 
 public class QuestManager : MonoBehaviour
 {
@@ -132,7 +131,8 @@ public class QuestManager : MonoBehaviour
     {
         if (InventoryGenerator.HintsInventory.Contains(_passwordHint))
             ConversationManager.Instance.SetBool("HasPasswordLibraryRoom", true);
-    }    public void CheckTalkedToForbiddenDoor()
+    }
+    public void CheckTalkedToForbiddenDoor()
     {
         if (ReachedFinalNodeForbiddenDoorConversation)
             ConversationManager.Instance.SetBool("HasTalkedToDoor", true);
@@ -213,6 +213,7 @@ public class QuestManager : MonoBehaviour
     public void HasReachedFinalNodeDishConversation()
     {
         ReachedFinalNodeDishConversation = true;
+        InventoryGenerator.ItemsInventory.Remove(_appleObject);
     }
     public void HasReachedFinalNodeKorbyDeathConversation()
     {

@@ -24,8 +24,11 @@ public class FadeManager : MonoBehaviour
     }
     void OnDisable()
     {
+        if (!QuestManager.ReachedFinalNodeDishConversation)
+        {
+            _playerInputController.PlayerControlls.Player.Enable();
+        }
         _isFinishedFadingOut = false;
-        _playerInputController.PlayerControlls.Player.Enable();
     }
     void Update()
     {

@@ -36,7 +36,7 @@ public class EndOfKorbyDeath : MonoBehaviour
         QuestManager.ReachedFinalNodeKorbyDeathConversation = false;
         _korby.SetActive(false);
         _cameraPivot.position = _viktraPosition.transform.position;
-        _viktraPosition.GetComponent<PlayerInputController>().EnablePlayerControlls();
+        FindFirstObjectByType<PlayerInputController>().PlayerControlls.Player.Enable();
         GetComponent<CheckVictory>().CheckVictoryByDeath();
     }
 }

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class HintSlotManager : MonoBehaviour
 {
-[Header("UI elements")]
+    CharacterAudioManager _characterAudioManager;
+
+    [Header("UI elements")]
     [SerializeField]
     TextMeshProUGUI _hintDescriptionBox;
     [SerializeField]
@@ -18,7 +20,6 @@ public class HintSlotManager : MonoBehaviour
     public string HintName { set { _hintName = value; } }
     public string HintDescription { set { _hintDescription = value; } }
 
-    CharacterAudioManager _characterAudioManager;
 
     void Awake()
     {
@@ -30,17 +31,12 @@ public class HintSlotManager : MonoBehaviour
     }
     public void DisplayHintDescription()
     {
-        if (ComponentHasHint())
+        if (_hintName != null)
         {
             _hintDescriptionBox.text = _hintDescription;
             _hintNameBox.text = _hintName;
 
             _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[2], false, .6f, 1);
         }
-    }
-    
-    bool ComponentHasHint()
-    {
-        return _hintName != null;
     }
 }

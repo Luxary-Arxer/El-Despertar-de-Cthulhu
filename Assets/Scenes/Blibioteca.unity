@@ -20368,7 +20368,7 @@ Transform:
   m_GameObject: {fileID: 590868704}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23911765, y: 0.3696438, z: -0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: -0.16, y: 1.678, z: 26.31}
+  m_LocalPosition: {x: -0.16, y: 1.65, z: 26.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31528,22 +31528,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 16
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFullCode\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":179.5,\"yPos\":35},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alto
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"HasFullCode\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":138.5,\"yPos\":-222},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alto
     ah\xED, nadie puede entrar en el laboratorio de Eur\xEDale sin autorizaci\xF3n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Guardian
-    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182,\"yPos\":137},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
-    te preocupes, tengo autorizaci\xF3n.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFullCode\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":10},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFullCode\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":183,\"yPos\":231},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Eso
+    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":141,\"yPos\":-120},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    te preocupes, tengo autorizaci\xF3n.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFullCode\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":10},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"HasFullCode\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142,\"yPos\":-26},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Eso
     est\xE1 por ver, \xBFcu\xE1l es el c\xF3digo de entrada?\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Guardian
-    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":25,\"yPos\":331},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
-    c\xF3digo es 0451.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":316,\"yPos\":333},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
-    lo s\xE9, estoy buscando a Eur\xEDale para entregarle un recado.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":26,\"yPos\":427},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ah,
+    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-16,\"yPos\":74},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
+    c\xF3digo es 0451.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":275,\"yPos\":76},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    lo s\xE9, estoy buscando a Eur\xEDale para entregarle un recado.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Viktra\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.7},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-15,\"yPos\":170},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ah,
     es correcto, adelante.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Guardian
-    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":318,\"yPos\":434},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sin
+    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":277,\"yPos\":177},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sin
     el c\xF3digo nadie puede entrar. L\xE1rgate, que est\xE1s echando mi tiempo a
     perder.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Guardian
-    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":319,\"yPos\":532},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Murmurando)
+    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":278,\"yPos\":275},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Murmurando)
     Si no me equivoco el c\xF3digo objeto empieza con un 04 pero no recuerdo el resto,
     a lo mejor me viene a lo largo del d\xEDa...\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Guardian
-    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.35},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":321,\"yPos\":630},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFA\xFAn
+    del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.35},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":280,\"yPos\":373},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFA\xFAn
     sigues ah\xED? Pi\xE9rdete, vamos.\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Guardian
     del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75}]}"
   saveVersion: 110
@@ -31564,19 +31564,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1658747137}
-        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
-        m_MethodName: GetFirstSecondNumberHint
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &905648598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48726,7 +48714,7 @@ Transform:
   m_GameObject: {fileID: 1415253961}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23911765, y: 0.3696438, z: -0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: -0.8020001, y: 0.16799974, z: 25.628996}
+  m_LocalPosition: {x: -0.96, y: 0.15, z: 25.51}
   m_LocalScale: {x: 0.40000004, y: 0.39999998, z: 0.40000004}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -56372,6 +56360,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _daggerItem: {fileID: 11400000, guid: d28fa546b522f454284fc09a5df46e55, type: 2}
   _letterLog: {fileID: 11400000, guid: 1762888f54465d048ac69f1e034d4822, type: 2}
+  _thirdNumber: {fileID: 11400000, guid: d5ad4cdfdc127394e91d5e8eaf9f9c95, type: 2}
+  _fourthNumber: {fileID: 11400000, guid: 382fd386a7d59d44fb2a31965cd90ffb, type: 2}
   _itemSlots:
   - {fileID: 1789425694}
   - {fileID: 764265784}
@@ -56563,7 +56553,7 @@ Transform:
   m_GameObject: {fileID: 1658747134}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.15999992, y: 1.678, z: 26.31}
+  m_LocalPosition: {x: -0.16, y: 1.65, z: 26.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73296,7 +73286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7640908916906559274
 Transform:
   m_ObjectHideFlags: 0

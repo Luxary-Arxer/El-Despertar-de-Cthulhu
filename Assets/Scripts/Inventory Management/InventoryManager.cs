@@ -9,6 +9,12 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]
     LogObject _letterLog;
 
+    [SerializeField]
+    HintObject _thirdNumber;
+    [SerializeField]
+    HintObject _fourthNumber;    
+    
+
     [Header("Inventory slots")]
     [SerializeField]
     GameObject[] _itemSlots;
@@ -27,7 +33,11 @@ public class InventoryManager : MonoBehaviour
     {
         AddItemToInventory(_daggerItem);
         AddLogToInventory(_letterLog);
+
+        AddHintToInventory(_thirdNumber);
+        AddHintToInventory(_fourthNumber);
     }
+    
     public void AddItemToInventory(ItemObject item)
     {
         if (!InventoryGenerator.ItemsInventory.Contains(item))

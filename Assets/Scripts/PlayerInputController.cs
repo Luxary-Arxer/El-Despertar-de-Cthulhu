@@ -88,6 +88,8 @@ public class PlayerInputController : MonoBehaviour
         _inventory.performed += Inventory;
 
         _back.performed += Back;
+
+        PlayerControlls.UI.Disable();
     }
     void OnDisable()
     {
@@ -166,7 +168,7 @@ public class PlayerInputController : MonoBehaviour
                 case "NPC":
                     if (!ConversationManager.Instance.IsConversationActive)
                     {
-                        _interactableObject.GetComponent<StartTalkToNPC>().BeginConversation();                        
+                        _interactableObject.GetComponent<StartTalkToNPC>().BeginConversation();
                     }
                     break;
             }
@@ -176,7 +178,7 @@ public class PlayerInputController : MonoBehaviour
     {
         if (!ConversationManager.Instance.IsConversationActive)
         {
-            DisablePlayerControlls();            
+            DisablePlayerControlls();
 
             _pauseMenuUI.SetActive(true);
             _timeUI.SetActive(false);
@@ -195,7 +197,7 @@ public class PlayerInputController : MonoBehaviour
         if (!ConversationManager.Instance.IsConversationActive)
         {
             DisablePlayerControlls();
-            
+
             _globalInventoryUI.SetActive(true);
             _timeUI.SetActive(false);
             _placeUI.SetActive(false);
@@ -212,7 +214,7 @@ public class PlayerInputController : MonoBehaviour
     {
         CharacterStoppedMoving();
         DisablePlayerControlls();
-        
+
         _globalInventoryUI.SetActive(true);
         _timeUI.SetActive(false);
         _placeUI.SetActive(false);
@@ -223,7 +225,7 @@ public class PlayerInputController : MonoBehaviour
     void Back(InputAction.CallbackContext context)
     {
         EnablePlayerControlls();
-        
+
         _pauseMenuUI.SetActive(false);
         _optionsMenuUI.SetActive(false);
         _globalInventoryUI.SetActive(false);
@@ -253,8 +255,7 @@ public class PlayerInputController : MonoBehaviour
     }
     void SpriteMovement()
     {
-        _characterSprite.position = new Vector3(transform.position.x, transform.position.y - 1.6f, transform.position.z); ;
-
+        _characterSprite.position = new Vector3(transform.position.x - .8f, transform.position.y - 1.5f, transform.position.z - .8f);
     }
     void SpriteMovementRotation()
     {
@@ -293,12 +294,12 @@ public class PlayerInputController : MonoBehaviour
         _characterAudioManager.StopSound();
         SpriteMovementRotationReset();
     }
-    public void DisablePlayerControlls()
+    void DisablePlayerControlls()
     {
         PlayerControlls.Player.Disable();
         PlayerControlls.UI.Enable();
     }
-    public void EnablePlayerControlls()
+    void EnablePlayerControlls()
     {
         PlayerControlls.Player.Enable();
         PlayerControlls.UI.Disable();

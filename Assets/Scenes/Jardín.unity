@@ -17650,11 +17650,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540700359}
   m_CullTransparentMesh: 1
---- !u!1 &541968736 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4599260282414021459, guid: 11e407b5193bff2438ec6b75bbf4f1e6, type: 3}
-  m_PrefabInstance: {fileID: 1867813893}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &542315612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46223,7 +46218,7 @@ Transform:
   m_GameObject: {fileID: 1502384849}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23911765, y: 0.3696438, z: -0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: -7.9919953, y: 1.3899999, z: -20.911003}
+  m_LocalPosition: {x: -8.15, y: 1.4, z: -21.03}
   m_LocalScale: {x: 0.40000004, y: 0.39999998, z: 0.40000004}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -55079,6 +55074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _daggerItem: {fileID: 11400000, guid: d28fa546b522f454284fc09a5df46e55, type: 2}
   _letterLog: {fileID: 11400000, guid: 1762888f54465d048ac69f1e034d4822, type: 2}
+  _thirdNumber: {fileID: 11400000, guid: d5ad4cdfdc127394e91d5e8eaf9f9c95, type: 2}
+  _fourthNumber: {fileID: 11400000, guid: 29d3707f342faf24aafd35b52138c33c, type: 2}
   _itemSlots:
   - {fileID: 540700359}
   - {fileID: 1692710830}
@@ -55270,7 +55267,7 @@ Transform:
   m_GameObject: {fileID: 1762049952}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -7.349997, y: 2.9, z: -20.23}
+  m_LocalPosition: {x: -7.35, y: 2.9, z: -20.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58143,10 +58140,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 791582934}
     m_Modifications:
     - target: {fileID: 3789790594669863401, guid: 11e407b5193bff2438ec6b75bbf4f1e6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3789790594669863401, guid: 11e407b5193bff2438ec6b75bbf4f1e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.575706
       objectReference: {fileID: 0}
@@ -58193,38 +58186,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4599260282414021459, guid: 11e407b5193bff2438ec6b75bbf4f1e6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1867813897}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11e407b5193bff2438ec6b75bbf4f1e6, type: 3}
 --- !u!4 &1867813894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3789790594669863401, guid: 11e407b5193bff2438ec6b75bbf4f1e6, type: 3}
   m_PrefabInstance: {fileID: 1867813893}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1867813897
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541968736}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4864507419118467945, guid: a2239afe32346c845be7a4a43b39a97d, type: 3}
 --- !u!1001 &1867921139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62012,7 +61980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":21},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Murmurando)
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Murmurando)
     Ah! Ya me acuerdo del \xFAltimo n\xFAmero del c\xF3digo del escudo, es el n\xFAmero
     de mascotas que tiene Eur\xEDale, uno.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Guardian
     del laboratorio\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.35}]}"

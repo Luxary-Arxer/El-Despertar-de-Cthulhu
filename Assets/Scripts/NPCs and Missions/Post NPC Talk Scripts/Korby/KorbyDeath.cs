@@ -5,8 +5,6 @@ using DialogueEditor;
 public class KorbyDeath : MonoBehaviour
 {
     [SerializeField]
-    ItemObject _apple;
-    [SerializeField]
     FadeManager _fadeManager;
     [SerializeField]
     NPCConversation _korbyDeathConversation;
@@ -53,9 +51,7 @@ public class KorbyDeath : MonoBehaviour
         _diningRoom.SetActive(true);
         _cameraPivot.position = _cameraPosition.position;
         _viktraLogic.position = _viktraPosition.position;
-        _viktraSprite.position = _viktraPosition.position;
-        InventoryGenerator.ItemsInventory.Remove(_apple);
-        _viktraLogic.gameObject.GetComponent<PlayerInputController>().DisablePlayerControlls();
+        _viktraSprite.position = new(_viktraPosition.position.x - .8f, _viktraPosition.position.y - 1.5f, _viktraPosition.position.z - .8f);
         yield return new WaitForSeconds(3);
         ConversationManager.Instance.StartConversation(_korbyDeathConversation);
         QuestManager.IsKorbyDead = true;

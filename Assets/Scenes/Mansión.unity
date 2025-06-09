@@ -8039,12 +8039,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 6
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":176.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1\xBFQui\xE9n
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":154.5,\"yPos\":-208},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1\xBFQui\xE9n
     ha sido el inutil que ha puesto una manzana en mi bandeja?! Os he dicho mil veces
     que las manzanas son mi \xFAnica debilidad.  \xA1Sois todos un hatajo de zoquetes
-    incompetentes!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":122},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Mentecatos!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":223},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Alima\xF1as
-    inmundas!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":326},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFEs
-    que pretendeis matarme de un ataque al coraz\xF3n?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179,\"yPos\":431},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1AAAAAAAHHHHHHHHHH!\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":179,\"yPos\":535},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hermanos,
+    incompetentes!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":155,\"yPos\":-109},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Mentecatos!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":155,\"yPos\":-7},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Alima\xF1as
+    inmundas!\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":155,\"yPos\":96},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFEs
+    que pretendeis matarme de un ataque al coraz\xF3n?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":157,\"yPos\":201},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1AAAAAAAHHHHHHHHHH!\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Korby\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.75},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":157,\"yPos\":305},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hermanos,
     lamentablemente uno de nuestros estimados Generales ha fallecido de un ataque
     al coraz\xF3n. \xA1Que Cthulhu lo reciba en su gloria eterna! Aun as\xED, debemos
     seguir adelante. No podemos permitir que nada ni nadie nos haga desviarnos de
@@ -8065,7 +8065,31 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: HasReachedFinalNodeKorbyDeathConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: GetAppleRealUseHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &275938402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69426,7 +69450,7 @@ Transform:
   m_GameObject: {fileID: 7532135173631539293}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23911765, y: 0.3696438, z: -0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: -0.86, y: 7.54, z: 36.91}
+  m_LocalPosition: {x: -0.8, y: 7.55, z: 37.27}
   m_LocalScale: {x: 0.40000004, y: 0.39999998, z: 0.40000004}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -79784,7 +79808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _viktraLogic: {fileID: 5641386861692687190}
-  _viktraSprite: {fileID: 5406410278415309683}
+  _viktraSprite: {fileID: 4010881865505357901}
   _cameraPivot: {fileID: 1238701445}
   _endOfSequencePosition: {fileID: 2091798037}
   _fadeManager: {fileID: 1391783213}
@@ -80759,6 +80783,18 @@ MonoBehaviour:
       - m_Target: {fileID: 6745147959644862769}
         m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
         m_MethodName: HasReachedFinalNodeDishConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: DisablePlayerControlls
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -82832,7 +82868,31 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: HasReachedFinalNodeDishConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6745147959644862769}
+        m_TargetAssemblyTypeName: QuestManager, Assembly-CSharp
+        m_MethodName: DisablePlayerControlls
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8154922633745555517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84320,6 +84380,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _daggerItem: {fileID: 11400000, guid: d28fa546b522f454284fc09a5df46e55, type: 2}
   _letterLog: {fileID: 11400000, guid: 1762888f54465d048ac69f1e034d4822, type: 2}
+  _thirdNumber: {fileID: 11400000, guid: d5ad4cdfdc127394e91d5e8eaf9f9c95, type: 2}
+  _fourthNumber: {fileID: 11400000, guid: 382fd386a7d59d44fb2a31965cd90ffb, type: 2}
   _itemSlots:
   - {fileID: 232086025}
   - {fileID: 825815576}
@@ -84408,13 +84470,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3859a095b9b917744920a5885f5b5add, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _apple: {fileID: 11400000, guid: 005aee7bdee1ff54d8ae53ad90096788, type: 2}
   _fadeManager: {fileID: 1391783213}
   _korbyDeathConversation: {fileID: 275938401}
   _viktraPosition: {fileID: 1201448410}
   _cameraPosition: {fileID: 1430574993}
   _viktraLogic: {fileID: 5641386861692687190}
-  _viktraSprite: {fileID: 5406410278415309683}
+  _viktraSprite: {fileID: 4010881865505357901}
   _cameraPivot: {fileID: 1238701445}
   _dishGameObject: {fileID: 1855138725}
   _waiterGameObject: {fileID: 6177890903457524965}

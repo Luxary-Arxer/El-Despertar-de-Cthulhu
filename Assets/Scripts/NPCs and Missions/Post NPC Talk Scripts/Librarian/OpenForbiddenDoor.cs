@@ -35,6 +35,5 @@ public class OpenForbiddenDoor : MonoBehaviour
         _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[5], false, 1, 1);
         QuestManager.ReachedFinalNodeLibrarianConverastion = false;
         _openedDoorObject.SetActive(true);
-        gameObject.SetActive(false);
     }
 }
