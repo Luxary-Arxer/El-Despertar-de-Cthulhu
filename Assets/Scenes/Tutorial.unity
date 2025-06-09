@@ -4519,7 +4519,7 @@ Transform:
   m_GameObject: {fileID: 166677555}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4564,7 +4564,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 5
   far clip plane: 5000
   field of view: 40
   orthographic: 1
@@ -52738,8 +52738,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _daggerItem: {fileID: 11400000, guid: d28fa546b522f454284fc09a5df46e55, type: 2}
   _letterLog: {fileID: 11400000, guid: 1762888f54465d048ac69f1e034d4822, type: 2}
-  _thirdNumber: {fileID: 0}
-  _fourthNumber: {fileID: 0}
   _itemSlots:
   - {fileID: 540700359}
   - {fileID: 1692710830}
