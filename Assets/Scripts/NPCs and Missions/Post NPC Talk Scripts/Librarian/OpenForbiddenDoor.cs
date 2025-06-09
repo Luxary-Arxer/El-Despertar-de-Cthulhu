@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class OpenForbiddenDoor : MonoBehaviour
 {
+    CharacterAudioManager _characterAudioManager;
+
     [SerializeField]
     FadeManager _fadeManager;
     [SerializeField]
     GameObject _openedDoorObject;
-    CharacterAudioManager _characterAudioManager;
+    [SerializeField]
+    GameObject _closedDoorObject;
     void Awake()
     {
         _characterAudioManager = FindFirstObjectByType<CharacterAudioManager>();
@@ -35,5 +38,6 @@ public class OpenForbiddenDoor : MonoBehaviour
         _characterAudioManager.PlaySound(_characterAudioManager.AudioClips[5], false, 1, 1);
         QuestManager.ReachedFinalNodeLibrarianConverastion = false;
         _openedDoorObject.SetActive(true);
+        _closedDoorObject.SetActive(false);
     }
 }

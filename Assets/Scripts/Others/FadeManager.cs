@@ -24,7 +24,7 @@ public class FadeManager : MonoBehaviour
     }
     void OnDisable()
     {
-        if (!QuestManager.ReachedFinalNodeDishConversation)
+        if (!QuestManager.ReachedFinalNodeDishConversation || (QuestManager.IsBifiaDead && QuestManager.IsKorbyDead && QuestManager.IsEphrieDead && QuestManager.IsEurialeDead))
         {
             _playerInputController.PlayerControlls.Player.Enable();
         }
@@ -56,5 +56,6 @@ public class FadeManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_waitTime);
         _isFinishedFadingOut = true;
+        Cursor.visible = false;
     }
 }

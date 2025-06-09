@@ -383,10 +383,10 @@ public class QuestManager : MonoBehaviour
             {
                 InventoryGenerator.HintsInventory.Remove(_unorderedWarehouseHint);
             }
-            HasPlantBait = true;
             _inventoryManager.AddHintToInventory(_lostFangHint);
             ReproduceGetHintSound();
         }
+        HasPlantBait = true;
     }
     public void GetFangInPlantHint()
     {
@@ -546,6 +546,10 @@ public class QuestManager : MonoBehaviour
     public void DisablePlayerControlls()
     {
         _playerInputController.PlayerControlls.Player.Disable();
+    }
+    public void ShowCursor()
+    {
+        Cursor.visible = true;
     }
     void ReproduceGetHintSound()
     {
